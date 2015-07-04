@@ -1,3 +1,10 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://jillmunson.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Jill Munson - insert clever title here"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+[params]
+  title = "Jill Munson - insert clever title here"
+  description = "Tesla's Awesome Hugo Site"
+  author = "Nikola Tesla"
