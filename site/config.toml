@@ -1,10 +1,10 @@
-baseurl = "http://jillmunson.com"
+baseurl = "http://jillmunson.com/"
 languageCode = "en-us"
 title = "Jill Munson"
 contentdir = "content"
 publishdir = "public"
 theme = "hugo-theme-casper"
-canonifyurls = true
+canonifyurls = false
 [params]
   description = ""
   cover = "img/female_founders.jpg"
