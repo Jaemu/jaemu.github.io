@@ -10,11 +10,12 @@ canonifyurls = false
   cover = "img/female_founders.jpg"
   author = "Jill Munson"
   authorlocation = "New York, NY"
-  bio= "about"
+  bio= "Software Engineer | Seawolf | Steve Ballmer is my spirit animal"
   googleAnalyticsUserID = "UA-79101-12"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   githubName = "jaemu"
   twitterName = "maykaynvwd"
+  instagram = "msito"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
 

@@ -141,6 +141,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-ghost:before {
     content: "\f100";
 }
+.icon-instagram:before {
+    content: "\f215";
+}
 .icon-feed:before {
     content: "\f413";
 }
@@ -507,16 +510,14 @@ body.nav-opened .site-wrapper {
     overflow: hidden;
 }
 
-
 .main-header-overlay {
   width: 100%;
   height: 100vh;
   position: absolute;
   background-color: #000;
   opacity: 0.7;
-  top: 0;
+  top:0;
 }
-
 .main-header .inner {
     width: 80%;
 }
