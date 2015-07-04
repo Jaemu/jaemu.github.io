@@ -12,4 +12,19 @@
     <lastmod>2015-07-04T12:57:25-04:00</lastmod>
   </url>
   
+  <url>
+    <loc>http://localhost:1313/projects/firework/about/</loc>
+    <lastmod>2015-04-14T22:17:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2015-04-14T22:17:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/projects/hugo/about/</loc>
+    <lastmod>2015-04-14T22:17:00+02:00</lastmod>
+  </url>
+  
 </urlset>

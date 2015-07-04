@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jill Munson - insert clever title here</title>
+    <title>Posts on Jill Munson</title>
     <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on Jill Munson - insert clever title here</description>
+    <description>Recent content in Posts on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jul 2015 12:57:25 -0400</lastBuildDate>

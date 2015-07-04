@@ -1,10 +1,35 @@
-baseurl = "http://jillmunson.com/"
+baseurl = "http://jillmunson.com"
 languageCode = "en-us"
-title = "Jill Munson - insert clever title here"
+title = "Jill Munson"
 contentdir = "content"
-layoutdir = "layouts"
 publishdir = "public"
+theme = "casper"
+canonifyurls = true
 [params]
-  title = "Jill Munson - insert clever title here"
-  description = "Tesla's Awesome Hugo Site"
-  author = "Nikola Tesla"
+  description = ""
+  cover = "img/female_founders.jpg"
+  author = "Jill Munson"
+  authorlocation = "New York, NY"
+  bio= "about"
+  googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  githubName = "jaemu"
+  twitterName = "maykaynvwd"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+
+[[menu.main]]
+  name = "Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/post"
+
+[[menu.main]]
+  name = "Projects"
+  weight = -120
+  url = "/projects"
+
+[[menu.main]]
+  name = "About"
+  weight = -120
+  url = "/about"
