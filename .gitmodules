@@ -1,0 +1,6 @@
+[submodule "hugo-theme-casper"]
+	path = hugo-theme-casper
+	url = https://github.com/Jaemu/hugo-theme-casper.git
+[submodule "site/themes/hugo-theme-casper"]
+	path = site/themes/hugo-theme-casper
+	url = https://github.com/Jaemu/hugo-theme-casper.git
