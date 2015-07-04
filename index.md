@@ -1,6 +1,6 @@
 ---
 redirect_to:
-  - /site/public/index.html
+  - /site/public/index/
 ---
 
 Here is my redirect page.
