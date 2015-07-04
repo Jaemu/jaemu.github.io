@@ -1,4 +1,4 @@
 gems:
   - jekyll-redirect-from
 redirect_to:
-  - /site/index.html
+  - /site/public/index.html
