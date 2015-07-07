@@ -11,7 +11,7 @@ canonifyurls = false
   author = "Jill Munson"
   authorlocation = "New York, NY"
   bio= "Software Engineer | Seawolf | Steve Ballmer is my spirit animal"
-  googleAnalyticsUserID = "UA-79101-12"
+  googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   githubName = "jaemu"
   twitterName = "maykaynvwd"
