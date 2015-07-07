@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Jill Munson</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Jill Munson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Apr 2015 22:17:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fireworks.js</title>
+      <link>http://localhost:1313/projects/firework/about/</link>
+      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/projects/firework/about/</guid>
+      <description>&lt;p&gt;A silly project that launches fireworks from click or touch events&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://localhost:1313/projects/hugo/about/</link>
+      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
+      
+      <guid>http://localhost:1313/projects/hugo/about/</guid>
+      <description>&lt;p&gt;I made a website! (with some help).&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
