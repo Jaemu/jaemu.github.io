@@ -1,4 +1,4 @@
-baseurl = "http://jillmunson.com/home/"
+baseurl = "http://jillmunson.com/"
 languageCode = "en-us"
 title = "Jill Munson"
 contentdir = "content"
