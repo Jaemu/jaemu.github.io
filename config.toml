@@ -1,15 +1,16 @@
 baseurl = "http://jillmunson.com/"
 languageCode = "en-us"
 title = "Jill Munson"
+
 contentdir = "content"
 publishdir = "./"
 theme = "hugo-theme-casper"
 canonifyurls = false
 [params]
-  description = ""
   cover = "img/female_founders.jpg"
   author = "Jill Munson"
   authorlocation = "New York, NY"
+  description = "Software Engineer.  Seawolf.  Steve Ballmer is my spirit animal"
   bio= "Software Engineer | Seawolf | Steve Ballmer is my spirit animal"
   googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
@@ -18,6 +19,12 @@ canonifyurls = false
   instagram = "msito"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
+
+[[menu.main]]
+  name = "Home"
+  weight = -140
+  identifier = "home"
+  url = "/"
 
 [[menu.main]]
   name = "Blog"
