@@ -6,9 +6,15 @@ comments=false
 share=false
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom.  Currently working as a javascript developer developing awesome kid-friendly experiences on the web for Nickelodeon and NickJr.  
+
+
+When I'm not making obscure literary references or arguing about the merits of two spaces: 
+
+
+- after the period (fight me, [Chicago Manual of Style](http://www.chicagomanualofstyle.org/qanda/data/faq/topics/OneSpaceorTwo.html))
+- as the perfect tab length
+
+you can find me at various tech [meetups](http://www.meetup.com/members/96241402/) around NYC which all started with that one summer I [interned there](http://making.meetup.com/post/58931840916/introducing-meetupquest), starting many unfinished sewing projects around my house (oops), going on local dog-friendly adventures with my [corgi](https://en.wikipedia.org/wiki/Cardigan_Welsh_Corgi) Meryl, or using my nieces for usability testing.  
+
+
