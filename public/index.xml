@@ -22,21 +22,6 @@
     </item>
     
     <item>
-      <title>About me</title>
-      <link>http://jillmunson.com/about/</link>
-      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
-      
-      <guid>http://jillmunson.com/about/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Hugo</title>
       <link>http://jillmunson.com/projects/hugo/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
@@ -55,6 +40,21 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&g
       
       <guid>http://jillmunson.com/projects/firework/about/</guid>
       <description>&lt;p&gt;A silly project that launches fireworks from click or touch events&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>http://jillmunson.com/about/</link>
+      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
+      
+      <guid>http://jillmunson.com/about/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
     </item>
     

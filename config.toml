@@ -1,8 +1,8 @@
-baseurl = "http://jillmunson.com/"
+baseurl = "http://jillmunson.com/home/"
 languageCode = "en-us"
 title = "Jill Munson"
 contentdir = "content"
-publishdir = "public"
+publishdir = "./"
 theme = "hugo-theme-casper"
 canonifyurls = false
 [params]
