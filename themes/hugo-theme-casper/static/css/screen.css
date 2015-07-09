@@ -788,6 +788,15 @@ body.nav-opened .nav {
     padding: 1px 0 5px 0;
     width: auto;
 }
+.blog-logo-center {
+    display: block;
+}
+
+.blog-logo-center img {
+  border-radius: 50%;
+  max-height: 200px;
+  margin: 0 auto;
+}
 
 .menu-button {
     -webkit-box-sizing: border-box;

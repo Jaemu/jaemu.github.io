@@ -32,12 +32,24 @@
     </item>
     
     <item>
+      <title>Hugo</title>
+      <link>http://jillmunson.com/projects/hugo/about/</link>
+      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
+      
+      <guid>http://jillmunson.com/projects/hugo/about/</guid>
+      <description>&lt;p&gt;I made a website! (with some help).&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+    </item>
+    
+    <item>
       <title>About me</title>
       <link>http://jillmunson.com/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
       <guid>http://jillmunson.com/about/</guid>
-      <description>&lt;p&gt;English nerd -&amp;gt; &lt;a href=&#34;https://www.cs.stonybrook.edu/&#34;&gt;Seawolf&lt;/a&gt; -&amp;gt; software engineer @ Viacom.  Currently working as a javascript developer developing awesome kid-friendly experiences on the web for Nickelodeon and NickJr.&lt;/p&gt;
+      <description>&lt;p&gt;English nerd -&amp;gt; &lt;a href=&#34;https://www.cs.stonybrook.edu/&#34;&gt;Seawolf&lt;/a&gt; -&amp;gt; software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.&lt;/p&gt;
 
 &lt;p&gt;When I&amp;rsquo;m not making obscure literary references or arguing about the merits of two spaces:&lt;/p&gt;
 
@@ -50,18 +62,6 @@
 
 &lt;p&gt;&lt;img src=&#34;http://jillmunson.com/img/manoa_falls.jpg&#34; alt=&#34;Manoa Falls, Hawaii&#34; title=&#34;Me in Manoa Falls Park, Hawaii.&#34; /&gt;
 &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://jillmunson.com/projects/hugo/about/</link>
-      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
-      
-      <guid>http://jillmunson.com/projects/hugo/about/</guid>
-      <description>&lt;p&gt;I made a website! (with some help).&lt;/p&gt;
-
-&lt;hr /&gt;
 </description>
     </item>
     

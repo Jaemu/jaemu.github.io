@@ -6,7 +6,7 @@ comments=false
 share=false
 +++
 
-English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom.  Currently working as a javascript developer developing awesome kid-friendly experiences on the web for Nickelodeon and NickJr.  
+English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.  
 
 
 When I'm not making obscure literary references or arguing about the merits of two spaces: 

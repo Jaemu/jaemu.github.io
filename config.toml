@@ -8,6 +8,7 @@ theme = "hugo-theme-casper"
 canonifyurls = false
 [params]
   cover = "img/female_founders.jpg"
+  logo = "img/me.jpg"
   author = "Jill Munson"
   authorlocation = "New York, NY"
   description = "Software Engineer.  Seawolf.  Steve Ballmer is my spirit animal"
