@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jill Munson</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://jillmunson.com/post/</link>
     <description>Recent content in Posts on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jul 2015 12:57:25 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jillmunson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>hello world</title>
-      <link>http://localhost:1313/post/2015/7-10/hello-world/</link>
+      <link>http://jillmunson.com/post/2015/7-10/hello-world/</link>
       <pubDate>Fri, 10 Jul 2015 12:57:25 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/2015/7-10/hello-world/</guid>
+      <guid>http://jillmunson.com/post/2015/7-10/hello-world/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something.  It&amp;rsquo;s not like I don&amp;rsquo;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.&lt;/p&gt;
 
 &lt;p&gt;The issue is that even though I like what I&amp;rsquo;m doing, I don&amp;rsquo;t feel like I&amp;rsquo;ve done anything start-to-finish and like I&amp;rsquo;m learning anything new.  Sure I&amp;rsquo;m quickly becoming the world&amp;rsquo;s largest living encyclopedia of browser and javascript quirks but lately I&amp;rsquo;ve been missing the sort of really stressful but incredibly satisfying high that comes from finally grok&amp;rsquo;ing lamdas or dynamic programming or the like.&lt;/p&gt;
