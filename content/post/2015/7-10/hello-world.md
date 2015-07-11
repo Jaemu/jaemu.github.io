@@ -3,6 +3,7 @@ date = "2015-07-10T12:57:25-04:00"
 draft = false
 title = "hello world"
 description = "A blinking cursor.  A blank window.  That is the home of my summer ennui."
+tags = ["personal"]
 +++
 
 

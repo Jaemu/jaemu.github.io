@@ -13,11 +13,12 @@ canonifyurls = false
   authorlocation = "New York, NY"
   authorwebsite = "email: hello at (this domain)"
   description = "Software Engineer.  Seawolf.  Steve Ballmer is my spirit animal"
-  bio= "Software Engineer | Seawolf | Steve Ballmer is my spirit animal"
+  bio= "Software Engineer | Seawolf | Corg-mom "
   googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   githubName = "jaemu"
   twitterName = "maykaynvwd"
+  linkedin = "https://www.linkedin.com/in/jillianmunson"
   instagram = "msito"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false

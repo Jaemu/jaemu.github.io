@@ -43,6 +43,11 @@
                     <span class="icon-instagram" style="color:white;font-size:2em"></span>
                 </a>
             {{end}}
+            {{ if .Site.Params.linkedin }}
+                <a class="bloglogo" href="https://www.linkedin.com/in/jillianmunson">
+                    <span class="icon-linkedin" style="color:white;font-size:2em"></span>
+                </a>
+            {{end}}
             <h1 class="page-title">{{ .Site.Title }}</h1>
             <h2 class="page-description">{{ .Site.Params.description }}</h2>
         </div>

@@ -11,6 +11,10 @@ One of the biggest weaknesses I have is putting pen to paper, finger to keyboard
 
 As a primarily front-end developer, this overthinking paralysis has stricken me every time I've tried making a personal site.  I've experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.  
 
+
+All in all, I learned several things about myself and side projects in general:
+
+
 #### Lesson 0 - You *might* not need (javascript|insert favorite language here) 
 
 When I first started thinking about what I needed, I started looking into [Ghost](https://github.com/tryghost/Ghost), which is a full blog engine with a ton of features out of the box, 3rd-party plugins, etc.  Ghost is great and from my little time with it, seems like the kind of thing that could really fit the use case of needing a blog engine.

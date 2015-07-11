@@ -21,6 +21,8 @@
 
 &lt;p&gt;As a primarily front-end developer, this overthinking paralysis has stricken me every time I&amp;rsquo;ve tried making a personal site.  I&amp;rsquo;ve experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.&lt;/p&gt;
 
+&lt;p&gt;All in all, I learned several things about myself and side projects in general:&lt;/p&gt;
+
 &lt;h4 id=&#34;lesson-0-you-might-not-need-javascript-insert-favorite-language-here:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 0 - You &lt;em&gt;might&lt;/em&gt; not need (javascript|insert favorite language here)&lt;/h4&gt;
 
 &lt;p&gt;When I first started thinking about what I needed, I started looking into &lt;a href=&#34;https://github.com/tryghost/Ghost&#34;&gt;Ghost&lt;/a&gt;, which is a full blog engine with a ton of features out of the box, 3rd-party plugins, etc.  Ghost is great and from my little time with it, seems like the kind of thing that could really fit the use case of needing a blog engine.&lt;/p&gt;
