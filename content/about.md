@@ -4,7 +4,13 @@ draft = false
 title = "About me"
 comments=false
 share=false
+image="img/what_happened_here.jpg"
 +++
+
+
+*pictured above: Me with my husband Ryan, Thomas immortalized as lord of the dance at our wedding*
+
+
 
 English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.  
 
