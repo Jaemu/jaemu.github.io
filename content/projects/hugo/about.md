@@ -3,6 +3,7 @@ date = "2015-04-14T22:17:00+02:00"
 draft = false
 title = "jillmunson.com + hugo"
 description = "I made a website! (after lots of false starts and with some help)"
+tags = ["personal", "projects", "front-end"]
 +++
 
 One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn't even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.  
@@ -93,3 +94,5 @@ I ran into a few other issues (static files not being copied over into my publis
 
 
 This is one person's experience with one tool, so please take any opinions here with a grain of salt.  However, the lessons learned here apply to any project.  
+
+
