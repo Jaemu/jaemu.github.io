@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jill Munson</title>
-    <link>http://jillmunson.com/tags/projects/</link>
+    <link>http://localhost:1313/tags/projects/</link>
     <description>Recent content in Projects on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Apr 2015 22:17:00 +0200</lastBuildDate>
-    <atom:link href="http://jillmunson.com/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>jillmunson.com &#43; hugo</title>
-      <link>http://jillmunson.com/projects/hugo/about/</link>
+      <link>http://localhost:1313/projects/hugo/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/projects/hugo/about/</guid>
+      <guid>http://localhost:1313/projects/hugo/about/</guid>
       <description>
 
 &lt;p&gt;One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&amp;rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.&lt;/p&gt;

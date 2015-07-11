@@ -2,19 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jill Munson</title>
-    <link>http://jillmunson.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2015 12:57:25 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jul 2015 12:57:25 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance</title>
+      <link>http://localhost:1313/post/2015/7-11/phylogeny-and-dogs/</link>
+      <pubDate>Sat, 11 Jul 2015 12:57:25 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/2015/7-11/phylogeny-and-dogs/</guid>
+      <description>
+
+&lt;p&gt;I love life sciences, dogs, and algorithms so when I found &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004016&#34;&gt;this paper&lt;/a&gt; describing recent changes to the hypothesized phylogeny of modern dog I got giddy.&lt;/p&gt;
+
+&lt;p&gt;Dogs are incredibly fascinating, regardless of your opinion on breed standards and dog shows.  They are the only successfully domesticated carnivore, they have the ability to understand our social communication mechanics and language, they engage in mutually beneficial social cooperation with us and we are not absolutely certain of why or when it happened.&lt;/p&gt;
+
+&lt;p&gt;The truth is there is a lot we don&amp;rsquo;t understand about &lt;em&gt;how&lt;/em&gt; man domesticated dogs or if man was even the catalyst for domestication.  For a long time, the prevailing theory was that dogs had evolved from wolves that were attracted to human agricultural settlements by trash.  This isn&amp;rsquo;t completely unrealistic because we know wolves are &lt;a href=&#34;https://en.wikipedia.org/wiki/Dog_anatomy#Physical_characteristics&#34;&gt;scavengers&lt;/a&gt; and that dogs have maintained some of these behaviors (any dog owner can tell you about their temporary land shark that appears around the table at mealtime).&lt;/p&gt;
+
+&lt;p&gt;What is so awesome about the findings from this study is that it demonstrates a working model of phylogeny that satisfies the current state of genetic similarity that shows dogs not as a derivative of wolf but as a &lt;a href=&#34;http://mediarelations.cornell.edu/2014/01/16/dogs-and-wolves-diverged-from-common-ancestor/&#34;&gt;sibling that evolved separately from a common ancestor&lt;/a&gt;.  &lt;img src=&#34;http://localhost:1313/img/journal.pgen.1004016.g004.png&#34; alt=&#34;Neighbor-joining tree and admixture signatures from ABBA/BABA tests.  Source: Genome Sequencing Highlights the Dynamic Early History of Dogs
+Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) Genome Sequencing Highlights the Dynamic Early History of Dogs. PLoS Genet 10(1): e1004016. doi: 10.1371/journal.pgen.1004016&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h4 id=&#34;phylogenetic-trees-introduction-and-construction-by-phenotype:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Phylogenetic trees: introduction and construction by phenotype&lt;/h4&gt;
+
+&lt;p&gt;The diagram in this picture is called a phylogenetic tree, a data structure that maintains the evolutionary relationship between child nodes.  In this representation, children on the same depth of the tree are &amp;ldquo;siblings&amp;rdquo; and their &amp;ldquo;common ancestor&amp;rdquo; is the node that corresponds to their closest common parent node.  So in this tree, BOX (boxer) and BSJ (basenji) are more closely related because they have a common ancestor that lived more recently than that of say, BOX and DNG (dingo).  Typically, the height of the tree correllates to time but I&amp;rsquo;ll explain the motivation for using base pair differences.&lt;/p&gt;
+
+&lt;p&gt;Before genetic sequencing, the &amp;ldquo;distance&amp;rdquo; between sibling nodes and the placement of intermediary branching events was guessed at by similarity of observable traits, or &lt;a href=&#34;https://en.wikipedia.org/wiki/Phenetics&#34;&gt;phenotype&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are several problems with using the phenetic approach, most notably the existence of similar traits in unrelated species that have different evolutionary paths.  This could have occurred in isolated populations that were subject to the same selective pressures and not indicative of parent or sibling relationships in evolution.&lt;/p&gt;
+
+&lt;p&gt;Enter genomics and &lt;a href=&#34;https://en.wikipedia.org/wiki/Levenshtein_distance&#34;&gt;Levenshtein distance&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;phylogenetic-trees-construction-by-edit-distance:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Phylogenetic trees: construction by edit distance&lt;/h4&gt;
+
+&lt;p&gt;With cheaper, faster genetic alignment and sequencing possible, we can now infer evolutionary relationships between species based on the similarity of their DNA.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not as simple as determining the edit distance between two long strings &amp;ndash; the location, migration, duplication and deletion of identical genes across species &lt;a href=&#34;https://en.wikipedia.org/wiki/Distance_matrices_in_phylogeny#Distance-matrix_methods&#34;&gt;complicates this a bit&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>hello world</title>
-      <link>http://jillmunson.com/post/2015/7-10/hello-world/</link>
+      <link>http://localhost:1313/post/2015/7-10/hello-world/</link>
       <pubDate>Fri, 10 Jul 2015 12:57:25 -0400</pubDate>
       
-      <guid>http://jillmunson.com/post/2015/7-10/hello-world/</guid>
+      <guid>http://localhost:1313/post/2015/7-10/hello-world/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something.  It&amp;rsquo;s not like I don&amp;rsquo;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.&lt;/p&gt;
 
 &lt;p&gt;The issue is that even though I like what I&amp;rsquo;m doing, I don&amp;rsquo;t feel like I&amp;rsquo;ve done anything start-to-finish and like I&amp;rsquo;m learning anything new.  Sure I&amp;rsquo;m quickly becoming the world&amp;rsquo;s largest living encyclopedia of browser and javascript quirks but lately I&amp;rsquo;ve been missing the sort of really stressful but incredibly satisfying high that comes from finally grok&amp;rsquo;ing lamdas or dynamic programming or the like.&lt;/p&gt;
@@ -43,10 +79,10 @@
     
     <item>
       <title>About me</title>
-      <link>http://jillmunson.com/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;&lt;em&gt;pictured above: Me with my husband Ryan, Thomas immortalized as lord of the dance at our wedding&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;English nerd -&amp;gt; &lt;a href=&#34;https://www.cs.stonybrook.edu/&#34;&gt;Seawolf&lt;/a&gt; -&amp;gt; software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.&lt;/p&gt;
@@ -64,27 +100,27 @@
 
 &lt;p&gt;You can find my resume &lt;a href=&#34;https://drive.google.com/file/d/0BwZCfk49XK_MS3NHTk1vNXdvaU0/view?usp=sharing&#34;&gt;here&lt;/a&gt; and that talk I did one time on decorators in Python &lt;a href=&#34;https://docs.google.com/presentation/d/1TmaaYFMZYYugkYFG3U2Tw_Ro0V033D_cGE_Tz2z21Jc/edit?usp=sharing&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://jillmunson.com/img/manoa_falls.jpg&#34; alt=&#34;Manoa Falls, Hawaii&#34; title=&#34;Me in Manoa Falls Park, Hawaii.&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/manoa_falls.jpg&#34; alt=&#34;Manoa Falls, Hawaii&#34; title=&#34;Me in Manoa Falls Park, Hawaii.&#34; /&gt;
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Fireworks.js</title>
-      <link>http://jillmunson.com/projects/firework/about/</link>
+      <link>http://localhost:1313/projects/firework/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/projects/firework/about/</guid>
+      <guid>http://localhost:1313/projects/firework/about/</guid>
       <description>&lt;p&gt;A silly project that launches fireworks from click or touch events&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>jillmunson.com &#43; hugo</title>
-      <link>http://jillmunson.com/projects/hugo/about/</link>
+      <link>http://localhost:1313/projects/hugo/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/projects/hugo/about/</guid>
+      <guid>http://localhost:1313/projects/hugo/about/</guid>
       <description>
 
 &lt;p&gt;One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&amp;rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.&lt;/p&gt;

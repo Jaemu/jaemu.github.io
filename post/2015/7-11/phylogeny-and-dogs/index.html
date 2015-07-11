@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance &middot;  Jill Munson" />
+  	<meta property="og:site_name" content="Jill Munson" />
+  	<meta property="og:url" content="http://localhost:1313/post/2015/7-11/phylogeny-and-dogs/" />
+    
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-07-11T12:57:25-04:00" />
+
+    
+    <meta property="og:article:tag" content="algorithms" />
+    
+    <meta property="og:article:tag" content="biology" />
+    
+    
+
+  <title>
+     Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance &middot;  Jill Munson
+  </title>
+
+    <meta name="description" content="Software Engineer.  Seawolf.  Corg-mom." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://localhost:1313/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://localhost:1313/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Jill Munson" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.14" />
+
+    <link rel="canonical" href="http://localhost:1313/post/2015/7-11/phylogeny-and-dogs/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-60038362-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about/">About</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/post/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/projects/">Projects</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://localhost:1313/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+ 
+  
+      <a class="blog-logo" href="http://localhost:1313/"><img src="http://localhost:1313/img/me.jpg" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance</h1>
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-07-11T12:57:25-04:00">
+            Jul 11, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://localhost:1313/tags/algorithms/">#algorithms</a></span>
+         
+          <span class="post-tag small"><a href="http://localhost:1313/tags/biology/">#biology</a></span>
+         
+        </section>
+    </header>
+  
+    <section class="post-content">
+      
+
+<p>I love life sciences, dogs, and algorithms so when I found <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004016">this paper</a> describing recent changes to the hypothesized phylogeny of modern dog I got giddy.</p>
+
+<p>Dogs are incredibly fascinating, regardless of your opinion on breed standards and dog shows.  They are the only successfully domesticated carnivore, they have the ability to understand our social communication mechanics and language, they engage in mutually beneficial social cooperation with us and we are not absolutely certain of why or when it happened.</p>
+
+<p>The truth is there is a lot we don&rsquo;t understand about <em>how</em> man domesticated dogs or if man was even the catalyst for domestication.  For a long time, the prevailing theory was that dogs had evolved from wolves that were attracted to human agricultural settlements by trash.  This isn&rsquo;t completely unrealistic because we know wolves are <a href="https://en.wikipedia.org/wiki/Dog_anatomy#Physical_characteristics">scavengers</a> and that dogs have maintained some of these behaviors (any dog owner can tell you about their temporary land shark that appears around the table at mealtime).</p>
+
+<p>What is so awesome about the findings from this study is that it demonstrates a working model of phylogeny that satisfies the current state of genetic similarity that shows dogs not as a derivative of wolf but as a <a href="http://mediarelations.cornell.edu/2014/01/16/dogs-and-wolves-diverged-from-common-ancestor/">sibling that evolved separately from a common ancestor</a>.  <img src="/img/journal.pgen.1004016.g004.png" alt="Neighbor-joining tree and admixture signatures from ABBA/BABA tests.  Source: Genome Sequencing Highlights the Dynamic Early History of Dogs
+Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) Genome Sequencing Highlights the Dynamic Early History of Dogs. PLoS Genet 10(1): e1004016. doi: 10.1371/journal.pgen.1004016" />
+</p>
+
+<h4 id="phylogenetic-trees-introduction-and-construction-by-phenotype:0b815a1b81587847d74fa9cdce27f2fa">Phylogenetic trees: introduction and construction by phenotype</h4>
+
+<p>The diagram in this picture is called a phylogenetic tree, a data structure that maintains the evolutionary relationship between child nodes.  In this representation, children on the same depth of the tree are &ldquo;siblings&rdquo; and their &ldquo;common ancestor&rdquo; is the node that corresponds to their closest common parent node.  So in this tree, BOX (boxer) and BSJ (basenji) are more closely related because they have a common ancestor that lived more recently than that of say, BOX and DNG (dingo).  Typically, the height of the tree correllates to time but I&rsquo;ll explain the motivation for using base pair differences.</p>
+
+<p>Before genetic sequencing, the &ldquo;distance&rdquo; between sibling nodes and the placement of intermediary branching events was guessed at by similarity of observable traits, or <a href="https://en.wikipedia.org/wiki/Phenetics">phenotype</a>.</p>
+
+<p>There are several problems with using the phenetic approach, most notably the existence of similar traits in unrelated species that have different evolutionary paths.  This could have occurred in isolated populations that were subject to the same selective pressures and not indicative of parent or sibling relationships in evolution.</p>
+
+<p>Enter genomics and <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a>.</p>
+
+<h4 id="phylogenetic-trees-construction-by-edit-distance:0b815a1b81587847d74fa9cdce27f2fa">Phylogenetic trees: construction by edit distance</h4>
+
+<p>With cheaper, faster genetic alignment and sequencing possible, we can now infer evolutionary relationships between species based on the similarity of their DNA.</p>
+
+<p>It&rsquo;s not as simple as determining the edit distance between two long strings &ndash; the location, migration, duplication and deletion of identical genes across species <a href="https://en.wikipedia.org/wiki/Distance_matrices_in_phylogeny#Distance-matrix_methods">complicates this a bit</a>.</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://localhost:1313/" style="background-image: url(http://localhost:1313/img/me.jpg)"><span class="hidden">Jill Munson's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://localhost:1313/">Jill Munson</a></h4>
+  
+  <p>Software Engineer | Seawolf | Corg-mom </p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">New York, NY</span>
+    <span class="author-link icon-link">email: hello at (this domain)</span>
+  </div>
+</section>
+
+
+
+    
+    <section class="share">
+      <h4>Share this post</h4>
+      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Evolutionary%20tree%20reconstruction%20and%20the%20phylogeny%20of%20the%20domestic%20dog%20pt.%201%3a%20Phylogenic%20trees%20and%20edit%20distance&amp;url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2015%2f7-11%2fphylogeny-and-dogs%2f"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+      </a>
+      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2f2015%2f7-11%2fphylogeny-and-dogs%2f"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+      </a>
+      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2f2015%2f7-11%2fphylogeny-and-dogs%2f"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+      </a>
+    </section>
+    
+
+    
+    
+    
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Jill Munson</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/Jaemu/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://localhost:1313/js/jquery.js"></script>
+    <script type="text/javascript" src="http://localhost:1313/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://localhost:1313/js/index.js"></script>
+
+</body>
+</html>
+
