@@ -12,7 +12,7 @@ canonifyurls = false
   author = "Jill Munson"
   authorlocation = "New York, NY"
   authorwebsite = "email: hello at (this domain)"
-  description = "Software Engineer.  Seawolf.  Steve Ballmer is my spirit animal"
+  description = "Software Engineer.  Seawolf.  Corg-mom."
   bio= "Software Engineer | Seawolf | Corg-mom "
   googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
