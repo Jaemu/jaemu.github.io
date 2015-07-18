@@ -30,4 +30,7 @@ you can find me at various tech [meetups](http://www.meetup.com/members/96241402
 You can find my resume [here](https://drive.google.com/file/d/0BwZCfk49XK_MS3NHTk1vNXdvaU0/view?usp=sharing) and that talk I did one time on decorators in Python [here](https://docs.google.com/presentation/d/1TmaaYFMZYYugkYFG3U2Tw_Ro0V033D_cGE_Tz2z21Jc/edit?usp=sharing)
 
 
-![Manoa Falls, Hawaii](/img/manoa_falls.jpg "Me in Manoa Falls Park, Hawaii.")
+![Manoa Falls, Hawaii](/img/manoa_falls.jpg "Me in Manoa Falls Park, Hawaii.  I am not tall.")
+
+
+-  Disclaimer: words, thoughts, opinions, rants, etc. not sanctioned by or in any way affiliated with Viacom or any company I have worked for and with in the past.  I'm an engineer who sometimes pretends to write, not a PR or brand representative.  Everything here is my own.  

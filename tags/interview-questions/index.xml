@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interview Questions on Jill Munson</title>
+    <link>http://jillmunson.com/tags/interview-questions/</link>
+    <description>Recent content in Interview Questions on Jill Munson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jul 2015 12:57:25 -0400</lastBuildDate>
+    <atom:link href="http://jillmunson.com/tags/interview-questions/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An Introduction to LRU Caches</title>
+      <link>http://jillmunson.com/post/2015/7-17/lru-cache/</link>
+      <pubDate>Fri, 17 Jul 2015 12:57:25 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/post/2015/7-17/lru-cache/</guid>
+      <description>&lt;p&gt;On the job, we use redis pretty heavily (someone did a talk about it once which you can find &lt;a href=&#34;http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

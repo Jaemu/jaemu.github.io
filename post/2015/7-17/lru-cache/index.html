@@ -5,20 +5,26 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  	<meta property="og:title" content=" About me &middot;  Jill Munson" />
+  	<meta property="og:title" content=" An Introduction to LRU Caches &middot;  Jill Munson" />
   	<meta property="og:site_name" content="Jill Munson" />
-  	<meta property="og:url" content="http://jillmunson.com/about/" />
+  	<meta property="og:url" content="http://jillmunson.com/post/2015/7-17/lru-cache/" />
     
     
   	<meta property="og:type" content="article" />
 
-    <meta property="og:article:published_time" content="2015-04-14T22:17:00&#43;02:00" />
+    <meta property="og:article:published_time" content="2015-07-17T12:57:25-04:00" />
 
+    
+    <meta property="og:article:tag" content="algorithms" />
+    
+    <meta property="og:article:tag" content="programming" />
+    
+    <meta property="og:article:tag" content="interview-questions" />
     
     
 
   <title>
-     About me &middot;  Jill Munson
+     An Introduction to LRU Caches &middot;  Jill Munson
   </title>
 
     <meta name="description" content="Software Engineer.  Seawolf.  Corg-mom." />
@@ -41,7 +47,7 @@
     
     <meta name="generator" content="Hugo 0.14" />
 
-    <link rel="canonical" href="http://jillmunson.com/about/" />
+    <link rel="canonical" href="http://jillmunson.com/post/2015/7-17/lru-cache/" />
 
     
     <script>
@@ -99,8 +105,8 @@
 
 
 
-<header class="main-header post-head" style="background-image: url(http://jillmunson.com/img/what_happened_here.jpg); background-size: contain;">
-  <nav class="main-nav overlay clearfix">
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
 
  
   
@@ -119,40 +125,28 @@
 
 
 
-  <article class="post ">
+  <article class="post post">
 
     <header class="post-header">
-        <h1 class="post-title">About me</h1>
+        <h1 class="post-title">An Introduction to LRU Caches</h1>
         <section class="post-meta">
         
+          <time class="post-date" datetime="2015-07-17T12:57:25-04:00">
+            Jul 17, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://jillmunson.com/tags/algorithms/">#algorithms</a></span>
+         
+          <span class="post-tag small"><a href="http://jillmunson.com/tags/programming/">#programming</a></span>
+         
+          <span class="post-tag small"><a href="http://jillmunson.com/tags/interview-questions/">#interview-questions</a></span>
          
         </section>
     </header>
   
     <section class="post-content">
-      <p><em>pictured above: Me with my husband Ryan, Thomas immortalized as lord of the dance at our wedding</em></p>
-
-<p>English nerd -&gt; <a href="https://www.cs.stonybrook.edu/">Seawolf</a> -&gt; software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.</p>
-
-<p>Corg-mom to a <a href="https://en.wikipedia.org/wiki/Cardigan_Welsh_Corgi">cardigan welsh corgi</a> named Meryl although <a href="https://twitter.com/StephenKing/status/614417373316153344">this guy</a> is much better at this whole rocking the &ldquo;Corgi parent&rdquo; thing.</p>
-
-<p>When I&rsquo;m not making obscure literary references or arguing about the merits of two spaces</p>
-
-<ul>
-<li>after the period (fight me, <a href="http://www.chicagomanualofstyle.org/qanda/data/faq/topics/OneSpaceorTwo.html">Chicago Manual of Style</a>)</li>
-<li>as the perfect tab length</li>
-</ul>
-
-<p>you can find me at various tech <a href="http://www.meetup.com/members/96241402/">meetups</a> around NYC which all started with that one summer I <a href="http://making.meetup.com/post/58931840916/introducing-meetupquest">interned there</a>, starting many unfinished sewing projects around my house (oops), going on local dog-friendly adventures, using my nieces for usability testing, or writing ridiculous run-on sentences (I also have been told I talk very fast by other New Yorkers, so at the very least it reads very true to life).</p>
-
-<p>You can find my resume <a href="https://drive.google.com/file/d/0BwZCfk49XK_MS3NHTk1vNXdvaU0/view?usp=sharing">here</a> and that talk I did one time on decorators in Python <a href="https://docs.google.com/presentation/d/1TmaaYFMZYYugkYFG3U2Tw_Ro0V033D_cGE_Tz2z21Jc/edit?usp=sharing">here</a></p>
-
-<p><img src="/img/manoa_falls.jpg" alt="Manoa Falls, Hawaii" title="Me in Manoa Falls Park, Hawaii.  I am not tall." />
-</p>
-
-<ul>
-<li>Disclaimer: words, thoughts, opinions, rants, etc. not sanctioned by or in any way affiliated with Viacom or any company I have worked for and with in the past.  I&rsquo;m an engineer who sometimes pretends to write, not a PR or brand representative.  Everything here is my own.<br /></li>
-</ul>
+      <p>On the job, we use redis pretty heavily (someone did a talk about it once which you can find <a href="http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale">here</a>).</p>
 
     </section>
 
@@ -186,7 +180,25 @@
 
 
     
+    <section class="share">
+      <h4>Share this post</h4>
+      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=An%20Introduction%20to%20LRU%20Caches&amp;url=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f7-17%2flru-cache%2f"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+      </a>
+      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f7-17%2flru-cache%2f"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+      </a>
+      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f7-17%2flru-cache%2f"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+      </a>
+    </section>
+    
 
+    
+    
     
 
   </footer>

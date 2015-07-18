@@ -88,3 +88,12 @@ And yet even though man has molded domestic dog evolution to use its instincts t
 
 
 They chose us too.
+
+
+-----
+
+Further Reading: 
+
+- ["Taming the Wild"](http://ngm.nationalgeographic.com/2011/03/taming-wild-animals/ratliff-text/2), an article from Nat Geo describing the efforts to study the genetic origins of domesticated behaviors.  Of particular interest is the assertion made that domestication is a fluid rather than linear unidirectional process.
+- ["Urinary oxytocin and social bonding in related and unrelated wild chimpanzees"](http://rspb.royalsocietypublishing.org/content/280/1755/20122765), a paper on the chemical changes in chimpanzees the engage in social cooperation
+- ["How Much Is That in Dog Years? The Advent of Canine Population Genomics"](http://journals.plos.org/plosgenetics/article?id=info:doi/10.1371/journal.pgen.1004093), paper describing the history of the study of dog phylogeny.
