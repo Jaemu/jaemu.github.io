@@ -6,7 +6,7 @@ contentdir = "content"
 publishdir = "./"
 theme = "hugo-theme-casper"
 canonifyurls = false
-builddrafts = true
+builddrafts = false
 [params]
   cover = "img/female_founders.jpg"
   logo = "img/me.jpg"
