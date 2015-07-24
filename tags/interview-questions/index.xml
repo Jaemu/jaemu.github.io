@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interview Questions on Jill Munson</title>
-    <link>http://localhost:1313/tags/interview-questions/</link>
+    <link>http://jillmunson.com/tags/interview-questions/</link>
     <description>Recent content in Interview Questions on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2015 12:57:25 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/interview-questions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jillmunson.com/tags/interview-questions/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>An Introduction to LRU Caches</title>
-      <link>http://localhost:1313/post/2015/7-17/lru-cache/</link>
+      <title>An Introduction to LRU Caches and Implementation</title>
+      <link>http://jillmunson.com/post/2015/7-17/lru-cache/</link>
       <pubDate>Fri, 17 Jul 2015 12:57:25 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/2015/7-17/lru-cache/</guid>
+      <guid>http://jillmunson.com/post/2015/7-17/lru-cache/</guid>
       <description>
 
-&lt;p&gt;When building and subsequently scaling a website, caching is important.  At the scale of hundreds of thousands of users a day, having multiple layers of caching becomes critical.&lt;/p&gt;
+&lt;p&gt;When building and subsequently scaling a website, caching is important.  At the scale of hundreds of thousands of users a day and beyond, having multiple layers of caching becomes critical.&lt;/p&gt;
 
-&lt;p&gt;On the job, we use the in-memory data store &lt;a href=&#34;http://redis.io/&#34;&gt;redis&lt;/a&gt; heavily (someone did a talk about it once which you can find &lt;a href=&#34;http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale&#34;&gt;here&lt;/a&gt;).  At a high level, we use it to support data coming into our sites so when we do things on the site that require lots of rapidly-changing content it&amp;rsquo;s pretty important to bust cache while making sure the site stays up.&lt;/p&gt;
+&lt;p&gt;On the job, we use the in-memory data store &lt;a href=&#34;http://redis.io/&#34;&gt;redis&lt;/a&gt; heavily (someone did a talk about it once which you can find &lt;a href=&#34;http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale&#34;&gt;here&lt;/a&gt;).  At a high level, we use it to support the data feeds coming into our &amp;ldquo;frackend&amp;rdquo; to further reduce the amount of calls we&amp;rsquo;re making to the services layer and ultimately the database.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;ve also done two technical interviews in which I&amp;rsquo;ve been asked to implement a cache with a &lt;a href=&#34;https://en.wikipedia.org/wiki/Page_replacement_algorithm#Least_recently_used&#34;&gt;least recently used&lt;/a&gt; eviction policy.  In a nutshell, LRU is a policy of dropping the &amp;ldquo;least recently used&amp;rdquo; item from cache to make room for a most recently used item that does not exist in the cache.&lt;/p&gt;
+&lt;p&gt;Besides working with redis, I&amp;rsquo;ve also done two technical interviews in which I&amp;rsquo;ve been asked to implement a cache with a &lt;a href=&#34;https://en.wikipedia.org/wiki/Page_replacement_algorithm#Least_recently_used&#34;&gt;least recently used&lt;/a&gt; eviction policy.  In a nutshell, LRU is a policy of dropping the &amp;ldquo;least recently used&amp;rdquo; item from cache to make room for a most recently used item that does not exist in the cache.&lt;/p&gt;
 
 &lt;p&gt;Question: Implement a cache with an LRU policy that has O(1) insertion, O(1) lookup, and O(1) removal.&lt;/p&gt;
 
@@ -34,6 +34,16 @@
 &lt;p&gt;Since lookup needs to be O(1), we need to store items in a data structure that gives us an O(1) key-value mapping.  However, we also need to be aware of the order of insertion &lt;em&gt;and&lt;/em&gt; order of being looked at, which we lose if we get rid of the queue entirely.&lt;/p&gt;
 
 &lt;h4 id=&#34;removal:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Removal&lt;/h4&gt;
+
+&lt;p&gt;If removal is O(1), that means we need to be able to remove key-value pairs in O(1) time.  A linked list will not suffice here either since list traversal is O(n).&lt;/p&gt;
+
+&lt;p&gt;So to recap, ideally we need a hash map to do plain O(1) insertion, lookup, and removal but we also need a queue to keep track of order of insertion.  Is there a data structure that does both?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java: Yes.  &lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html&#34;&gt;LinkedHashMap&lt;/a&gt; is a thing.&lt;/li&gt;
+&lt;li&gt;Python/C: No, but we can fake it with a dictionary of objects (structs, etc.) that store references to nodes in a linked list.&lt;/li&gt;
+&lt;li&gt;Javascript: Heh.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

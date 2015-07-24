@@ -1,7 +1,7 @@
 +++
 date = "2015-07-11T12:57:25-04:00"
 draft = false
-title = "Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance"
+title = "Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenetic trees and edit distance"
 description = "What I learned from computational biology and being a dog owner"
 tags = ["algorithms", "biology"]
 +++
@@ -39,7 +39,7 @@ With cheaper, faster genetic alignment and sequencing possible, we can now infer
 It's not as simple as determining the edit distance between two long strings -- identifying known gene regions and the migration, duplication and deletion of genes as well as rate of population growth and appearance of mutations across species [complicates this a bit](https://en.wikipedia.org/wiki/Genetic_distance).  
 
 
-I will go into more detail of the algorithms used to reconstruct phylogenic trees from genetic distance, but before you can construct a phylogenetic tree you need the data and a metric with which to measure the relative evolutionary relationships between species.
+I will go into more detail of the algorithms used to reconstruct phylogenetic trees from genetic distance, but before you can construct a phylogenetic tree you need the data and a metric with which to measure the relative evolutionary relationships between species.
 
 
 To determine the degree of "similarity" between two different species using DNA, it is necessary to sequence the current members of the species to compare and calculate their genetic difference.  In this case, siblings with a more recent common ancestor would be more genetically similar than species with an ancestor that last spread its genetic data thousands of years ago.

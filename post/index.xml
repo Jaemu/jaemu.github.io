@@ -10,7 +10,7 @@
     <atom:link href="http://jillmunson.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenic trees and edit distance</title>
+      <title>Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenetic trees and edit distance</title>
       <link>http://jillmunson.com/post/2015/7-11/phylogeny-and-dogs/</link>
       <pubDate>Sat, 11 Jul 2015 12:57:25 -0400</pubDate>
       
@@ -43,7 +43,7 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
 
 &lt;p&gt;It&amp;rsquo;s not as simple as determining the edit distance between two long strings &amp;ndash; identifying known gene regions and the migration, duplication and deletion of genes as well as rate of population growth and appearance of mutations across species &lt;a href=&#34;https://en.wikipedia.org/wiki/Genetic_distance&#34;&gt;complicates this a bit&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I will go into more detail of the algorithms used to reconstruct phylogenic trees from genetic distance, but before you can construct a phylogenetic tree you need the data and a metric with which to measure the relative evolutionary relationships between species.&lt;/p&gt;
+&lt;p&gt;I will go into more detail of the algorithms used to reconstruct phylogenetic trees from genetic distance, but before you can construct a phylogenetic tree you need the data and a metric with which to measure the relative evolutionary relationships between species.&lt;/p&gt;
 
 &lt;p&gt;To determine the degree of &amp;ldquo;similarity&amp;rdquo; between two different species using DNA, it is necessary to sequence the current members of the species to compare and calculate their genetic difference.  In this case, siblings with a more recent common ancestor would be more genetically similar than species with an ancestor that last spread its genetic data thousands of years ago.&lt;/p&gt;
 

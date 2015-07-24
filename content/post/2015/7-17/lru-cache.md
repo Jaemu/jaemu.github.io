@@ -1,19 +1,19 @@
 +++
 date = "2015-07-17T12:57:25-04:00"
 draft = true
-title = "An Introduction to LRU Caches"
+title = "An Introduction to LRU Caches and Implementation"
 description = "I've been asked how to build one in several technical interviews, so I'm going to do it in every language I claim to know"
 tags = ["algorithms", "programming", "interview-questions"]
 +++
 
 
-When building and subsequently scaling a website, caching is important.  At the scale of hundreds of thousands of users a day, having multiple layers of caching becomes critical.  
+When building and subsequently scaling a website, caching is important.  At the scale of hundreds of thousands of users a day and beyond, having multiple layers of caching becomes critical.  
 
 
-On the job, we use the in-memory data store [redis](http://redis.io/) heavily (someone did a talk about it once which you can find [here](http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale)).  At a high level, we use it to support data coming into our sites so when we do things on the site that require lots of rapidly-changing content it's pretty important to bust cache while making sure the site stays up.  
+On the job, we use the in-memory data store [redis](http://redis.io/) heavily (someone did a talk about it once which you can find [here](http://blog.pivotal.io/pivotal/case-studies-2/8-ways-media-giant-viacom-uses-redis-to-serve-dynamic-video-at-scale)).  At a high level, we use it to support the data feeds coming into our "frackend" to further reduce the amount of calls we're making to the services layer and ultimately the database.    
 
 
-I've also done two technical interviews in which I've been asked to implement a cache with a [least recently used](https://en.wikipedia.org/wiki/Page_replacement_algorithm#Least_recently_used) eviction policy.  In a nutshell, LRU is a policy of dropping the "least recently used" item from cache to make room for a most recently used item that does not exist in the cache.  
+Besides working with redis, I've also done two technical interviews in which I've been asked to implement a cache with a [least recently used](https://en.wikipedia.org/wiki/Page_replacement_algorithm#Least_recently_used) eviction policy.  In a nutshell, LRU is a policy of dropping the "least recently used" item from cache to make room for a most recently used item that does not exist in the cache.  
 
 
 Question: Implement a cache with an LRU policy that has O(1) insertion, O(1) lookup, and O(1) removal.
@@ -31,4 +31,14 @@ Since lookup needs to be O(1), we need to store items in a data structure that g
 
 
 #### Removal
+
+If removal is O(1), that means we need to be able to remove key-value pairs in O(1) time.  A linked list will not suffice here either since list traversal is O(n).
+
+
+So to recap, ideally we need a hash map to do plain O(1) insertion, lookup, and removal but we also need a queue to keep track of order of insertion.  Is there a data structure that does both?
+
+- Java: Yes.  [LinkedHashMap](http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html) is a thing.
+- Python/C: No, but we can fake it with a dictionary of objects (structs, etc.) that store references to nodes in a linked list.
+- Javascript: Heh.
+
 
