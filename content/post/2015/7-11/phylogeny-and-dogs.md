@@ -65,7 +65,7 @@ I was reminded of [this article](http://www.nytimes.com/2012/05/29/science/dogs-
 
 #### Final thoughts
 
-I don't pretend to be an evolutionary biologist so don't take my word on the quality of the science mentioned in any of the papers or articles that I cited.  I sort of fell down a rabbit hole when trying to find an article to support my dad's assertion that he once heard on the Discovery channel that humans evolved a large visible sclera due to evolutionary advantages and the cooperative eye [cooperative eye hypothesis](https://en.wikipedia.org/wiki/Cooperative_eye_hypothesis) and that dogs also engage in social cooperation via eye communication.  Much to my surprise, my dad wasn't totally contradicted by modern science (not a first, but a rarity).
+I don't pretend to be an evolutionary biologist so don't take my word on the quality of the science mentioned in any of the papers or articles that I cited.  I sort of fell down a rabbit hole when trying to find an article to support my dad's assertion that he once heard on the Discovery channel that humans evolved a large visible sclera due to evolutionary advantages and the [cooperative eye hypothesis](https://en.wikipedia.org/wiki/Cooperative_eye_hypothesis), and that dogs also engage in social cooperation via eye communication.  Much to my surprise, my dad wasn't totally contradicted by modern science (not a first, but a rarity).
 
 
 While it is true that dogs can and do signal emotions through use of visible sclera (search "whale eye" and you will get lots of images of scared or anxious dogs), there is no evidence that they engage in social cooperation with humans using eye contact.  The jury is still out on whether or not eye contact with humans makes dogs feel a stronger social bond or feel threatened.  
@@ -95,5 +95,5 @@ They chose us too.
 Further Reading: 
 
 - ["Taming the Wild"](http://ngm.nationalgeographic.com/2011/03/taming-wild-animals/ratliff-text/2), an article from Nat Geo describing the efforts to study the genetic origins of domesticated behaviors.  Of particular interest is the assertion made that domestication is a fluid rather than linear unidirectional process.
-- ["Urinary oxytocin and social bonding in related and unrelated wild chimpanzees"](http://rspb.royalsocietypublishing.org/content/280/1755/20122765), a paper on the chemical changes in chimpanzees the engage in social cooperation
+- ["Urinary oxytocin and social bonding in related and unrelated wild chimpanzees"](http://rspb.royalsocietypublishing.org/content/280/1755/20122765), a paper on the chemical changes that occur in chimpanzees that engage in social cooperation
 - ["How Much Is That in Dog Years? The Advent of Canine Population Genomics"](http://journals.plos.org/plosgenetics/article?id=info:doi/10.1371/journal.pgen.1004093), paper describing the history of the study of dog phylogeny.

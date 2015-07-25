@@ -6,8 +6,22 @@
     <description>Recent content on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2015 12:57:25 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2015 14:47:49 -0400</lastBuildDate>
     <atom:link href="http://jillmunson.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Haiku.py</title>
+      <link>http://jillmunson.com/project/haiku/about/</link>
+      <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/project/haiku/about/</guid>
+      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/google-cloud-cp100&#34;&gt;google-cloud-cp100&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demo: &lt;a href=&#34;http://haiku.jillmunson.com/haiku/you&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Evolutionary tree reconstruction and the phylogeny of the domestic dog pt. 1: Phylogenetic trees and edit distance</title>
@@ -61,7 +75,7 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
 
 &lt;h4 id=&#34;final-thoughts:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Final thoughts&lt;/h4&gt;
 
-&lt;p&gt;I don&amp;rsquo;t pretend to be an evolutionary biologist so don&amp;rsquo;t take my word on the quality of the science mentioned in any of the papers or articles that I cited.  I sort of fell down a rabbit hole when trying to find an article to support my dad&amp;rsquo;s assertion that he once heard on the Discovery channel that humans evolved a large visible sclera due to evolutionary advantages and the cooperative eye &lt;a href=&#34;https://en.wikipedia.org/wiki/Cooperative_eye_hypothesis&#34;&gt;cooperative eye hypothesis&lt;/a&gt; and that dogs also engage in social cooperation via eye communication.  Much to my surprise, my dad wasn&amp;rsquo;t totally contradicted by modern science (not a first, but a rarity).&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t pretend to be an evolutionary biologist so don&amp;rsquo;t take my word on the quality of the science mentioned in any of the papers or articles that I cited.  I sort of fell down a rabbit hole when trying to find an article to support my dad&amp;rsquo;s assertion that he once heard on the Discovery channel that humans evolved a large visible sclera due to evolutionary advantages and the &lt;a href=&#34;https://en.wikipedia.org/wiki/Cooperative_eye_hypothesis&#34;&gt;cooperative eye hypothesis&lt;/a&gt;, and that dogs also engage in social cooperation via eye communication.  Much to my surprise, my dad wasn&amp;rsquo;t totally contradicted by modern science (not a first, but a rarity).&lt;/p&gt;
 
 &lt;p&gt;While it is true that dogs can and do signal emotions through use of visible sclera (search &amp;ldquo;whale eye&amp;rdquo; and you will get lots of images of scared or anxious dogs), there is no evidence that they engage in social cooperation with humans using eye contact.  The jury is still out on whether or not eye contact with humans makes dogs feel a stronger social bond or feel threatened.&lt;/p&gt;
 
@@ -86,7 +100,7 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://ngm.nationalgeographic.com/2011/03/taming-wild-animals/ratliff-text/2&#34;&gt;&amp;ldquo;Taming the Wild&amp;rdquo;&lt;/a&gt;, an article from Nat Geo describing the efforts to study the genetic origins of domesticated behaviors.  Of particular interest is the assertion made that domestication is a fluid rather than linear unidirectional process.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://rspb.royalsocietypublishing.org/content/280/1755/20122765&#34;&gt;&amp;ldquo;Urinary oxytocin and social bonding in related and unrelated wild chimpanzees&amp;rdquo;&lt;/a&gt;, a paper on the chemical changes in chimpanzees the engage in social cooperation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rspb.royalsocietypublishing.org/content/280/1755/20122765&#34;&gt;&amp;ldquo;Urinary oxytocin and social bonding in related and unrelated wild chimpanzees&amp;rdquo;&lt;/a&gt;, a paper on the chemical changes that occur in chimpanzees that engage in social cooperation&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=info:doi/10.1371/journal.pgen.1004093&#34;&gt;&amp;ldquo;How Much Is That in Dog Years? The Advent of Canine Population Genomics&amp;rdquo;&lt;/a&gt;, paper describing the history of the study of dog phylogeny.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -158,21 +172,23 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
     
     <item>
       <title>Fireworks.js</title>
-      <link>http://jillmunson.com/projects/firework/about/</link>
+      <link>http://jillmunson.com/project/firework/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/projects/firework/about/</guid>
+      <guid>http://jillmunson.com/project/firework/about/</guid>
       <description>&lt;p&gt;A silly project that launches fireworks from click or touch events&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>jillmunson.com &#43; hugo</title>
-      <link>http://jillmunson.com/projects/hugo/about/</link>
+      <link>http://jillmunson.com/project/hugo/about/</link>
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
-      <guid>http://jillmunson.com/projects/hugo/about/</guid>
+      <guid>http://jillmunson.com/project/hugo/about/</guid>
       <description>
+
+&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/jaemu.github.io&#34;&gt;jaemu.github.io&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&amp;rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.&lt;/p&gt;
 

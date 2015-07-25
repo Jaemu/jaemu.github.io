@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interview Questions on Jill Munson</title>
-    <link>http://jillmunson.com/tags/interview-questions/</link>
+    <link>http://localhost:1313/tags/interview-questions/</link>
     <description>Recent content in Interview Questions on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2015 12:57:25 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/tags/interview-questions/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/interview-questions/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>An Introduction to LRU Caches and Implementation</title>
-      <link>http://jillmunson.com/post/2015/7-17/lru-cache/</link>
+      <link>http://localhost:1313/post/2015/7-17/lru-cache/</link>
       <pubDate>Fri, 17 Jul 2015 12:57:25 -0400</pubDate>
       
-      <guid>http://jillmunson.com/post/2015/7-17/lru-cache/</guid>
+      <guid>http://localhost:1313/post/2015/7-17/lru-cache/</guid>
       <description>
 
 &lt;p&gt;When building and subsequently scaling a website, caching is important.  At the scale of hundreds of thousands of users a day and beyond, having multiple layers of caching becomes critical.&lt;/p&gt;
@@ -25,25 +25,50 @@
 
 &lt;p&gt;Question: Implement a cache with an LRU policy that has O(1) insertion, O(1) lookup, and O(1) removal.&lt;/p&gt;
 
-&lt;h4 id=&#34;insertion:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Insertion&lt;/h4&gt;
+&lt;h5 id=&#34;insertion:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Insertion&lt;/h5&gt;
 
 &lt;p&gt;In order to achieve O(1) insertion, you will need to store items themselves in a hash map or a linked list.  At first, it seems obvious that this list should be ordered so a queue might suffice.&lt;/p&gt;
 
-&lt;h4 id=&#34;lookup:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Lookup&lt;/h4&gt;
+&lt;h5 id=&#34;lookup:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Lookup&lt;/h5&gt;
 
 &lt;p&gt;Since lookup needs to be O(1), we need to store items in a data structure that gives us an O(1) key-value mapping.  However, we also need to be aware of the order of insertion &lt;em&gt;and&lt;/em&gt; order of being looked at, which we lose if we get rid of the queue entirely.&lt;/p&gt;
 
-&lt;h4 id=&#34;removal:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Removal&lt;/h4&gt;
+&lt;h5 id=&#34;removal:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Removal&lt;/h5&gt;
 
 &lt;p&gt;If removal is O(1), that means we need to be able to remove key-value pairs in O(1) time.  A linked list will not suffice here either since list traversal is O(n).&lt;/p&gt;
 
 &lt;p&gt;So to recap, ideally we need a hash map to do plain O(1) insertion, lookup, and removal but we also need a queue to keep track of order of insertion.  Is there a data structure that does both?&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Java: Yes.  &lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html&#34;&gt;LinkedHashMap&lt;/a&gt; is a thing.&lt;/li&gt;
+&lt;li&gt;Java: Yes.  &lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html&#34;&gt;LinkedHashMap&lt;/a&gt; is a thing, but you should still prove that you can implement the cache with a linked list and a hash map and that you understand how all of these data structures work.&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;Python/C: No, but we can fake it with a dictionary of objects (structs, etc.) that store references to nodes in a linked list.&lt;/li&gt;
-&lt;li&gt;Javascript: Heh.&lt;/li&gt;
+&lt;li&gt;Javascript: Heh.  Good one, guys.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;solution-logic:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Solution Logic&lt;/h4&gt;
+
+&lt;p&gt;Before I dive straight into code, it would be helpful to figure out what the code should do first.&lt;/p&gt;
+
+&lt;h5 id=&#34;insertion-1:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Insertion:&lt;/h5&gt;
+
+&lt;p&gt;There are two cases for insertion.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The cache has available space.&lt;/li&gt;
+&lt;li&gt;The cache is full and an item must be deleted before insertion of the new element.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So really, insertion actually has a hard dependency on lookup (does this key exist?) and removal (If there is no space, make space)so we should implement those first.&lt;/p&gt;
+
+&lt;h5 id=&#34;removal-1:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Removal:&lt;/h5&gt;
+
+&lt;p&gt;There are technically two cases for removal, but one is &amp;ldquo;is the cache empty&amp;rdquo; and if we maintain a size parameter on insert and removal this is trivial to check for.&lt;/p&gt;
+
+&lt;p&gt;In our cache, removal is a sub-operation of insert.  But retrieval is also a sub-operation of removal since we need to find the item to delete it.&lt;/p&gt;
+
+&lt;h5 id=&#34;retrieval:5fb571edf0462b9520231a3fff3fe887&#34;&gt;Retrieval:&lt;/h5&gt;
 </description>
     </item>
     

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Jill Munson</title>
+    <link>http://jillmunson.com/tags/python/</link>
+    <description>Recent content in Python on Jill Munson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jul 2015 14:47:49 -0400</lastBuildDate>
+    <atom:link href="http://jillmunson.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Haiku.py</title>
+      <link>http://jillmunson.com/project/haiku/about/</link>
+      <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/project/haiku/about/</guid>
+      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/google-cloud-cp100&#34;&gt;google-cloud-cp100&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Demo: &lt;a href=&#34;http://haiku.jillmunson.com/haiku/you&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

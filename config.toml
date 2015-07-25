@@ -39,7 +39,7 @@ builddrafts = false
 [[menu.main]]
   name = "Projects"
   weight = -120
-  url = "/projects"
+  url = "/project"
 
 [[menu.main]]
   name = "About"
