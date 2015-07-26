@@ -17,9 +17,15 @@
       <guid>http://jillmunson.com/project/haiku/about/</guid>
       <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/google-cloud-cp100&#34;&gt;google-cloud-cp100&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Demo: &lt;a href=&#34;http://haiku.jillmunson.com/haiku/you&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Demos:&lt;/p&gt;
 
-&lt;p&gt;Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haiku.jillmunson.com/haiku/you&#34;&gt;haiku.jillmunson.com/haiku&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haiku.jillmunson.com/syllable/flower&#34;&gt;haiku.jillmunson.com/syllable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A work in progress JSON API to construct haikus.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
