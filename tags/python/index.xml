@@ -25,7 +25,7 @@
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haiku.jillmunson.com/syllable/flower&#34;&gt;haiku.jillmunson.com/syllable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;A work in progress JSON API to construct haikus.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -19,6 +19,6 @@ Demos:
 - [haiku.jillmunson.com/syllable](http://haiku.jillmunson.com/syllable/flower)
 
 
-A work in progress JSON API to construct haikus.  Built with Flask on top of the provided sample application from CP:100, deployed on [google app engine](https://cloud.google.com/appengine/docs)
+A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on [google app engine](https://cloud.google.com/appengine/docs)
 
 
