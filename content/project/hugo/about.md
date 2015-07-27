@@ -8,6 +8,8 @@ tags = ["personal", "projects", "front-end"]
 
 Github: [jaemu.github.io](https://github.com/Jaemu/jaemu.github.io)
 
+-------
+
 One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn't even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.  
 
 
