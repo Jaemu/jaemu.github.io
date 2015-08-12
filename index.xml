@@ -15,17 +15,47 @@
       <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
       
       <guid>http://jillmunson.com/project/haiku/about/</guid>
-      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/google-cloud-cp100&#34;&gt;google-cloud-cp100&lt;/a&gt;&lt;/p&gt;
+      <description>
+
+&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/haiku.py&#34;&gt;haiku.py&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Demos:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haiku.jillmunson.com/haiku/you&#34;&gt;haiku.jillmunson.com/haiku&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Haiku generator:  &lt;a href=&#34;http://haiku.jillmunson.com/haiku.json&#34;&gt;/haiku.json&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://haiku.jillmunson.com/syllable/flower&#34;&gt;haiku.jillmunson.com/syllable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Syllable counter:  &lt;a href=&#34;http://haiku.jillmunson.com/syllable/flower&#34;&gt;/syllable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Insult generator (Disclaimer: may sometimes produce compliments): &lt;a href=&#34;http://haiku.jillmunson.com/insult&#34;&gt;/insult&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;v-01-counting-syllables-with-nltk-and-cmu-pronouncing-dictionary:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.01 - counting syllables with nltk and CMU pronouncing dictionary&lt;/h4&gt;
+
+&lt;p&gt;This all started as a demo app for google app engine that I was tweaking as part of &lt;a href=&#34;https://cloud.google.com/training/&#34;&gt;CP:100&lt;/a&gt;, an introduction to Google Cloud Platform that was organized by &lt;a href=&#34;http://www.meetup.com/NYC-GDG/&#34;&gt;GDG-NYC&lt;/a&gt; (side note: they are awesome and run some really awesome meetups so if you are in the area, go!).&lt;/p&gt;
+
+&lt;p&gt;At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user&amp;rsquo;s chat history.  Since I don&amp;rsquo;t have an API key for Hipchat access, I thought I would start on the whole counting syllables thing.&lt;/p&gt;
+
+&lt;p&gt;Syllable counting is hard.  In theory, I could have started by limiting the dictionary and hard-coding text inputs but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose.&lt;/p&gt;
+
+&lt;p&gt;Enter &lt;a href=&#34;http://nltk.org&#34;&gt;nltk&lt;/a&gt;.  Nltk is a natural language toolkit for Python that has lots of &lt;a href=&#34;http://www.nltk.org/py-modindex.html&#34;&gt;awesome modules&lt;/a&gt; and &lt;a href=&#34;http://www.nltk.org/book&#34;&gt;a companion book with examples&lt;/a&gt; to get you started.&lt;/p&gt;
+
+&lt;p&gt;Unfortuantely, nltk does not have a syllable dictionary.  However, I found this nifty &lt;a href=&#34;https://groups.google.com/forum/#!msg/nltk-users/mCOh_u7V8_I/HsBNcLYM54EJ&#34;&gt;code snippet&lt;/a&gt; from the nltk-users mailing list which was cited in this &lt;a href=&#34;http://runningwithdata.com/post/3576752158/w&#34;&gt;writeup&lt;/a&gt; which is something closer to what I ended up using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from curses.ascii import isdigit 
+from nltk.corpus import cmudict 
+
+d = cmudict.dict() # get the CMU Pronouncing Dict
+
+def nsyl(word): 
+    &amp;quot;&amp;quot;&amp;quot;return the max syllable count in the case of multiple pronunciations&amp;quot;&amp;quot;&amp;quot;
+    return max([len([y for y in x if isdigit(y[-1])]) for x in d[word.lower()]])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What this list comprehension is doing is taking the entry in the &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34;&gt;CMU pronuncing dictionary&lt;/a&gt; and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).&lt;/p&gt;
 </description>
     </item>
     
@@ -173,16 +203,6 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
 &lt;ul&gt;
 &lt;li&gt;Disclaimer: words, thoughts, opinions, rants, etc. not sanctioned by or in any way affiliated with Viacom or any company I have worked for and with in the past.  I&amp;rsquo;m an engineer who sometimes pretends to write, not a PR or brand representative.  Everything here is my own.&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fireworks.js</title>
-      <link>http://jillmunson.com/project/firework/about/</link>
-      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
-      
-      <guid>http://jillmunson.com/project/firework/about/</guid>
-      <description>&lt;p&gt;A silly project that launches fireworks from click or touch events&lt;/p&gt;
 </description>
     </item>
     

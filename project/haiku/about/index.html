@@ -142,17 +142,47 @@
     </header>
   
     <section class="post-content">
-      <p>Github: <a href="https://github.com/Jaemu/google-cloud-cp100">google-cloud-cp100</a></p>
+      
+
+<p>Github: <a href="https://github.com/Jaemu/haiku.py">haiku.py</a></p>
 
 <p>Demos:</p>
 
 <ul>
-<li><p><a href="http://haiku.jillmunson.com/haiku/you">haiku.jillmunson.com/haiku</a></p></li>
+<li><p>Haiku generator:  <a href="http://haiku.jillmunson.com/haiku.json">/haiku.json</a></p></li>
 
-<li><p><a href="http://haiku.jillmunson.com/syllable/flower">haiku.jillmunson.com/syllable</a></p></li>
+<li><p>Syllable counter:  <a href="http://haiku.jillmunson.com/syllable/flower">/syllable</a></p></li>
+
+<li><p>Insult generator (Disclaimer: may sometimes produce compliments): <a href="http://haiku.jillmunson.com/insult">/insult</a></p></li>
 </ul>
 
 <p>A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on <a href="https://cloud.google.com/appengine/docs">google app engine</a></p>
+
+<hr />
+
+<h4 id="v-01-counting-syllables-with-nltk-and-cmu-pronouncing-dictionary:6083a88ee3411b0d17ce02d738f69d47">v.01 - counting syllables with nltk and CMU pronouncing dictionary</h4>
+
+<p>This all started as a demo app for google app engine that I was tweaking as part of <a href="https://cloud.google.com/training/">CP:100</a>, an introduction to Google Cloud Platform that was organized by <a href="http://www.meetup.com/NYC-GDG/">GDG-NYC</a> (side note: they are awesome and run some really awesome meetups so if you are in the area, go!).</p>
+
+<p>At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user&rsquo;s chat history.  Since I don&rsquo;t have an API key for Hipchat access, I thought I would start on the whole counting syllables thing.</p>
+
+<p>Syllable counting is hard.  In theory, I could have started by limiting the dictionary and hard-coding text inputs but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose.</p>
+
+<p>Enter <a href="http://nltk.org">nltk</a>.  Nltk is a natural language toolkit for Python that has lots of <a href="http://www.nltk.org/py-modindex.html">awesome modules</a> and <a href="http://www.nltk.org/book">a companion book with examples</a> to get you started.</p>
+
+<p>Unfortuantely, nltk does not have a syllable dictionary.  However, I found this nifty <a href="https://groups.google.com/forum/#!msg/nltk-users/mCOh_u7V8_I/HsBNcLYM54EJ">code snippet</a> from the nltk-users mailing list which was cited in this <a href="http://runningwithdata.com/post/3576752158/w">writeup</a> which is something closer to what I ended up using:</p>
+
+<pre><code class="language-python">from curses.ascii import isdigit 
+from nltk.corpus import cmudict 
+
+d = cmudict.dict() # get the CMU Pronouncing Dict
+
+def nsyl(word): 
+    &quot;&quot;&quot;return the max syllable count in the case of multiple pronunciations&quot;&quot;&quot;
+    return max([len([y for y in x if isdigit(y[-1])]) for x in d[word.lower()]])
+</code></pre>
+
+<p>What this list comprehension is doing is taking the entry in the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronuncing dictionary</a> and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).</p>
 
     </section>
 
