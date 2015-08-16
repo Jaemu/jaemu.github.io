@@ -5,6 +5,7 @@ title = "About me"
 comments=false
 share=false
 image="img/what_happened_here.jpg"
+imgsize = "contain"
 +++
 
 

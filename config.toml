@@ -7,6 +7,7 @@ publishdir = "./"
 theme = "hugo-theme-casper"
 canonifyurls = false
 builddrafts = false
+DisqusShortname = "jaemu"
 [params]
   cover = "img/female_founders.jpg"
   logo = "img/me.jpg"

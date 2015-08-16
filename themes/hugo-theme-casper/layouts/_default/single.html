@@ -2,7 +2,7 @@
 {{ $baseurl := .Site.BaseURL }}
 
 {{if .Params.image}}
-<header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}}); background-size: contain;">
+<header class="main-header post-head" style="background-image: url({{ $baseurl }}{{.Params.image}}); background-size: {{.Params.imgsize}};">
   <nav class="main-nav overlay clearfix">
 {{else}}
 <header class="main-header post-head no-cover">
