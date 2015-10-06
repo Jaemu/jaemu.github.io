@@ -2,21 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag2 on Jill Munson</title>
-    <link>http://localhost:1313/tags/tag2/</link>
+    <link>http://jillmunson.com/tags/tag2/</link>
     <description>Recent content in Tag2 on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 17:11:57 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Sep 2015 13:01:31 -0400</lastBuildDate>
+    <atom:link href="http://jillmunson.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Craft as meditation</title>
-      <link>http://localhost:1313/post/2015/8-3/craft/</link>
-      <pubDate>Mon, 03 Aug 2015 17:11:57 -0400</pubDate>
+      <title>mta</title>
+      <link>http://jillmunson.com/post/2015/9-6/post-title/</link>
+      <pubDate>Sun, 06 Sep 2015 13:01:31 -0400</pubDate>
       
-      <guid>http://localhost:1313/post/2015/8-3/craft/</guid>
-      <description>&lt;p&gt;I get restless sometimes.&lt;/p&gt;
-</description>
+      <guid>http://jillmunson.com/post/2015/9-6/post-title/</guid>
+      <description></description>
     </item>
     
   </channel>
