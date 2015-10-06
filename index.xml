@@ -6,8 +6,27 @@
     <description>Recent content on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 17:11:57 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2015 12:44:05 -0400</lastBuildDate>
     <atom:link href="http://jillmunson.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cracking the coding interview</title>
+      <link>http://jillmunson.com/project/ctci/ctci/</link>
+      <pubDate>Tue, 06 Oct 2015 12:44:05 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/project/ctci/ctci/</guid>
+      <description>&lt;p&gt;Coming soon: a reorganization of my preliminary effort to answer and refactor some of the questions from the 7th edition of &lt;a href=&#34;http://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/098478280X&#34;&gt;Cracking the Coding Interview&lt;/a&gt; that I started &lt;a href=&#34;https://github.com/Jaemu/codejam/tree/master/ctci&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>mta</title>
+      <link>http://jillmunson.com/post/2015/9-6/post-title/</link>
+      <pubDate>Sun, 06 Sep 2015 13:01:31 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/post/2015/9-6/post-title/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Craft as meditation</title>
