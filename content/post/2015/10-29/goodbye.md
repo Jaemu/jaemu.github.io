@@ -2,7 +2,7 @@
 comments = true
 date = "2015-10-29T17:11:57-04:00"
 draft = false
-image = "img/stars.jpg"
+image = "img/stars_small.jpg"
 imgsize = "cover"
 share = true
 tags = ["personal"]
