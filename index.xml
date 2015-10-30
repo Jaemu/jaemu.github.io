@@ -169,19 +169,10 @@ It never was.  Sure, it would probably vary a tiny bit here and there, but the m
       <guid>http://jillmunson.com/project/haiku/about/</guid>
       <description>
 
-&lt;p&gt;Link: &lt;a href=&#34;http://haiku.jillmunson.com&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Link: &lt;a href=&#34;http://haiku.jillmunson.com&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/del&gt;&lt;br /&gt;
+&lt;em&gt;no longer hosted on google app engine, currently migrating to AWS so stay tuned&lt;/em&gt; :)&lt;/p&gt;
 
 &lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/haiku.py&#34;&gt;haiku.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Demos:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Haiku generator:  &lt;a href=&#34;http://haiku.jillmunson.com/haiku.json&#34;&gt;/haiku.json&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Syllable counter:  &lt;a href=&#34;http://haiku.jillmunson.com/syllable/flower&#34;&gt;/syllable&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Insult generator (Disclaimer: may sometimes produce compliments): &lt;a href=&#34;http://haiku.jillmunson.com/insult&#34;&gt;/insult&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;p&gt;A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
 
