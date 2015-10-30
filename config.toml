@@ -46,3 +46,8 @@ DisqusShortname = "jaemu"
   name = "About"
   weight = -120
   url = "/about"
+
+[[menu.main]]
+  name = "WIT Meetups"
+  weight = -120
+  url = "/meetups"
