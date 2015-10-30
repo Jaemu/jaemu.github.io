@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>App Engine on Jill Munson</title>
-    <link>http://localhost:1313/tags/app-engine/</link>
+    <link>http://jillmunson.com/tags/app-engine/</link>
     <description>Recent content in App Engine on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Jul 2015 14:47:49 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/app-engine/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jillmunson.com/tags/app-engine/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Haiku.py</title>
-      <link>http://localhost:1313/project/haiku/about/</link>
+      <link>http://jillmunson.com/project/haiku/about/</link>
       <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
       
-      <guid>http://localhost:1313/project/haiku/about/</guid>
+      <guid>http://jillmunson.com/project/haiku/about/</guid>
       <description>
 
 &lt;p&gt;Link: &lt;a href=&#34;http://haiku.jillmunson.com&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/p&gt;
