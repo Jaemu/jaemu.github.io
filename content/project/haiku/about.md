@@ -9,19 +9,11 @@ title = "Haiku.py"
 description = "Generating haikus using flask and nltk on google app engine"
 +++
 
-Link: [haiku.jillmunson.com](http://haiku.jillmunson.com)
+~~Link: [haiku.jillmunson.com](http://haiku.jillmunson.com)~~  
+*no longer hosted on google app engine, currently migrating to AWS so stay tuned* :)
 
 
 Github: [haiku.py](https://github.com/Jaemu/haiku.py)
-
-
-Demos: 
-
-- Haiku generator:  [/haiku.json](http://haiku.jillmunson.com/haiku.json)
-
-- Syllable counter:  [/syllable](http://haiku.jillmunson.com/syllable/flower)
- 
-- Insult generator (Disclaimer: may sometimes produce compliments): [/insult](http://haiku.jillmunson.com/insult)
 
 
 A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on [google app engine](https://cloud.google.com/appengine/docs)
