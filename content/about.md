@@ -13,7 +13,8 @@ imgsize = "contain"
 
 
 
-English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom.  Currently working as a javascript developer making awesome kid-friendly experiences on the web for Nickelodeon and NickJr.  
+English nerd -> [Seawolf](https://www.cs.stonybrook.edu/) -> software engineer @ Viacom -> cross-country road warrior.  
+Currently on hiatus from code monkeying for a week before starting my new job as an SDE @ Amazon on the video advertising team. 
 
 
 Corg-mom to a [cardigan welsh corgi](https://en.wikipedia.org/wiki/Cardigan_Welsh_Corgi) named Meryl although [this guy](https://twitter.com/StephenKing/status/614417373316153344) is much better at this whole rocking the "Corgi parent" thing.

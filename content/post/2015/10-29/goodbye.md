@@ -7,7 +7,7 @@ imgsize = "cover"
 share = true
 tags = ["personal"]
 title = "Last Day at Viacom"
-description = "This is how my time here ends -- Not with a !#, but with a whisper (and gifs)"
+description = "This is how my time here ends -- Not with a #!, but with a whisper (and gifs)"
 +++
 
 At the time of writing, this moment is:  
