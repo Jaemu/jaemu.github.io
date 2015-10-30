@@ -51,7 +51,7 @@ and I also learned that I'm entirely too risk averse and probably need to take m
 
 Basically, less ![indecisiveness and puttering](https://gimmebar-assets.s3.amazonaws.com/4e0e17ed803b4.gif "indecisiveness and puttering")
 
-and more ![yolo](https://gimmebar-assets.s3.amazonaws.com/55c3c0f1d2a05.gif "yo(launch)o")
+and more ![yolo](https://gimmebar-assets.s3.amazonaws.com/55c3c0f1d2a05.gif "you only launch once")
 
 Because life is too short to be paralyzed by perfectionism, and the truth is when you're making something new and venturing into uncharted territory there are no right answers and sometimes something that seemed totally stupid ends up being the feature that people love about your product and would have failed had it worked "properly".
 
