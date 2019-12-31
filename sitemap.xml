@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://jillmunson.com/post/2019/12-30/homecoming/</loc>
-    <lastmod>2019-12-30T10:54:24+02:00</lastmod>
+    <loc>http://jillmunson.com/about/</loc>
+    <lastmod>2019-12-30T22:17:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://jillmunson.com/</loc>
+    <lastmod>2019-12-30T22:17:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jillmunson.com/post/2019/12-30/homecoming/</loc>
     <lastmod>2019-12-30T10:54:24+02:00</lastmod>
   </url>
   
@@ -25,51 +30,6 @@
   <url>
     <loc>http://jillmunson.com/tags/</loc>
     <lastmod>2019-12-30T10:54:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/post/2015/8-3/model-and-view/</loc>
-    <lastmod>2017-11-03T17:11:57-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/tags/tag1/</loc>
-    <lastmod>2017-07-09T09:17:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/tags/tag2/</loc>
-    <lastmod>2017-07-09T09:17:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</loc>
-    <lastmod>2017-07-09T09:17:07-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/project/twitter/otp-bot/</loc>
-    <lastmod>2016-09-10T13:22:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/project/</loc>
-    <lastmod>2016-09-10T13:22:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/tags/python/</loc>
-    <lastmod>2016-09-10T13:22:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/tags/roadtrip/</loc>
-    <lastmod>2015-11-02T11:51:57-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/post/2015/11-2/day-0/</loc>
-    <lastmod>2015-11-02T11:51:57-05:00</lastmod>
   </url>
   
   <url>
@@ -113,6 +73,16 @@
   </url>
   
   <url>
+    <loc>http://jillmunson.com/project/</loc>
+    <lastmod>2015-07-25T14:47:49-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jillmunson.com/tags/python/</loc>
+    <lastmod>2015-07-25T14:47:49-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://jillmunson.com/tags/algorithms/</loc>
     <lastmod>2015-07-11T12:57:25-04:00</lastmod>
   </url>
@@ -130,11 +100,6 @@
   <url>
     <loc>http://jillmunson.com/post/2015/7-10/hello-world/</loc>
     <lastmod>2015-07-10T12:57:25-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://jillmunson.com/about/</loc>
-    <lastmod>2015-04-14T22:17:00+02:00</lastmod>
   </url>
   
   <url>

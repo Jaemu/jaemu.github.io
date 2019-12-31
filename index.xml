@@ -6,10 +6,20 @@
     <description>Recent content on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2019 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 22:17:00 +0200</lastBuildDate>
     
 	<atom:link href="http://jillmunson.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About me</title>
+      <link>http://jillmunson.com/about/</link>
+      <pubDate>Mon, 30 Dec 2019 22:17:00 +0200</pubDate>
+      
+      <guid>http://jillmunson.com/about/</guid>
+      <description>[Under Construction]
+Words, thoughts, opinions, rants, etc. not sanctioned by or in any way affiliated with any company I have worked for and with in the past. I&#39;m an engineer who sometimes pretends to write, not a PR or brand representative. Everything here is my own.</description>
+    </item>
     
     <item>
       <title>Homecoming</title>
@@ -17,48 +27,10 @@
       <pubDate>Mon, 30 Dec 2019 10:54:24 +0200</pubDate>
       
       <guid>http://jillmunson.com/post/2019/12-30/homecoming/</guid>
-      <description>We need a reboot.</description>
-    </item>
-    
-    <item>
-      <title>The Model and The View</title>
-      <link>http://jillmunson.com/post/2015/8-3/model-and-view/</link>
-      <pubDate>Fri, 03 Nov 2017 17:11:57 -0400</pubDate>
-      
-      <guid>http://jillmunson.com/post/2015/8-3/model-and-view/</guid>
-      <description>&amp;ldquo;Are you sure you did that work? I remember things differently.&amp;rdquo;
-I&#39;ve never been more sure of anything in my life.
-Over the course of a lifetime, I have developed an incredibly well-defined sense of self. In a world of imposter syndrome seminars and #askformore campaigns, it can feel like this identity that I have declared my own is in some way rooted in false bravado. I prefer to think of it as the result of having lived a life running in the debugger.</description>
-    </item>
-    
-    <item>
-      <title>Using SOHCAHTOA: A CSS War Story</title>
-      <link>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</link>
-      <pubDate>Sun, 09 Jul 2017 09:17:07 -0700</pubDate>
-      
-      <guid>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</guid>
-      <description>Dmitri PopovI decided to split this into parts, because I had a great time at I/O and there was a lot to learn and experience over 3 days.
-(Additional disclaimer: I do not present myself as a representative of Amazon nor does anything I say here confirm, deny or relate to any business strategy, priorities or initiatives currently being undertaken at Amazon. Any mention of Amazon products are presented as my personal opinion as a technology consumer, not as an employee.</description>
-    </item>
-    
-    <item>
-      <title>LIRR On-Time Performance</title>
-      <link>http://jillmunson.com/project/twitter/otp-bot/</link>
-      <pubDate>Sat, 10 Sep 2016 13:22:42 -0700</pubDate>
-      
-      <guid>http://jillmunson.com/project/twitter/otp-bot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Roadtrip Day [0] - Columbus, OH</title>
-      <link>http://jillmunson.com/post/2015/11-2/day-0/</link>
-      <pubDate>Mon, 02 Nov 2015 11:51:57 -0500</pubDate>
-      
-      <guid>http://jillmunson.com/post/2015/11-2/day-0/</guid>
-      <description>For the next 7 days, Ryan and I are making our own version of the Oregon trail (from New York to Seattle), along with the dog and everything we own in one of these.
-Peak levels of &amp;lsquo;Murica have been reached, folks.
- I have a history of making excuses based on overplayed stereotypes of salt-of-the-earth folk and cultural incest in an effort to avoid the awkward conversation about my policy of never moving to anywhere where I might be the most &amp;ldquo;ethnic&amp;rdquo; looking person in the zip code.</description>
+      <description>We&#39;re gonna need a reboot.
+ It&#39;s been a minute since I updated this site. I knew it was wildly in need of some TLC, but part of me also wanted to leave it alone as a time capsule to remember the feeling of endless adventure and unknown that laid before me at what, 27?
+Things have changed. A lot has changed. The short version?
+ Divorce Cancer Amazon Twitch Seattle Irvine, CA  I&#39;ll try to unpack all of those things one at a time.</description>
     </item>
     
     <item>
@@ -128,18 +100,6 @@ Dogs are incredibly fascinating, regardless of your opinion on breed standards a
       <guid>http://jillmunson.com/post/2015/7-10/hello-world/</guid>
       <description>I&#39;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something. It&#39;s not like I don&#39;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.
 The issue is that even though I like what I&#39;m doing, I don&#39;t feel like I&#39;ve done anything start-to-finish and like I&#39;m learning anything new.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>http://jillmunson.com/about/</link>
-      <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
-      
-      <guid>http://jillmunson.com/about/</guid>
-      <description>pictured above: Me with my husband Ryan, Thomas immortalized as lord of the dance at our wedding
-English nerd -&amp;gt; Seawolf -&amp;gt; software engineer @ Viacom -&amp;gt; cross-country road warrior.
-Currently on hiatus from code monkeying for a week before starting my new job as an SDE @ Amazon on the video advertising team.
-Corg-mom to a cardigan welsh corgi named Meryl although this guy is much better at this whole rocking the &amp;ldquo;Corgi parent&amp;rdquo; thing.</description>
     </item>
     
     <item>

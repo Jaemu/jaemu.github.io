@@ -21,42 +21,6 @@
     </item>
     
     <item>
-      <title>tag1</title>
-      <link>http://jillmunson.com/tags/tag1/</link>
-      <pubDate>Sun, 09 Jul 2017 09:17:07 -0700</pubDate>
-      
-      <guid>http://jillmunson.com/tags/tag1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag2</title>
-      <link>http://jillmunson.com/tags/tag2/</link>
-      <pubDate>Sun, 09 Jul 2017 09:17:07 -0700</pubDate>
-      
-      <guid>http://jillmunson.com/tags/tag2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>http://jillmunson.com/tags/python/</link>
-      <pubDate>Sat, 10 Sep 2016 13:22:42 -0700</pubDate>
-      
-      <guid>http://jillmunson.com/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>roadtrip</title>
-      <link>http://jillmunson.com/tags/roadtrip/</link>
-      <pubDate>Mon, 02 Nov 2015 11:51:57 -0500</pubDate>
-      
-      <guid>http://jillmunson.com/tags/roadtrip/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>meetups</title>
       <link>http://jillmunson.com/tags/meetups/</link>
       <pubDate>Fri, 30 Oct 2015 11:27:27 -0400</pubDate>
@@ -80,6 +44,15 @@
       <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
       
       <guid>http://jillmunson.com/tags/app-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://jillmunson.com/tags/python/</link>
+      <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/tags/python/</guid>
       <description></description>
     </item>
     
