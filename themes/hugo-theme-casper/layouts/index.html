@@ -48,6 +48,11 @@
                     <span class="icon-linkedin" style="color:white;font-size:2em"></span>
                 </a>
             {{end}}
+            {{ if .Site.Params.scoresaber }}
+                <a class="" href="https://scoresaber.com/u/76561198414068914">
+                    <span class="icon-scoresaber" style="color:transparent!important;font-size:2em;"></span>
+                </a>
+            {{end}}
             <h1 class="page-title">{{ .Site.Title }}</h1>
             <h2 class="page-description">{{ .Site.Params.description }}</h2>
         </div>

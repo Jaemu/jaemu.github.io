@@ -168,7 +168,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-link:before {
     content: "\f442";
 }
-
+.icon-scoresaber {
+    background-image: url(img/scoresaber.svg);
+}
 
 /* ==========================================================================
    2. General - Setting up some base styles

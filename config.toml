@@ -14,13 +14,14 @@ DisqusShortname = "jaemu"
   author = "Jill Munson"
   authorlocation = "Irvine, CA"
   authorwebsite = "email: hello at (this domain)"
-  description = "Dreams in console.log, can probably fix your web app, most definitely cannot fix your printer."
+  description = "Girl next door in the metaverse. Dreams in console.log. Can probably fix your web app. Most definitely cannot fix your printer."
   bio= "Software Engineer, Twitch. Musings and opinions here are my own."
   googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   githubName = "jaemu"
   linkedin = "https://www.linkedin.com/in/jillianmunson"
   instagram = "msito"
+  scoresaber = "https://scoresaber.com/u/76561198414068914"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
   hideHUGOSupport = false
 
