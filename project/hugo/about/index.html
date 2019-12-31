@@ -45,7 +45,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.14" />
+    <meta name="generator" content="Hugo 0.62.0" />
 
     <link rel="canonical" href="http://jillmunson.com/project/hugo/about/" />
 
@@ -79,22 +79,27 @@
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about/">About</a>
+            	<a href="/about">About</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/post/">Blog</a>
+            	<a href="/post">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/project/">Projects</a>
+            	<a href="/project">Projects</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/meetups/">WIT Meetups</a>
+            	<a href="/meetups">WIT Meetups</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/post/2019/12-30/homecoming/">Homecoming</a>
             </li>
         
     </ul>
@@ -147,93 +152,49 @@
     </header>
   
     <section class="post-content">
-      
-
-<p>Github: <a href="https://github.com/Jaemu/jaemu.github.io">jaemu.github.io</a></p>
-
-<hr />
-
-<p>One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.</p>
-
-<p>As a primarily front-end developer, this overthinking paralysis has stricken me every time I&rsquo;ve tried making a personal site.  I&rsquo;ve experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.</p>
-
+      <p>Github: <a href="https://github.com/Jaemu/jaemu.github.io">jaemu.github.io</a></p>
+<hr>
+<p>One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn't even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.</p>
+<p>As a primarily front-end developer, this overthinking paralysis has stricken me every time I've tried making a personal site.  I've experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.</p>
 <p>All in all, I learned several things about myself and side projects in general:</p>
-
-<h4 id="lesson-0-you-might-not-need-javascript-insert-favorite-language-here:6083a88ee3411b0d17ce02d738f69d47">Lesson 0 - You <em>might</em> not need (javascript|insert favorite language here)</h4>
-
+<h4 id="lesson-0---you-might-not-need-javascriptinsert-favorite-language-here">Lesson 0 - You <em>might</em> not need (javascript|insert favorite language here)</h4>
 <p>When I first started thinking about what I needed, I started looking into <a href="https://github.com/tryghost/Ghost">Ghost</a>, which is a full blog engine with a ton of features out of the box, 3rd-party plugins, etc.  Ghost is great and from my little time with it, seems like the kind of thing that could really fit the use case of needing a blog engine.</p>
-
-<p>Once I started getting set up with it though, I realized that for what I wanted (a personal site to host blog posts, images, and project pages) I didn&rsquo;t really <em>need</em> a full-fledged backend and thus didn&rsquo;t really need a server to serve content.  What I really wanted was something that generated static content and could be served from something like AWS S3 or Github.</p>
-
+<p>Once I started getting set up with it though, I realized that for what I wanted (a personal site to host blog posts, images, and project pages) I didn't really <em>need</em> a full-fledged backend and thus didn't really need a server to serve content.  What I really wanted was something that generated static content and could be served from something like AWS S3 or Github.</p>
 <p>This was an important realization for me because one of my major problems was just identifying what it was that I wanted to build.  Even though I could run a self-hosted instance of Ghost, that required a lot of additional configuration and setup that while not <em>difficult</em> per se was an additional headache (not even going into my gun-shyness with securing a public web server after a fiasco with an EC2 instance that I was running for a network security project of all things).</p>
-
 <p>Even though I was completely comfortable with nodejs and have been working on an incredibly dyanmic single-page application entirely in javascript, the things that nick.com need to do vs. what I wanted my site to do were wildly different in scope and complexity.</p>
-
 <p>I learned not to overcomplicate things just for the sake of &ldquo;learning&rdquo; and to make the right thing for the right task.</p>
-
-<h4 id="lesson-1-while-not-always-the-right-way-to-go-doing-something-the-hard-way-first-teaches-you-a-lot-about-what-you-re-trying-to-build:6083a88ee3411b0d17ce02d738f69d47">Lesson 1: While not always the right way to go, doing something the hard way first teaches you a lot about what you&rsquo;re trying to build</h4>
-
+<h4 id="lesson-1-while-not-always-the-right-way-to-go-doing-something-the-hard-way-first-teaches-you-a-lot-about-what-youre-trying-to-build">Lesson 1: While not always the right way to go, doing something the hard way first teaches you a lot about what you're trying to build</h4>
 <p>I wish I could say that I learned my lesson and continued on without making things overly complex.</p>
-
 <p>Instead, I thought &ldquo;well I can write my <em>own</em> static site generator for nodejs!  With recursion and partials and more!&rdquo;</p>
-
 <p>As an experiment to figure out what features I would need to do so, I tried hand-rolling my own site.  In hindsight, this is like milking a cow to figure out how to make an ice cream machine but hindsight.</p>
-
 <p>At the very least, I identified some pain points:</p>
-
 <ul>
 <li>Re-usable HTML templates and partials are not just a nice to have, they are a necessity.  Otherwise, woe is the developer trying to keep an ever-growing number of static files consistently pointing to the right file references, using the same class names for elements across pages, etc.</li>
-<li>Writing a static HTML generator is foolhardy for several reasons, least of which is the existence of Markdown compilers.  I realized one of the biggest advantages of using Markdown is that not only is there a common language that compiles to the same elements, but it gives you the freedom to use inline HTML when absolutely necessary.<br /></li>
-<li>Writing responsive CSS from scratch is a pain.  I don&rsquo;t care how long you have been doing front-end development, writing clean, maintainable, working CSS without Less/Stylus/Sass and a framework is an exercise in frustration.<br /></li>
+<li>Writing a static HTML generator is foolhardy for several reasons, least of which is the existence of Markdown compilers.  I realized one of the biggest advantages of using Markdown is that not only is there a common language that compiles to the same elements, but it gives you the freedom to use inline HTML when absolutely necessary.</li>
+<li>Writing responsive CSS from scratch is a pain.  I don't care how long you have been doing front-end development, writing clean, maintainable, working CSS without Less/Stylus/Sass and a framework is an exercise in frustration.</li>
 </ul>
-
 <p>There were probably many more, but that was about as far as I got before having a conversation with my friend <a href="http://www.robxu9.com/">Rob</a> about what I was trying to do.  He suggested <a href="http://gohugo.io/">hugo</a>.</p>
-
-<h4 id="lesson-2-done-is-better-than-perfect-or-why-you-shouldn-t-give-up-on-something-the-first-time-it-doesn-t-work-the-way-you-expect-it-to:6083a88ee3411b0d17ce02d738f69d47">Lesson 2: Done is better than perfect, or why you shouldn&rsquo;t give up on something the first time it doesn&rsquo;t work the way you expect it to.</h4>
-
+<h4 id="lesson-2-done-is-better-than-perfect-or-why-you-shouldnt-give-up-on-something-the-first-time-it-doesnt-work-the-way-you-expect-it-to">Lesson 2: Done is better than perfect, or why you shouldn't give up on something the first time it doesn't work the way you expect it to.</h4>
 <p>Getting started with hugo was extremely easy.</p>
-
 <pre><code>brew install hugo
-</code></pre>
-
-<p>Figuring out what to do from there was not as easy.  Hugo expects to create a new folder within the current directory of</p>
-
+</code></pre><p>Figuring out what to do from there was not as easy.  Hugo expects to create a new folder within the current directory of</p>
 <pre><code>hugo new site (sitename)
-</code></pre>
-
-<p>and if that folder already exists, throws an error.  If it were me, I would have created a new site within that folder or at least created an option to pass a flag that indicates that this is what I want to do, especially when migrating content from an existing github repo that has the strict requirement of having the name (github_name).github.io.</p>
-
+</code></pre><p>and if that folder already exists, throws an error.  If it were me, I would have created a new site within that folder or at least created an option to pass a flag that indicates that this is what I want to do, especially when migrating content from an existing github repo that has the strict requirement of having the name (github_name).github.io.</p>
 <p>Once I got past that, I stumbled on the configuration bit.  Hugo expects a config.(toml|yaml|json) file, but not all of the params are documented.  This becomes a problem when trying to add data to partials because <em>some</em> data is global in scope but others like custom params are under the .Site.Params namespace.  <a href="http://gohugo.io/overview/configuration/">This is all that I was able to find</a>, and while most of the params are documented some are given no explanation.</p>
-
 <p>There is also some reduntant functionality.  In the config file, you can specify which theme you want to use but you can also compile your project with</p>
-
 <pre><code>hugo -t (theme_name)
-</code></pre>
-
-<p>which is fine, but again not super well documented as to why you would want to use one and not the other.</p>
-
-<hr />
-
-<p>My point is, it&rsquo;s ok to struggle with a tool out of the box.  The beauty of open source is that if something doesn&rsquo;t work the way you intend it to, look at the source and if you think it&rsquo;s wrong then change it.</p>
-
-<h4 id="lesson-3-configuration-is-important-flexible-configuration-is-a-god-send:6083a88ee3411b0d17ce02d738f69d47">Lesson 3: Configuration is important.  Flexible configuration is a god-send.</h4>
-
-<p>One of my favorite parts about hugo is the configurable folder structure.  Currently I&rsquo;m publishing to the project root directory (bad), but in the config file I can specify all of the directories I want to use and where I want hugo to publish those files.  I ran into this issue with Octopress awhile ago and found the &ldquo;use this file structure&rdquo; heavyhandedness really inflexible so this feature was a nice surprise.</p>
-
-<h4 id="lesson-4-there-are-hackfixes-in-every-project:6083a88ee3411b0d17ce02d738f69d47">Lesson 4: There are hackfixes in <em>every</em> project.</h4>
-
+</code></pre><p>which is fine, but again not super well documented as to why you would want to use one and not the other.</p>
+<hr>
+<p>My point is, it's ok to struggle with a tool out of the box.  The beauty of open source is that if something doesn't work the way you intend it to, look at the source and if you think it's wrong then change it.</p>
+<h4 id="lesson-3-configuration-is-important--flexible-configuration-is-a-god-send">Lesson 3: Configuration is important.  Flexible configuration is a god-send.</h4>
+<p>One of my favorite parts about hugo is the configurable folder structure.  Currently I'm publishing to the project root directory (bad), but in the config file I can specify all of the directories I want to use and where I want hugo to publish those files.  I ran into this issue with Octopress awhile ago and found the &ldquo;use this file structure&rdquo; heavyhandedness really inflexible so this feature was a nice surprise.</p>
+<h4 id="lesson-4-there-are-hackfixes-in-every-project">Lesson 4: There are hackfixes in <em>every</em> project.</h4>
 <p>When I first tried to deploy the site to github, all of my static file references were 404ing even though they were in the right directories.  I realized after a tiny bit of digging that when you run</p>
-
 <pre><code>hugo server
-</code></pre>
-
-<p>it replaces the baseurl param with &ldquo;localhost:1313&rdquo; and puts this all over your site so that static file references work locally.  This is extremely heavyhanded (what if I don&rsquo;t have localhost in /etc/hosts and I don&rsquo;t have permissions to change that file?  Hypothetical.) for a few reasons.  I guess you could get around this by not using absolute paths to reference your static content, but that seems rather <a href="http://stackoverflow.com/questions/2005079/absolute-vs-relative-urls">opinionated</a>.</p>
-
-<h4 id="conclusions:6083a88ee3411b0d17ce02d738f69d47">Conclusions</h4>
-
-<p>I ran into a few other issues (static files not being copied over into my publish dir frrom my theme folder, customizing the theme, etc.) but all in all I found hugo easy to work with if a bit under-documented.  Most of its power comes from its tiny footprint, speed, and flexible configuration.  I don&rsquo;t mind the hard dependency on Go, but I can see that being a drawback for some (although I find Go configuration and package management much easier to manage than, say, python but I could be biased because I am using a mac with a default python installed and having to remember where python vs python2.7 vs python3 look for their packages is frustrating at best).</p>
-
-<p>This is one person&rsquo;s experience with one tool, so please take any opinions here with a grain of salt.  However, the lessons learned here apply to any project.</p>
+</code></pre><p>it replaces the baseurl param with &ldquo;localhost:1313&rdquo; and puts this all over your site so that static file references work locally.  This is extremely heavyhanded (what if I don't have localhost in /etc/hosts and I don't have permissions to change that file?  Hypothetical.) for a few reasons.  I guess you could get around this by not using absolute paths to reference your static content, but that seems rather <a href="http://stackoverflow.com/questions/2005079/absolute-vs-relative-urls">opinionated</a>.</p>
+<h4 id="conclusions">Conclusions</h4>
+<p>I ran into a few other issues (static files not being copied over into my publish dir frrom my theme folder, customizing the theme, etc.) but all in all I found hugo easy to work with if a bit under-documented.  Most of its power comes from its tiny footprint, speed, and flexible configuration.  I don't mind the hard dependency on Go, but I can see that being a drawback for some (although I find Go configuration and package management much easier to manage than, say, python but I could be biased because I am using a mac with a default python installed and having to remember where python vs python2.7 vs python3 look for their packages is frustrating at best).</p>
+<p>This is one person's experience with one tool, so please take any opinions here with a grain of salt.  However, the lessons learned here apply to any project.</p>
 
     </section>
 

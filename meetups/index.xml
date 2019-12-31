@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meetups on Jill Munson</title>
@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Oct 2015 11:27:27 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/meetups/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jillmunson.com/meetups/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>NYC</title>
@@ -15,92 +17,9 @@
       <pubDate>Fri, 30 Oct 2015 11:27:27 -0400</pubDate>
       
       <guid>http://jillmunson.com/meetups/nyc/</guid>
-      <description>
-
-&lt;h3 id=&#34;1-digitalocean-meetup-community-http-www-meetup-com-digitalocean-community:3f3904813e6f31da8838053ec92e62f5&#34;&gt;1. &lt;a href=&#34;http://www.meetup.com/DigitalOcean_Community/&#34;&gt;DigitalOcean Meetup Community&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.digitalocean.com&#34;&gt;Digital Ocean&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;why:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;Besides swag, pizza, and beer, they are super involved in the open source devops community and contribute to core docker libraries.  They tend to get really great speakers, the organizer for the NY office is a woman and they host women in tech events and provide venue space for other meetups on this list.&lt;/p&gt;
-
-&lt;h3 id=&#34;2-women-who-code-nyc-http-www-meetup-com-womenwhocodenyc:3f3904813e6f31da8838053ec92e62f5&#34;&gt;2. &lt;a href=&#34;http://www.meetup.com/WomenWhoCodeNYC/&#34;&gt;Women Who Code NYC&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-1:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.womenwhocode.com/&#34;&gt;Women Who Code&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;why-1:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;This group organizes “tracks” of meetups that run weekly or bi-weekly like front-end study group, algorithms study group, etc.  Usually a good place to get some work done with pizza and meet other women usually trying to break into a new field of software engineering.  Get on the WWC mailing list as well &amp;ndash; LOTS of good links and discount codes for conferences and things.  I can forward you this month’s if you want to see.&lt;/p&gt;
-
-&lt;h3 id=&#34;3-nyc-pyladies-http-www-meetup-com-nyc-pyladies:3f3904813e6f31da8838053ec92e62f5&#34;&gt;3. &lt;a href=&#34;http://www.meetup.com/NYC-PyLadies/&#34;&gt;NYC PyLadies&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-2:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.pyladies.com&#34;&gt;pyladies&lt;/a&gt;, Celia La (Lynn Root is also &lt;a href=&#34;http://www.roguelynn.com/about/&#34;&gt;awesome&lt;/a&gt;  and maintains the pyladies &lt;a href=&#34;https://github.com/pyladies&#34;&gt;github&lt;/a&gt;)&lt;/p&gt;
-
-&lt;h4 id=&#34;why-2:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;Super awesome community, both pyladies and &lt;a href=&#34;http://www.meetup.com/nycpython/&#34;&gt;nyc python&lt;/a&gt; which are run by the same group of organizers.  They put together &lt;a href=&#34;https://pygotham.org/2015/&#34;&gt;pygotham&lt;/a&gt; every year and if you volunteer and/or speak you can get in for free.&lt;br /&gt;
-&lt;em&gt;Additional:&lt;/em&gt; Next year’s PyCon is in Portland and &lt;a href=&#34;https://us.pycon.org/2016/assistance/&#34;&gt;financial aid applications&lt;/a&gt; just opened.  I went to the 2014 conference in montreal and it was a BLAST.  Not just the talks (which were amazing), but the developer community and volunteering with pyladies was an awesome experience and I highly recommend it.  Bonus:  if you don’t want to spring for a hotel now you know someone who is a 2hr drive from portland and will probably attend :D&lt;/p&gt;
-
-&lt;h3 id=&#34;4-gdg-nyc-http-www-meetup-com-nyc-gdg:3f3904813e6f31da8838053ec92e62f5&#34;&gt;4. &lt;a href=&#34;http://www.meetup.com/NYC-GDG/&#34;&gt;GDG-NYC&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-3:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;Nitya Namasimhan&lt;/p&gt;
-
-&lt;h4 id=&#34;why-3:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;If you’ve never been to Google NYC, this is a good meetup to join :) no seriously Nitya is amazing.  They run events roughly once a month, from hackathons using new Google SDKs and libraries to in-depth tech talks.&lt;/p&gt;
-
-&lt;h3 id=&#34;5-girl-develop-it-nyc-http-www-meetup-com-girldevelopit:3f3904813e6f31da8838053ec92e62f5&#34;&gt;5. &lt;a href=&#34;http://www.meetup.com/girldevelopit/&#34;&gt;Girl Develop It NYC&lt;/a&gt;&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-4:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;Aurelia Moser&lt;/p&gt;
-
-&lt;h4 id=&#34;why-4:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;Even though their classes cost money and are during the week and might not be your thing, GDI NYC sends out a weekly email list called “Friday Jobs” which includes, well, job postings but also conference scholarship info as well.  They are ALWAYS looking for volunteers and it’s a great way to give back as well :)&lt;/p&gt;
-
-&lt;p&gt;Some more groups that aren’t meetup based:&lt;/p&gt;
-
-&lt;h3 id=&#34;systers-community-mailing-list-http-anitaborg-org-get-involved-systers:3f3904813e6f31da8838053ec92e62f5&#34;&gt;&lt;a href=&#34;http://anitaborg.org/get-involved/systers/&#34;&gt;Systers community, mailing list&lt;/a&gt;:&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-5:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;Rose Robinson&lt;/p&gt;
-
-&lt;h4 id=&#34;why-5:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?&lt;/h4&gt;
-
-&lt;p&gt;Good idea to introduce yourself and what you hope to get out of the group.  Lots of &lt;em&gt;very&lt;/em&gt; senior women engineers on this extremely well-locked down mailing list (well-enforced code of conduct, etc.).  This is a super awesome place to ask those really uncomfortable career questions (e.g. “my lead architect took credit for my work in a meeting”, “when should I ask for a raise and how?”, “am I on a good career trajectory?”, etc.) as well as anything related to being a woman and technology.
-Also has applications for discount codes, scholarships for F8, I/O, etc.&lt;/p&gt;
-
-&lt;h3 id=&#34;women-techmakers-http-womentechmakers-org:3f3904813e6f31da8838053ec92e62f5&#34;&gt;&lt;a href=&#34;http://womentechmakers.org&#34;&gt;Women Techmakers&lt;/a&gt;:&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-6:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;Natalie Villalobos&lt;/p&gt;
-
-&lt;h4 id=&#34;why-6:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;Besides Natalie just being an awesome human being, this is Google’s outreach effort and honestly it is the only women in tech group that is doing primary research on what kind of support would most benefit women trying to enter the tech space, from being the driving force behind getting more women on stage to speak at I/O to moderating the wtmio slack community and more.&lt;/p&gt;
-
-&lt;h3 id=&#34;etsy-s-code-as-craft-series-https-codeascraft-com:3f3904813e6f31da8838053ec92e62f5&#34;&gt;&lt;a href=&#34;https://codeascraft.com/&#34;&gt;Etsy’s Code as Craft series&lt;/a&gt;:&lt;/h3&gt;
-
-&lt;h4 id=&#34;organizer-7:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Organizer:&lt;/h4&gt;
-
-&lt;p&gt;Etsy&lt;/p&gt;
-
-&lt;h4 id=&#34;why-7:3f3904813e6f31da8838053ec92e62f5&#34;&gt;Why?:&lt;/h4&gt;
-
-&lt;p&gt;Their offices are right here in DUMBO, and their talks cover the gamut from cluster deployment to how to hire and manage engineering teams that make shit that works.&lt;/p&gt;
-</description>
+      <description>1. DigitalOcean Meetup Community Organizer: Digital Ocean
+Why?: Besides swag, pizza, and beer, they are super involved in the open source devops community and contribute to core docker libraries. They tend to get really great speakers, the organizer for the NY office is a woman and they host women in tech events and provide venue space for other meetups on this list.
+2. Women Who Code NYC Organizer: Women Who Code</description>
     </item>
     
   </channel>

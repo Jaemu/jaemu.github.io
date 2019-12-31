@@ -45,7 +45,7 @@
       
       
     
-    <meta name="generator" content="Hugo 0.14" />
+    <meta name="generator" content="Hugo 0.62.0" />
 
     <link rel="canonical" href="http://jillmunson.com/project/haiku/about/" />
 
@@ -79,22 +79,27 @@
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/about/">About</a>
+            	<a href="/about">About</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/post/">Blog</a>
+            	<a href="/post">Blog</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/project/">Projects</a>
+            	<a href="/project">Projects</a>
             </li>
         
             
             <li class="nav-opened" role="presentation">
-            	<a href="/meetups/">WIT Meetups</a>
+            	<a href="/meetups">WIT Meetups</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/post/2019/12-30/homecoming/">Homecoming</a>
             </li>
         
     </ul>
@@ -147,239 +152,191 @@
     </header>
   
     <section class="post-content">
-      
-
-<p><del>Link: <a href="http://haiku.jillmunson.com">haiku.jillmunson.com</a></del><br />
+      <p><del>Link: <a href="http://haiku.jillmunson.com">haiku.jillmunson.com</a></del><br>
 <em>no longer hosted on google app engine, currently migrating to AWS so stay tuned</em> :)</p>
-
 <p>Github: <a href="https://github.com/Jaemu/haiku.py">haiku.py</a></p>
-
 <p>A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on <a href="https://cloud.google.com/appengine/docs">google app engine</a></p>
-
-<hr />
-
-<h4 id="v-01-counting-syllables-with-nltk-and-cmu-pronouncing-dictionary:6083a88ee3411b0d17ce02d738f69d47">v.01 - Counting syllables with nltk and CMU pronouncing dictionary</h4>
-
+<hr>
+<h4 id="v01---counting-syllables-with-nltk-and-cmu-pronouncing-dictionary">v.01 - Counting syllables with nltk and CMU pronouncing dictionary</h4>
 <p>This all started as a demo app for google app engine that I was tweaking as part of <a href="https://cloud.google.com/training/">CP:100</a>, an introduction to Google Cloud Platform that was organized by <a href="http://www.meetup.com/NYC-GDG/">GDG-NYC</a> (side note: they are awesome and run some really awesome meetups so if you are in the area, go!).</p>
-
-<p>At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user&rsquo;s chat history.  Since I don&rsquo;t have an API key for Hipchat access, I thought I would start on the whole counting syllables and making haikus that didn&rsquo;t totally suck thing.</p>
-
-<p>Accurate syllable counting is <a href="https://en.wikipedia.org/wiki/Syllabification">hard</a>.  In theory, I could have started by limiting the dictionary and hard-coding text inputs with syllable counts and part-of-speech tags but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose, although <a href="http://www.everypoet.com/haiku/chunk1.js">it&rsquo;s been done</a>.</p>
-
+<p>At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user's chat history.  Since I don't have an API key for Hipchat access, I thought I would start on the whole counting syllables and making haikus that didn't totally suck thing.</p>
+<p>Accurate syllable counting is <a href="https://en.wikipedia.org/wiki/Syllabification">hard</a>.  In theory, I could have started by limiting the dictionary and hard-coding text inputs with syllable counts and part-of-speech tags but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose, although <a href="http://www.everypoet.com/haiku/chunk1.js">it's been done</a>.</p>
 <p>Enter <a href="http://nltk.org">nltk</a>.  Nltk is a natural language toolkit for Python that has lots of <a href="http://www.nltk.org/py-modindex.html">awesome modules</a> and <a href="http://www.nltk.org/book">a companion book with examples</a> to get you started.</p>
-
 <p>Unfortuantely, nltk does not have a syllable dictionary.  However, I found this nifty <a href="https://groups.google.com/forum/#!msg/nltk-users/mCOh_u7V8_I/HsBNcLYM54EJ">code snippet</a> from the nltk-users mailing list which was cited in this <a href="http://runningwithdata.com/post/3576752158/w">writeup</a> which is something closer to what I ended up using:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> curses.ascii <span style="color:#f92672">import</span> isdigit 
+<span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> cmudict 
 
-<pre><code class="language-python">from curses.ascii import isdigit 
-from nltk.corpus import cmudict 
+d <span style="color:#f92672">=</span> cmudict<span style="color:#f92672">.</span>dict() <span style="color:#75715e"># get the CMU Pronouncing Dict</span>
 
-d = cmudict.dict() # get the CMU Pronouncing Dict
-
-def nsyl(word): 
-    &quot;&quot;&quot;return the max syllable count in the case of multiple pronunciations&quot;&quot;&quot;
-    return max([len([y for y in x if isdigit(y[-1])]) for x in d[word.lower()]])
-</code></pre>
-
-<p>What this list comprehension is doing is taking the entry in the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronuncing dictionary</a> and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).</p>
-
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nsyl</span>(word): 
+    <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">return the max syllable count in the case of multiple pronunciations</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+    <span style="color:#66d9ef">return</span> max([len([y <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> x <span style="color:#66d9ef">if</span> isdigit(y[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])]) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> d[word<span style="color:#f92672">.</span>lower()]])
+</code></pre></div><p>What this list comprehension is doing is taking the entry in the <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU pronuncing dictionary</a> and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).</p>
 <p>so the first version of the app literally just returned estimated syllable counts for a given input:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> string
+<span style="color:#f92672">import</span> nltk
+<span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> cmudict
 
-<pre><code class="language-python">import string
-import nltk
-from nltk.corpus import cmudict
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Haiku</span>:
 
-class Haiku:
+<span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>cmudict <span style="color:#f92672">=</span> cmudict<span style="color:#f92672">.</span>dict()
 
-def __init__(self):
-        self.cmudict = cmudict.dict()
-
-def countSyllables(self, query='hello'):
-        result = {}
-        words = query.strip().split(',')
-        for word in words:
-            try:
-                result[word] = max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[word.lower()]])
-            except:
-                result[word] = 'Error - ' + word + ' is not a recognized word'
-        return result
-</code></pre>
-
-<h4 id="v-02-grammar-tagging-with-penn-treebank-part-of-speech-tags-and-nltk-word-tokenizer:6083a88ee3411b0d17ce02d738f69d47">v.02 - Grammar tagging with Penn Treebank part of speech tags and nltk word tokenizer</h4>
-
-<p>So once I had a syllable counter, it would be trivially easy to find random words to construct a haiku that satisfies the 5-7-5 syllable structure.  I didn&rsquo;t want to settle &ndash; I wanted haikus that, while maybe not semantically sensical, at least followed some semblance of grammatically correct English.</p>
-
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">countSyllables</span>(self, query<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#39;</span>):
+        result <span style="color:#f92672">=</span> {}
+        words <span style="color:#f92672">=</span> query<span style="color:#f92672">.</span>strip()<span style="color:#f92672">.</span>split(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">,</span><span style="color:#e6db74">&#39;</span>)
+        <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words:
+            <span style="color:#66d9ef">try</span>:
+                result[word] <span style="color:#f92672">=</span> max([len([y <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> x <span style="color:#66d9ef">if</span> y[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> string<span style="color:#f92672">.</span>digits]) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cmudict[word<span style="color:#f92672">.</span>lower()]])
+            <span style="color:#66d9ef">except</span>:
+                result[word] <span style="color:#f92672">=</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">Error - </span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">+</span> word <span style="color:#f92672">+</span> <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74"> is not a recognized word</span><span style="color:#e6db74">&#39;</span>
+        <span style="color:#66d9ef">return</span> result
+</code></pre></div><h4 id="v02---grammar-tagging-with-penn-treebank-part-of-speech-tags-and-nltk-word-tokenizer">v.02 - Grammar tagging with Penn Treebank part of speech tags and nltk word tokenizer</h4>
+<p>So once I had a syllable counter, it would be trivially easy to find random words to construct a haiku that satisfies the 5-7-5 syllable structure.  I didn't want to settle &ndash; I wanted haikus that, while maybe not semantically sensical, at least followed some semblance of grammatically correct English.</p>
 <p>In order to be able to do this, I needed to be able to tag every word in the CMU dictionary with its part of speech.  The nltk textbook has a <a href="http://www.nltk.org/book/ch05.html">whole chapter</a> dedicated to word tagging and tokenization.</p>
-
 <p>For my purposes, I wanted to preserve the generated syllable count and the part of speech.  In order to do that, I needed to create a new dictionary.  Generating this dictionary on application load was insanely expensive, so I made a smaller script just to generate the dictionary and instead would load a pickle.</p>
-
 <p>To test the dictionary, I created a new endpoint that would accept a word as input and return a list of other words that have the same part of speech and syllable count.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> random
+<span style="color:#f92672">import</span> string
+<span style="color:#f92672">import</span> nltk
+<span style="color:#f92672">import</span> pickle
+<span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> cmudict
+<span style="color:#f92672">from</span> nltk <span style="color:#f92672">import</span> word_tokenize
 
-<pre><code class="language-python">import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Haiku</span>:
 
 
-    def __init__(self):
-        self.cmudict = cmudict.dict()
-        self.words = self.cmudict.keys()
-        self.tagged_words = pickle.load(open('tagged_words_syl.p', &quot;rb&quot;))
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>cmudict <span style="color:#f92672">=</span> cmudict<span style="color:#f92672">.</span>dict()
+        self<span style="color:#f92672">.</span>words <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cmudict<span style="color:#f92672">.</span>keys()
+        self<span style="color:#f92672">.</span>tagged_words <span style="color:#f92672">=</span> pickle<span style="color:#f92672">.</span>load(open(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tagged_words_syl.p</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">rb</span><span style="color:#e6db74">&#34;</span>))
 
-    def _syllableHelper(self, query='hello'):
-	    return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_syllableHelper</span>(self, query<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#39;</span>):
+	    <span style="color:#66d9ef">return</span> max([len([y <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> x <span style="color:#66d9ef">if</span> y[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> string<span style="color:#f92672">.</span>digits]) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cmudict[query<span style="color:#f92672">.</span>lower()]])
 
 
 Using this pattern I generated haikus like:
 
 
 
-    def getSimilarWords(self, word=&quot;hello&quot;):
-        wordData = nltk.pos_tag(word_tokenize(word))
-        category = wordData[0][1]
-        syllable = self._syllableHelper(word)
-        similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-        return {
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getSimilarWords</span>(self, word<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#34;</span>):
+        wordData <span style="color:#f92672">=</span> nltk<span style="color:#f92672">.</span>pos_tag(word_tokenize(word))
+        category <span style="color:#f92672">=</span> wordData[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>]
+        syllable <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_syllableHelper(word)
+        similarWords <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>tagged_words <span style="color:#66d9ef">if</span> x[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> category <span style="color:#f92672">and</span> x[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">==</span> syllable]
+        <span style="color:#66d9ef">return</span> {
             word: similarWords,
-            'category': category
+            <span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">category</span><span style="color:#e6db74">&#39;</span>: category
         }
 
 
-</code></pre>
-
-<h4 id="v-03-building-pattern-based-haikus:6083a88ee3411b0d17ce02d738f69d47">v.03 - Building pattern-based haikus</h4>
-
+</code></pre></div><h4 id="v03---building-pattern-based-haikus">v.03 - Building pattern-based haikus</h4>
 <p>So once I had syllable counts and parts of speech, I needed to create a pattern for the haikus.  The pattern would contain three arrays, each containing either:</p>
-
 <ul>
 <li>A (part of speech, syllable) tuple or</li>
 <li>A list of connecting phrases, modifiers, etc.</li>
 </ul>
-
 <p>The pattern I came up with after some trial and error was:</p>
+<!-- raw HTML omitted -->
+<p>So to use this to generate haikus, I would iterate over the pattern and either replace a tuple with a similar word or choose a random entry given a list of words.  I thought this might break down if I start accepting user-provided patterns, but I wasn't there yet and honestly was just curious what kind of output I would get.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">import</span> random
+<span style="color:#f92672">import</span> string
+<span style="color:#f92672">import</span> nltk
+<span style="color:#f92672">import</span> pickle
+<span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> cmudict
+<span style="color:#f92672">from</span> nltk <span style="color:#f92672">import</span> word_tokenize
 
-<p style="text-align: center; font-size: .75em;">
-[plural noun] [present-tense verb]<br \>
-[present-tense verb] ["in the" | "like some" | "without my" | "like the" | "of the"] [plural noun]  <br \>
-[present-tense verb] [adjective] <br \>
-</p>
-
-<p>So to use this to generate haikus, I would iterate over the pattern and either replace a tuple with a similar word or choose a random entry given a list of words.  I thought this might break down if I start accepting user-provided patterns, but I wasn&rsquo;t there yet and honestly was just curious what kind of output I would get.</p>
-
-<pre><code class="language-python">
-import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Haiku</span>:
 
 
-	def __init__(self):
-		self.cmudict = cmudict.dict()
-		self.words = self.cmudict.keys()
-		self.tagged_words = pickle.load(open('tagged_words_syl.p', &quot;rb&quot;))
-		self.pattern = [[
-				(&quot;NNS&quot;, 2),
-				(&quot;VBG&quot;, 3)
+	<span style="color:#66d9ef">def</span> __init__(self):
+		self<span style="color:#f92672">.</span>cmudict <span style="color:#f92672">=</span> cmudict<span style="color:#f92672">.</span>dict()
+		self<span style="color:#f92672">.</span>words <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>cmudict<span style="color:#f92672">.</span>keys()
+		self<span style="color:#f92672">.</span>tagged_words <span style="color:#f92672">=</span> pickle<span style="color:#f92672">.</span>load(open(<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">tagged_words_syl.p</span><span style="color:#e6db74">&#39;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">rb</span><span style="color:#e6db74">&#34;</span>))
+		self<span style="color:#f92672">.</span>pattern <span style="color:#f92672">=</span> [[
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NNS</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">2</span>),
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBG</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">3</span>)
 			],[
-				(&quot;VBG&quot;, 3),
-				[&quot;in the&quot;, &quot;with some&quot;, &quot;like some&quot;, &quot;without my&quot;, &quot;like the&quot;, &quot;of the&quot;],
-				(&quot;NNS&quot;, 2)
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBG</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">3</span>),
+				[<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">in the</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">with some</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">like some</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">without my</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">like the</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">of the</span><span style="color:#e6db74">&#34;</span>],
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NNS</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">2</span>)
 			],[
-				(&quot;VBG&quot;, 2),
-				(&quot;RB&quot;, 3)
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBG</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">2</span>),
+				(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">RB</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">3</span>)
 			]
 		]
-		self.grammar = [
-			&quot;CC&quot;,
-			&quot;CD&quot;,
-			&quot;DT&quot;,
-			&quot;EX&quot;,
-			&quot;FW&quot;,
-			&quot;IN&quot;,
-			&quot;JJ&quot;,
-			&quot;JJR&quot;,
-			&quot;JJS&quot;,
-			&quot;LS&quot;,
-			&quot;MD&quot;,
-			&quot;NN&quot;,
-			&quot;NNS&quot;,
-			&quot;NNP&quot;,
-			&quot;NNPS&quot;,
-			&quot;PDT&quot;,
-			&quot;POS&quot;,
-			&quot;PRP&quot;,
-			&quot;PRP$&quot;,
-			&quot;RB&quot;,
-			&quot;RBR&quot;,
-			&quot;RBS&quot;,
-			&quot;RP&quot;,
-			&quot;SYM&quot;,
-			&quot;TO&quot;,
-			&quot;UH&quot;,
-			&quot;VB&quot;,
-			&quot;VBD&quot;,
-			&quot;VBG&quot;,
-			&quot;VBN&quot;,
-			&quot;VBP&quot;,
-			&quot;VBZ&quot;,
-			&quot;WDT&quot;,
-			&quot;WP&quot;,
-			&quot;WP$&quot;,
+		self<span style="color:#f92672">.</span>grammar <span style="color:#f92672">=</span> [
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">CC</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">CD</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">DT</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">EX</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">FW</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">IN</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">JJ</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">JJR</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">JJS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">LS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">MD</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NN</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NNS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NNP</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">NNPS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PDT</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">POS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PRP</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">PRP$</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">RB</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">RBR</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">RBS</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">RP</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">SYM</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">TO</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">UH</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VB</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBD</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBG</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBN</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBP</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">VBZ</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">WDT</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">WP</span><span style="color:#e6db74">&#34;</span>,
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">WP$</span><span style="color:#e6db74">&#34;</span>,
 		]
 
-	def _syllableHelper(self, query='hello'):
-		return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])	
+	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_syllableHelper</span>(self, query<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#39;</span>):
+		<span style="color:#66d9ef">return</span> max([len([y <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> x <span style="color:#66d9ef">if</span> y[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">in</span> string<span style="color:#f92672">.</span>digits]) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>cmudict[query<span style="color:#f92672">.</span>lower()]])	
 
-	def getSimilarWords(self, word=&quot;hello&quot;):
-		wordData = nltk.pos_tag(word_tokenize(word))
-		category = wordData[0][1]
-		syllable = self._syllableHelper(word)
-		similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-		return {
+	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getSimilarWords</span>(self, word<span style="color:#f92672">=</span><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">hello</span><span style="color:#e6db74">&#34;</span>):
+		wordData <span style="color:#f92672">=</span> nltk<span style="color:#f92672">.</span>pos_tag(word_tokenize(word))
+		category <span style="color:#f92672">=</span> wordData[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>]
+		syllable <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_syllableHelper(word)
+		similarWords <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>tagged_words <span style="color:#66d9ef">if</span> x[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> category <span style="color:#f92672">and</span> x[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">==</span> syllable]
+		<span style="color:#66d9ef">return</span> {
 			word: similarWords,
-			'category': category
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">category</span><span style="color:#e6db74">&#39;</span>: category
 		}
 
-	def makeHaiku(self):
-		haiku = {}
-		for line in xrange(len(self.pattern)):
-			haiku[line] = []
-			for i in xrange(len(self.pattern[line])):
-				if not (len(self.pattern[line][i]) &gt; 2):
-					currentPattern = self.pattern[line][i]
-					category = currentPattern[0]
-					syllable = currentPattern[1]
-					similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-					haiku[line].append(random.choice(similarWords)[0])
-				else:
-					haiku[line].append(random.choice(self.pattern[line][i]))
-		return {
-			'haiku': haiku
+	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">makeHaiku</span>(self):
+		haiku <span style="color:#f92672">=</span> {}
+		<span style="color:#66d9ef">for</span> line <span style="color:#f92672">in</span> xrange(len(self<span style="color:#f92672">.</span>pattern)):
+			haiku[line] <span style="color:#f92672">=</span> []
+			<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> xrange(len(self<span style="color:#f92672">.</span>pattern[line])):
+				<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> (len(self<span style="color:#f92672">.</span>pattern[line][i]) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2</span>):
+					currentPattern <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pattern[line][i]
+					category <span style="color:#f92672">=</span> currentPattern[<span style="color:#ae81ff">0</span>]
+					syllable <span style="color:#f92672">=</span> currentPattern[<span style="color:#ae81ff">1</span>]
+					similarWords <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>tagged_words <span style="color:#66d9ef">if</span> x[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> category <span style="color:#f92672">and</span> x[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">==</span> syllable]
+					haiku[line]<span style="color:#f92672">.</span>append(random<span style="color:#f92672">.</span>choice(similarWords)[<span style="color:#ae81ff">0</span>])
+				<span style="color:#66d9ef">else</span>:
+					haiku[line]<span style="color:#f92672">.</span>append(random<span style="color:#f92672">.</span>choice(self<span style="color:#f92672">.</span>pattern[line][i]))
+		<span style="color:#66d9ef">return</span> {
+			<span style="color:#e6db74"></span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">haiku</span><span style="color:#e6db74">&#39;</span>: haiku
 		}
-</code></pre>
-
-<p>Using this pattern I generated haikus like:
-<p style="text-align: center; font-size: .75em;">
-schaefers beheading<br \>
-reviving without my chloris<br \>
-filling plaintively<br \>
-</p></p>
-
+</code></pre></div><p>Using this pattern I generated haikus like:</p>
+<!-- raw HTML omitted -->
 <p>and</p>
-
-<p style="text-align: center; font-size: .75em;">
-bake-offs inflaming<br \>
-taxiing in the promos<br \>
-forcing gainfully<br \>
-</p>
-
+<!-- raw HTML omitted -->
 <p>In general, the output reads like a silly but legit haiku.</p>
 
     </section>

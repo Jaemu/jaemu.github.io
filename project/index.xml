@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jill Munson</title>
@@ -6,8 +6,19 @@
     <description>Recent content in Projects on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jul 2015 14:47:49 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2016 13:22:42 -0700</lastBuildDate>
+    
+	<atom:link href="http://jillmunson.com/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LIRR On-Time Performance</title>
+      <link>http://jillmunson.com/project/twitter/otp-bot/</link>
+      <pubDate>Sat, 10 Sep 2016 13:22:42 -0700</pubDate>
+      
+      <guid>http://jillmunson.com/project/twitter/otp-bot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Haiku.py</title>
@@ -15,241 +26,11 @@
       <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
       
       <guid>http://jillmunson.com/project/haiku/about/</guid>
-      <description>
-
-&lt;p&gt;&lt;del&gt;Link: &lt;a href=&#34;http://haiku.jillmunson.com&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/del&gt;&lt;br /&gt;
-&lt;em&gt;no longer hosted on google app engine, currently migrating to AWS so stay tuned&lt;/em&gt; :)&lt;/p&gt;
-
-&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/haiku.py&#34;&gt;haiku.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;v-01-counting-syllables-with-nltk-and-cmu-pronouncing-dictionary:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.01 - Counting syllables with nltk and CMU pronouncing dictionary&lt;/h4&gt;
-
-&lt;p&gt;This all started as a demo app for google app engine that I was tweaking as part of &lt;a href=&#34;https://cloud.google.com/training/&#34;&gt;CP:100&lt;/a&gt;, an introduction to Google Cloud Platform that was organized by &lt;a href=&#34;http://www.meetup.com/NYC-GDG/&#34;&gt;GDG-NYC&lt;/a&gt; (side note: they are awesome and run some really awesome meetups so if you are in the area, go!).&lt;/p&gt;
-
-&lt;p&gt;At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user&amp;rsquo;s chat history.  Since I don&amp;rsquo;t have an API key for Hipchat access, I thought I would start on the whole counting syllables and making haikus that didn&amp;rsquo;t totally suck thing.&lt;/p&gt;
-
-&lt;p&gt;Accurate syllable counting is &lt;a href=&#34;https://en.wikipedia.org/wiki/Syllabification&#34;&gt;hard&lt;/a&gt;.  In theory, I could have started by limiting the dictionary and hard-coding text inputs with syllable counts and part-of-speech tags but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose, although &lt;a href=&#34;http://www.everypoet.com/haiku/chunk1.js&#34;&gt;it&amp;rsquo;s been done&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Enter &lt;a href=&#34;http://nltk.org&#34;&gt;nltk&lt;/a&gt;.  Nltk is a natural language toolkit for Python that has lots of &lt;a href=&#34;http://www.nltk.org/py-modindex.html&#34;&gt;awesome modules&lt;/a&gt; and &lt;a href=&#34;http://www.nltk.org/book&#34;&gt;a companion book with examples&lt;/a&gt; to get you started.&lt;/p&gt;
-
-&lt;p&gt;Unfortuantely, nltk does not have a syllable dictionary.  However, I found this nifty &lt;a href=&#34;https://groups.google.com/forum/#!msg/nltk-users/mCOh_u7V8_I/HsBNcLYM54EJ&#34;&gt;code snippet&lt;/a&gt; from the nltk-users mailing list which was cited in this &lt;a href=&#34;http://runningwithdata.com/post/3576752158/w&#34;&gt;writeup&lt;/a&gt; which is something closer to what I ended up using:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from curses.ascii import isdigit 
-from nltk.corpus import cmudict 
-
-d = cmudict.dict() # get the CMU Pronouncing Dict
-
-def nsyl(word): 
-    &amp;quot;&amp;quot;&amp;quot;return the max syllable count in the case of multiple pronunciations&amp;quot;&amp;quot;&amp;quot;
-    return max([len([y for y in x if isdigit(y[-1])]) for x in d[word.lower()]])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What this list comprehension is doing is taking the entry in the &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34;&gt;CMU pronuncing dictionary&lt;/a&gt; and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).&lt;/p&gt;
-
-&lt;p&gt;so the first version of the app literally just returned estimated syllable counts for a given input:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import string
-import nltk
-from nltk.corpus import cmudict
-
-class Haiku:
-
-def __init__(self):
-        self.cmudict = cmudict.dict()
-
-def countSyllables(self, query=&#39;hello&#39;):
-        result = {}
-        words = query.strip().split(&#39;,&#39;)
-        for word in words:
-            try:
-                result[word] = max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[word.lower()]])
-            except:
-                result[word] = &#39;Error - &#39; + word + &#39; is not a recognized word&#39;
-        return result
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;v-02-grammar-tagging-with-penn-treebank-part-of-speech-tags-and-nltk-word-tokenizer:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.02 - Grammar tagging with Penn Treebank part of speech tags and nltk word tokenizer&lt;/h4&gt;
-
-&lt;p&gt;So once I had a syllable counter, it would be trivially easy to find random words to construct a haiku that satisfies the 5-7-5 syllable structure.  I didn&amp;rsquo;t want to settle &amp;ndash; I wanted haikus that, while maybe not semantically sensical, at least followed some semblance of grammatically correct English.&lt;/p&gt;
-
-&lt;p&gt;In order to be able to do this, I needed to be able to tag every word in the CMU dictionary with its part of speech.  The nltk textbook has a &lt;a href=&#34;http://www.nltk.org/book/ch05.html&#34;&gt;whole chapter&lt;/a&gt; dedicated to word tagging and tokenization.&lt;/p&gt;
-
-&lt;p&gt;For my purposes, I wanted to preserve the generated syllable count and the part of speech.  In order to do that, I needed to create a new dictionary.  Generating this dictionary on application load was insanely expensive, so I made a smaller script just to generate the dictionary and instead would load a pickle.&lt;/p&gt;
-
-&lt;p&gt;To test the dictionary, I created a new endpoint that would accept a word as input and return a list of other words that have the same part of speech and syllable count.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
-
-
-    def __init__(self):
-        self.cmudict = cmudict.dict()
-        self.words = self.cmudict.keys()
-        self.tagged_words = pickle.load(open(&#39;tagged_words_syl.p&#39;, &amp;quot;rb&amp;quot;))
-
-    def _syllableHelper(self, query=&#39;hello&#39;):
-	    return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])
-
-
-Using this pattern I generated haikus like:
-
-
-
-    def getSimilarWords(self, word=&amp;quot;hello&amp;quot;):
-        wordData = nltk.pos_tag(word_tokenize(word))
-        category = wordData[0][1]
-        syllable = self._syllableHelper(word)
-        similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-        return {
-            word: similarWords,
-            &#39;category&#39;: category
-        }
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;v-03-building-pattern-based-haikus:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.03 - Building pattern-based haikus&lt;/h4&gt;
-
-&lt;p&gt;So once I had syllable counts and parts of speech, I needed to create a pattern for the haikus.  The pattern would contain three arrays, each containing either:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A (part of speech, syllable) tuple or&lt;/li&gt;
-&lt;li&gt;A list of connecting phrases, modifiers, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The pattern I came up with after some trial and error was:&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-[plural noun] [present-tense verb]&lt;br \&gt;
-[present-tense verb] [&#34;in the&#34; | &#34;like some&#34; | &#34;without my&#34; | &#34;like the&#34; | &#34;of the&#34;] [plural noun]  &lt;br \&gt;
-[present-tense verb] [adjective] &lt;br \&gt;
-&lt;/p&gt;
-
-&lt;p&gt;So to use this to generate haikus, I would iterate over the pattern and either replace a tuple with a similar word or choose a random entry given a list of words.  I thought this might break down if I start accepting user-provided patterns, but I wasn&amp;rsquo;t there yet and honestly was just curious what kind of output I would get.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
-
-
-	def __init__(self):
-		self.cmudict = cmudict.dict()
-		self.words = self.cmudict.keys()
-		self.tagged_words = pickle.load(open(&#39;tagged_words_syl.p&#39;, &amp;quot;rb&amp;quot;))
-		self.pattern = [[
-				(&amp;quot;NNS&amp;quot;, 2),
-				(&amp;quot;VBG&amp;quot;, 3)
-			],[
-				(&amp;quot;VBG&amp;quot;, 3),
-				[&amp;quot;in the&amp;quot;, &amp;quot;with some&amp;quot;, &amp;quot;like some&amp;quot;, &amp;quot;without my&amp;quot;, &amp;quot;like the&amp;quot;, &amp;quot;of the&amp;quot;],
-				(&amp;quot;NNS&amp;quot;, 2)
-			],[
-				(&amp;quot;VBG&amp;quot;, 2),
-				(&amp;quot;RB&amp;quot;, 3)
-			]
-		]
-		self.grammar = [
-			&amp;quot;CC&amp;quot;,
-			&amp;quot;CD&amp;quot;,
-			&amp;quot;DT&amp;quot;,
-			&amp;quot;EX&amp;quot;,
-			&amp;quot;FW&amp;quot;,
-			&amp;quot;IN&amp;quot;,
-			&amp;quot;JJ&amp;quot;,
-			&amp;quot;JJR&amp;quot;,
-			&amp;quot;JJS&amp;quot;,
-			&amp;quot;LS&amp;quot;,
-			&amp;quot;MD&amp;quot;,
-			&amp;quot;NN&amp;quot;,
-			&amp;quot;NNS&amp;quot;,
-			&amp;quot;NNP&amp;quot;,
-			&amp;quot;NNPS&amp;quot;,
-			&amp;quot;PDT&amp;quot;,
-			&amp;quot;POS&amp;quot;,
-			&amp;quot;PRP&amp;quot;,
-			&amp;quot;PRP$&amp;quot;,
-			&amp;quot;RB&amp;quot;,
-			&amp;quot;RBR&amp;quot;,
-			&amp;quot;RBS&amp;quot;,
-			&amp;quot;RP&amp;quot;,
-			&amp;quot;SYM&amp;quot;,
-			&amp;quot;TO&amp;quot;,
-			&amp;quot;UH&amp;quot;,
-			&amp;quot;VB&amp;quot;,
-			&amp;quot;VBD&amp;quot;,
-			&amp;quot;VBG&amp;quot;,
-			&amp;quot;VBN&amp;quot;,
-			&amp;quot;VBP&amp;quot;,
-			&amp;quot;VBZ&amp;quot;,
-			&amp;quot;WDT&amp;quot;,
-			&amp;quot;WP&amp;quot;,
-			&amp;quot;WP$&amp;quot;,
-		]
-
-	def _syllableHelper(self, query=&#39;hello&#39;):
-		return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])	
-
-	def getSimilarWords(self, word=&amp;quot;hello&amp;quot;):
-		wordData = nltk.pos_tag(word_tokenize(word))
-		category = wordData[0][1]
-		syllable = self._syllableHelper(word)
-		similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-		return {
-			word: similarWords,
-			&#39;category&#39;: category
-		}
-
-	def makeHaiku(self):
-		haiku = {}
-		for line in xrange(len(self.pattern)):
-			haiku[line] = []
-			for i in xrange(len(self.pattern[line])):
-				if not (len(self.pattern[line][i]) &amp;gt; 2):
-					currentPattern = self.pattern[line][i]
-					category = currentPattern[0]
-					syllable = currentPattern[1]
-					similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-					haiku[line].append(random.choice(similarWords)[0])
-				else:
-					haiku[line].append(random.choice(self.pattern[line][i]))
-		return {
-			&#39;haiku&#39;: haiku
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Using this pattern I generated haikus like:
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-schaefers beheading&lt;br \&gt;
-reviving without my chloris&lt;br \&gt;
-filling plaintively&lt;br \&gt;
-&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-bake-offs inflaming&lt;br \&gt;
-taxiing in the promos&lt;br \&gt;
-forcing gainfully&lt;br \&gt;
-&lt;/p&gt;
-
-&lt;p&gt;In general, the output reads like a silly but legit haiku.&lt;/p&gt;
-</description>
+      <description>Link: haiku.jillmunson.com
+no longer hosted on google app engine, currently migrating to AWS so stay tuned :)
+Github: haiku.py
+A work in progress JSON API haiku-as-a-service. Built with Flask on top of the provided sample application from CP:100, deployed on google app engine
+ v.01 - Counting syllables with nltk and CMU pronouncing dictionary This all started as a demo app for google app engine that I was tweaking as part of CP:100, an introduction to Google Cloud Platform that was organized by GDG-NYC (side note: they are awesome and run some really awesome meetups so if you are in the area, go!</description>
     </item>
     
     <item>
@@ -258,94 +39,8 @@ forcing gainfully&lt;br \&gt;
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
       <guid>http://jillmunson.com/project/hugo/about/</guid>
-      <description>
-
-&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/jaemu.github.io&#34;&gt;jaemu.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&amp;rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.&lt;/p&gt;
-
-&lt;p&gt;As a primarily front-end developer, this overthinking paralysis has stricken me every time I&amp;rsquo;ve tried making a personal site.  I&amp;rsquo;ve experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.&lt;/p&gt;
-
-&lt;p&gt;All in all, I learned several things about myself and side projects in general:&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-0-you-might-not-need-javascript-insert-favorite-language-here:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 0 - You &lt;em&gt;might&lt;/em&gt; not need (javascript|insert favorite language here)&lt;/h4&gt;
-
-&lt;p&gt;When I first started thinking about what I needed, I started looking into &lt;a href=&#34;https://github.com/tryghost/Ghost&#34;&gt;Ghost&lt;/a&gt;, which is a full blog engine with a ton of features out of the box, 3rd-party plugins, etc.  Ghost is great and from my little time with it, seems like the kind of thing that could really fit the use case of needing a blog engine.&lt;/p&gt;
-
-&lt;p&gt;Once I started getting set up with it though, I realized that for what I wanted (a personal site to host blog posts, images, and project pages) I didn&amp;rsquo;t really &lt;em&gt;need&lt;/em&gt; a full-fledged backend and thus didn&amp;rsquo;t really need a server to serve content.  What I really wanted was something that generated static content and could be served from something like AWS S3 or Github.&lt;/p&gt;
-
-&lt;p&gt;This was an important realization for me because one of my major problems was just identifying what it was that I wanted to build.  Even though I could run a self-hosted instance of Ghost, that required a lot of additional configuration and setup that while not &lt;em&gt;difficult&lt;/em&gt; per se was an additional headache (not even going into my gun-shyness with securing a public web server after a fiasco with an EC2 instance that I was running for a network security project of all things).&lt;/p&gt;
-
-&lt;p&gt;Even though I was completely comfortable with nodejs and have been working on an incredibly dyanmic single-page application entirely in javascript, the things that nick.com need to do vs. what I wanted my site to do were wildly different in scope and complexity.&lt;/p&gt;
-
-&lt;p&gt;I learned not to overcomplicate things just for the sake of &amp;ldquo;learning&amp;rdquo; and to make the right thing for the right task.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-1-while-not-always-the-right-way-to-go-doing-something-the-hard-way-first-teaches-you-a-lot-about-what-you-re-trying-to-build:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 1: While not always the right way to go, doing something the hard way first teaches you a lot about what you&amp;rsquo;re trying to build&lt;/h4&gt;
-
-&lt;p&gt;I wish I could say that I learned my lesson and continued on without making things overly complex.&lt;/p&gt;
-
-&lt;p&gt;Instead, I thought &amp;ldquo;well I can write my &lt;em&gt;own&lt;/em&gt; static site generator for nodejs!  With recursion and partials and more!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;As an experiment to figure out what features I would need to do so, I tried hand-rolling my own site.  In hindsight, this is like milking a cow to figure out how to make an ice cream machine but hindsight.&lt;/p&gt;
-
-&lt;p&gt;At the very least, I identified some pain points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Re-usable HTML templates and partials are not just a nice to have, they are a necessity.  Otherwise, woe is the developer trying to keep an ever-growing number of static files consistently pointing to the right file references, using the same class names for elements across pages, etc.&lt;/li&gt;
-&lt;li&gt;Writing a static HTML generator is foolhardy for several reasons, least of which is the existence of Markdown compilers.  I realized one of the biggest advantages of using Markdown is that not only is there a common language that compiles to the same elements, but it gives you the freedom to use inline HTML when absolutely necessary.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Writing responsive CSS from scratch is a pain.  I don&amp;rsquo;t care how long you have been doing front-end development, writing clean, maintainable, working CSS without Less/Stylus/Sass and a framework is an exercise in frustration.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were probably many more, but that was about as far as I got before having a conversation with my friend &lt;a href=&#34;http://www.robxu9.com/&#34;&gt;Rob&lt;/a&gt; about what I was trying to do.  He suggested &lt;a href=&#34;http://gohugo.io/&#34;&gt;hugo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-2-done-is-better-than-perfect-or-why-you-shouldn-t-give-up-on-something-the-first-time-it-doesn-t-work-the-way-you-expect-it-to:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 2: Done is better than perfect, or why you shouldn&amp;rsquo;t give up on something the first time it doesn&amp;rsquo;t work the way you expect it to.&lt;/h4&gt;
-
-&lt;p&gt;Getting started with hugo was extremely easy.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Figuring out what to do from there was not as easy.  Hugo expects to create a new folder within the current directory of&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site (sitename)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and if that folder already exists, throws an error.  If it were me, I would have created a new site within that folder or at least created an option to pass a flag that indicates that this is what I want to do, especially when migrating content from an existing github repo that has the strict requirement of having the name (github_name).github.io.&lt;/p&gt;
-
-&lt;p&gt;Once I got past that, I stumbled on the configuration bit.  Hugo expects a config.(toml|yaml|json) file, but not all of the params are documented.  This becomes a problem when trying to add data to partials because &lt;em&gt;some&lt;/em&gt; data is global in scope but others like custom params are under the .Site.Params namespace.  &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;This is all that I was able to find&lt;/a&gt;, and while most of the params are documented some are given no explanation.&lt;/p&gt;
-
-&lt;p&gt;There is also some reduntant functionality.  In the config file, you can specify which theme you want to use but you can also compile your project with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo -t (theme_name)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;which is fine, but again not super well documented as to why you would want to use one and not the other.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;My point is, it&amp;rsquo;s ok to struggle with a tool out of the box.  The beauty of open source is that if something doesn&amp;rsquo;t work the way you intend it to, look at the source and if you think it&amp;rsquo;s wrong then change it.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-3-configuration-is-important-flexible-configuration-is-a-god-send:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 3: Configuration is important.  Flexible configuration is a god-send.&lt;/h4&gt;
-
-&lt;p&gt;One of my favorite parts about hugo is the configurable folder structure.  Currently I&amp;rsquo;m publishing to the project root directory (bad), but in the config file I can specify all of the directories I want to use and where I want hugo to publish those files.  I ran into this issue with Octopress awhile ago and found the &amp;ldquo;use this file structure&amp;rdquo; heavyhandedness really inflexible so this feature was a nice surprise.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-4-there-are-hackfixes-in-every-project:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 4: There are hackfixes in &lt;em&gt;every&lt;/em&gt; project.&lt;/h4&gt;
-
-&lt;p&gt;When I first tried to deploy the site to github, all of my static file references were 404ing even though they were in the right directories.  I realized after a tiny bit of digging that when you run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;it replaces the baseurl param with &amp;ldquo;localhost:1313&amp;rdquo; and puts this all over your site so that static file references work locally.  This is extremely heavyhanded (what if I don&amp;rsquo;t have localhost in /etc/hosts and I don&amp;rsquo;t have permissions to change that file?  Hypothetical.) for a few reasons.  I guess you could get around this by not using absolute paths to reference your static content, but that seems rather &lt;a href=&#34;http://stackoverflow.com/questions/2005079/absolute-vs-relative-urls&#34;&gt;opinionated&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;conclusions:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Conclusions&lt;/h4&gt;
-
-&lt;p&gt;I ran into a few other issues (static files not being copied over into my publish dir frrom my theme folder, customizing the theme, etc.) but all in all I found hugo easy to work with if a bit under-documented.  Most of its power comes from its tiny footprint, speed, and flexible configuration.  I don&amp;rsquo;t mind the hard dependency on Go, but I can see that being a drawback for some (although I find Go configuration and package management much easier to manage than, say, python but I could be biased because I am using a mac with a default python installed and having to remember where python vs python2.7 vs python3 look for their packages is frustrating at best).&lt;/p&gt;
-
-&lt;p&gt;This is one person&amp;rsquo;s experience with one tool, so please take any opinions here with a grain of salt.  However, the lessons learned here apply to any project.&lt;/p&gt;
-</description>
+      <description>Github: jaemu.github.io
+ One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&#39;t even there. Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch). I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.</description>
     </item>
     
   </channel>

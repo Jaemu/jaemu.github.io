@@ -1,13 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal on Jill Munson</title>
+    <title>personal on Jill Munson</title>
     <link>http://jillmunson.com/tags/personal/</link>
-    <description>Recent content in Personal on Jill Munson</description>
+    <description>Recent content in personal on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2015 17:11:57 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Dec 2019 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://jillmunson.com/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homecoming</title>
+      <link>http://jillmunson.com/post/2019/12-30/homecoming/</link>
+      <pubDate>Mon, 30 Dec 2019 10:54:24 +0200</pubDate>
+      
+      <guid>http://jillmunson.com/post/2019/12-30/homecoming/</guid>
+      <description>We need a reboot.</description>
+    </item>
+    
+    <item>
+      <title>The Model and The View</title>
+      <link>http://jillmunson.com/post/2015/8-3/model-and-view/</link>
+      <pubDate>Fri, 03 Nov 2017 17:11:57 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/post/2015/8-3/model-and-view/</guid>
+      <description>&amp;ldquo;Are you sure you did that work? I remember things differently.&amp;rdquo;
+I&#39;ve never been more sure of anything in my life.
+Over the course of a lifetime, I have developed an incredibly well-defined sense of self. In a world of imposter syndrome seminars and #askformore campaigns, it can feel like this identity that I have declared my own is in some way rooted in false bravado. I prefer to think of it as the result of having lived a life running in the debugger.</description>
+    </item>
     
     <item>
       <title>Last Day at Viacom</title>
@@ -15,71 +37,12 @@
       <pubDate>Thu, 29 Oct 2015 17:11:57 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/10-29/goodbye/</guid>
-      <description>&lt;p&gt;At the time of writing, this moment is:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my last day with Nick digital,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;3 days before I start a cross-country adventure with my micro-family on our way to put down new roots and start the Seattle chapter of our lives,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2 hours before my going away party starts,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;about&lt;/em&gt; 20 minutes before the &lt;a href=&#34;https://minibardelivery.com/&#34;&gt;Minibar&lt;/a&gt; delivery gets here.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I started to wind down the day by writing one of those horrible &amp;ldquo;last day for ______&amp;rdquo; emails that read less like a parting note and more like a final treatise on so-and-so&amp;rsquo;s insights that will motivate and steer the company towards greatness while complimenting a large number of people that person has probably never met.&lt;br /&gt;
-I&amp;rsquo;m not one for flowery speech or long goodbyes.  I&amp;rsquo;ll do this in my preferred medium.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Starting at Nick on my first day while wrapping up grad school, I probably looked like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/51bdab692fb5d.gif&#34; alt=&#34;I have no idea what I&#39;m doing&#34; title=&#34;I have no idea what I&#39;m doing&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And when they stuck me in the intern cave I was like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/5185d4e91f8fe.gif&#34; alt=&#34;That&#39;s a big ass moose&#34; title=&#34;that&#39;s a big ass moose&#34; /&gt; and thought everyone hated me.&lt;/p&gt;
-
-&lt;p&gt;Then some time passed, I got to re-implement authentication, we relaunched &lt;a href=&#34;nick.com&#34;&gt;nick.com&lt;/a&gt;, basically a lot of things happened and stuff &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e68db26cdca4.gif&#34; alt=&#34;and it was AWESOME&#34; title=&#34;and it was AWESOME&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And without really realizing it, over time I felt less like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/507403c3d50c8.gif&#34; alt=&#34;I had no idea what was happening&#34; title=&#34;I had no idea what was happening&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and more like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/5474e83f22d62.gif&#34; alt=&#34;I could pretty much take on anything&#34; title=&#34;I could pretty much take on anything&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But I tried not to get too full of myself and do things like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4fb02d8639d6c.gif&#34; alt=&#34;get way too ahead of myself&#34; title=&#34;get way too ahead of myself&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And I didn&amp;rsquo;t.  Everyone here kept me pretty humble on the daily because this place is full of insanely creative and capable people and basically &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4fc86e6f70118.gif&#34; alt=&#34;Nick digital is flawless and I love you&#34; title=&#34;Nick digital is flawless and I love you&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It wasn&amp;rsquo;t all fun and games, though.  Sometimes there was site support &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/540969b121af1.gif&#34; alt=&#34;and unexpected things happened&#34; title=&#34;and unexpected things happened&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And really, really nasty bugs that were only reproducible on IE9&amp;hellip;sometimes&amp;hellip;and it was really tempting to tell users to &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/503222458de58.gif&#34; alt=&#34;deal with it or upgrade&#34; title=&#34;deal with it or upgrade&#34; /&gt;.&lt;/p&gt;
-
-&lt;p&gt;But overall it was awesome.  I&amp;rsquo;m not being glib or whatever when I say I learned a whole lot here and got addicted to the awesome feeling of launching something &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/54908e8df1dde.gif&#34; alt=&#34;even when all didn&#39;t go according to plan&#34; title=&#34;even when all didn&#39;t go according to plan&#34; /&gt;.&lt;/p&gt;
-
-&lt;p&gt;and I also learned that I&amp;rsquo;m entirely too risk averse and probably need to take more chances and not try to account for every single thing that might go wrong ever because I&amp;rsquo;m terrified of being wrong (no seriously, I think it&amp;rsquo;s a legit phobia.  I&amp;rsquo;m legit terrified of red pens and compiler errors).&lt;/p&gt;
-
-&lt;p&gt;Basically, less &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e0e17ed803b4.gif&#34; alt=&#34;indecisiveness and puttering&#34; title=&#34;indecisiveness and puttering&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and more &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/55c3c0f1d2a05.gif&#34; alt=&#34;yolo&#34; title=&#34;you only launch once&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Because life is too short to be paralyzed by perfectionism, and the truth is when you&amp;rsquo;re making something new and venturing into uncharted territory there are no right answers and sometimes something that seemed totally stupid ends up being the feature that people love about your product and would have failed had it worked &amp;ldquo;properly&amp;rdquo;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;In less than two weeks I will be in a new job writing code for another project that hasn&amp;rsquo;t launched yet, in a city 4000+ miles away from home after driving an unfamiliar car for 6+ days and I will inevitably screw up some part of this process by leaving my passport home, forgetting paperwork for the dog, not leaving a key for someone, etc etc etc.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m scared, but I&amp;rsquo;m also not going to go into this like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4ec3cd2131d8e.gif&#34; alt=&#34;completely terrified and uprepared&#34; title=&#34;completely terrified and uprepared&#34; /&gt; because now I know that it&amp;rsquo;s ok to prepare and do the best you can and take the chance that it&amp;rsquo;s not good enough and &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4ff045335c6d2.gif&#34; alt=&#34;completely fall on your face as long as you&#39;re doing something you love&#34; title=&#34;completely fall on your face as long as you&#39;re doing something you love&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So even though leaving is &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/500901eb25f32.gif&#34; alt=&#34;kind of really sad&#34; title=&#34;kind of really sad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And maybe some &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/55be3ee3b4fd0.gif&#34; alt=&#34;insincere hugs and affection&#34; title=&#34;insincere hugs and affection&#34; /&gt; are in order.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;m not sad.  I&amp;rsquo;m leaving behind awesome experiences and people for something new to do something that they&amp;rsquo;ve been trying to encourage me to do for a long time which is to go big or go home (I blame Fred as always).&lt;/p&gt;
-
-&lt;p&gt;To my immediate team, just remember that no matter what challenges come up &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e557157570a4.gif&#34; alt=&#34;you are all awesome and can solve anything&#34; title=&#34;you are all awesome and can solve anything&#34; /&gt; and I would work with all of you again in a heartbeat.&lt;/p&gt;
-
-&lt;p&gt;Now if you&amp;rsquo;ll excuse me, &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/54db976d4d56b.gif&#34; alt=&#34;it&#39;s time for me to turn in my laptop and hand in my id card&#34; title=&#34;it&#39;s time for me to turn in my laptop and hand in my id card&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(For Liz)&lt;/p&gt;
-</description>
+      <description>At the time of writing, this moment is:
+  my last day with Nick digital,
+  3 days before I start a cross-country adventure with my micro-family on our way to put down new roots and start the Seattle chapter of our lives,
+  2 hours before my going away party starts,
+  about 20 minutes before the Minibar delivery gets here.
+   I started to wind down the day by writing one of those horrible &amp;ldquo;last day for ______&amp;rdquo; emails that read less like a parting note and more like a final treatise on so-and-so&#39;s insights that will motivate and steer the company towards greatness while complimenting a large number of people that person has probably never met.</description>
     </item>
     
     <item>
@@ -88,77 +51,9 @@ I&amp;rsquo;m not one for flowery speech or long goodbyes.  I&amp;rsquo;ll do th
       <pubDate>Mon, 03 Aug 2015 17:11:57 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/8-3/craft/</guid>
-      <description>&lt;p&gt;I get restless sometimes.&lt;/p&gt;
-
-&lt;p&gt;I work in the city, and thus have the distinct pleasure of a long train commute.  I have lots of time on my hands to do a lot of thinking while sitting still.&lt;br /&gt;
-I think about lots of things &amp;ndash; work, side projects, what am I doing with my life, etc. but if I&amp;rsquo;m not doing something with my hands I get perpetually distracted from my own thoughts.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think I&amp;rsquo;m alone in this.  I look around at the other commuters every morning, eyes glued to their smartphones swiping mindlessly on CandySaga, Bejeweled, or whatever flavor of the month game it is today.  Whatever game they&amp;rsquo;re playing has them convinced that they are not running a fool&amp;rsquo;s errand, that this will be the day they beat their high score or get that new crown or what have you.&lt;/p&gt;
-
-&lt;p&gt;I do the same, and yet I still feel physically restless.&lt;/p&gt;
-
-&lt;p&gt;I thought about this restlessness a lot lately because I came across &lt;a href=&#34;http://robrhinehart.com/?p=1331&#34;&gt;this&lt;/a&gt; post a few weeks ago on hacker news.  In the post, the author eschews modern inconveniences required for self-maintenance like cooking in order to live a more efficient, sustainable lifestyle:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;With no fridge, no dishes, no microwave, no oven, no range, no dishwasher, no utensils, no pests, no cleaning products nor dirty
-rags, my life is considerably simpler, lighter and cleaner than before. I think it was a bit presumptuous for the architect to
-assume I wanted a kitchen with my apartment and make me pay for it. My home is a place of peace. I don’t want to live with red hot
-heating elements and razor sharp knives. That sounds like a torture chamber. However, it’s not a total loss. I was able to use the
-cabinets to store part of my book collection.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;rsquo;s important to note that the author is the creator of a product called &lt;a href=&#34;https://www.soylent.com/&#34;&gt;Soylent&lt;/a&gt;, which in a nutshell is a protein drink marketed towards the sort of people who would try to &amp;ldquo;hack&amp;rdquo; their daily bread in order to optimize the total amount of time wasted doing things like eating.&lt;/p&gt;
-
-&lt;p&gt;Ignoring the frenetic pace and contradictory nature of the writing (in the paragraph before the one quoted above he claims to not want to live with red hot heating elements, but he eschews an electric kettle in favor of an open-flame butane stove), the author paints a strange picture of a modern kitchen and an even stranger one of himself.&lt;/p&gt;
-
-&lt;p&gt;Placing truly universally disgusting things like pests and dirty rags in the same list as the rest of the normal things found in a kitchen is supposed to trick the audience into agreeing that indeed that entire list is undesirable.  Using words like &amp;ldquo;simpler&amp;rdquo; and &amp;ldquo;lighter&amp;rdquo; imply that the mere existence of the kitchen is a heavy burden upon the author.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;My home is a place of peace&amp;rdquo;, indicating that so long as there is a kitchen and all of its accoutrements present in his home, it cannot ever hope to be peaceful.  But fear not for the resourceful author, because he has hacked the necessity of this urban torture chamber by repurposing his cabinets as shelves for &amp;ldquo;part of [his] book collection&amp;rdquo;!&lt;/p&gt;
-
-&lt;p&gt;Look, there&amp;rsquo;s honest advertising copy trying to sell you on the company&amp;rsquo;s vision of the world and then there&amp;rsquo;s this, which vacilates between diary of a mad man and the arrogant manifesto of a fourteen-year old who has just discovered the thesaurus (see also: panoply).  The author is trying to sell himself as smarter than you as evidenced by his expansive book collection and his disgust for pretty much everything that one would consider a normal part of everyday life.  Since you haven&amp;rsquo;t &lt;em&gt;noticed&lt;/em&gt; how truly &lt;strong&gt;awful&lt;/strong&gt; and, worse yet, inefficient your daily existence actually is, your opinion is clearly not to be trusted.&lt;/p&gt;
-
-&lt;p&gt;Here, have a warm protein shake.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Delusional vision of the world aside, the line that struck me the most was this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I never cook. I am all for self reliance but repeating the same labor over and over for the sake of existence is the realm of
-robots.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Robotic.  The perfect word to describe the people on the train that I watch every day of the workweek playing their games.  The last word I would use to describe cooking, a tradition thousands of years old shaped by every culture that has ever walked the Earth as important to the persistence of oral history as storytelling.&lt;/p&gt;
-
-&lt;p&gt;I remember being around 11 or 12 and watching my grandma make &lt;a href=&#34;http://www.foodnetwork.com/recipes/daisy-martinez/chicken-with-rice-arroz-con-pollo-recipe.html&#34;&gt;arroz con pollo&lt;/a&gt; from scratch.  I took a class in high school called &amp;ldquo;world foods&amp;rdquo; and we were tasked with finding a recipe and bringing in a traditional dish from some part of your heritage.&lt;/p&gt;
-
-&lt;p&gt;I followed my grandma with pen and paper in hand, trying to write down everything she did so that I could remake the dish later.&lt;/p&gt;
-
-&lt;p&gt;The meal took over an hour to make.  Not once during the entire process did she ever pull out a measuring utensil.  The exercise went like this:&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;How many cups of chicken broth do I need to make?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Just make a full pot&amp;rsquo;s worth from the leftover chicken parts, fill the pot for the rice until the broth reaches about two inches or so on the handle of a wooden spoon.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;And so on.  You would think with such inexact measurements and convoluted, inefficient ways for remembering how to make different parts of the dish that inevitably some step would be forgotten or something would be ruined.&lt;br /&gt;
-It never was.  Sure, it would probably vary a tiny bit here and there, but the meal always came out perfect &amp;ndash; the rice was never undercooked, the chicken was always seasoned properly, etc.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve since made that same meal hundreds of times over the course of a decade or so.  I started to realize that measuring cups and exact ratios of things for dishes that have been made since before man had a universal language for mathematics are an attempt to enforce preciseness on an imprecise are, to extract a minimally viable algorithm for making a minimally viable version of a dish.  You can see this in recipes when you spot &amp;ldquo;8-12 minutes depending&amp;rdquo; or what have you.  Nature provides variation &amp;ndash; how dense is a particular cut of meat, the exact temperature of your stove, the heat displacement capability of your pans, and so on.&lt;/p&gt;
-
-&lt;p&gt;So even though soylent man can make cooking out to be a delicious exercise in paint-by-numbers, if someone continues to practice the same paint-by-numbers every day to the point where they have memorized the basics and are so adept at reproducing the original that they can take creative license and add artistic elements to create something new on a blank canvas is that not art?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Cooking over the years has helped me develop a keen instinct that frees my mind to be able to multitask and handle a complex array of activites, but this is true of any skill that can be considered craft.&lt;/p&gt;
-
-&lt;p&gt;Much like cooking, I apply this same practice of repetition to writing, sewing, code, and pretty much everything else I want to get better at doing.  Mastery of the basics reinforces not only the concepts but also the importance of continuous improvement.  It&amp;rsquo;s the same reason we teach kids their multiplication tables before allowing them to use a calculator.&lt;/p&gt;
-
-&lt;p&gt;And yet, aside from the benefit of refining a particular skillset, I still find myself drawn to these mindful and repetitive exercises.  The only cure for my restlessness is to occupy my hands with making and my mind with full concentration on the physical nature of the task.  It&amp;rsquo;s ironic that in our self-proclaimed make-obsessed society, we look down on the artifacts of labor and making of physical goods for survival and dismiss them as mindless relics of tradition, reminders that we are shackled with the burden of being human.&lt;/p&gt;
-
-&lt;p&gt;Craft is how we learn.  Until we fully understand the brain and how to artificially imprint knowledge, craft is how we reinforce good habits and reduce badness in our respected skills.  This is true for everyone.  Whatever you do, do not mistake the burdensome labor of mindful crafting in others for mindless repetition to be optimized away.&lt;/p&gt;
-
-&lt;p&gt;It is not the realm of robots.  It is the essence of humanity.&lt;/p&gt;
-</description>
+      <description>I get restless sometimes.
+I work in the city, and thus have the distinct pleasure of a long train commute. I have lots of time on my hands to do a lot of thinking while sitting still.
+I think about lots of things &amp;ndash; work, side projects, what am I doing with my life, etc. but if I&#39;m not doing something with my hands I get perpetually distracted from my own thoughts.</description>
     </item>
     
     <item>
@@ -167,30 +62,8 @@ It never was.  Sure, it would probably vary a tiny bit here and there, but the m
       <pubDate>Fri, 10 Jul 2015 12:57:25 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/7-10/hello-world/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something.  It&amp;rsquo;s not like I don&amp;rsquo;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.&lt;/p&gt;
-
-&lt;p&gt;The issue is that even though I like what I&amp;rsquo;m doing, I don&amp;rsquo;t feel like I&amp;rsquo;ve done anything start-to-finish and like I&amp;rsquo;m learning anything new.  Sure I&amp;rsquo;m quickly becoming the world&amp;rsquo;s largest living encyclopedia of browser and javascript quirks but lately I&amp;rsquo;ve been missing the sort of really stressful but incredibly satisfying high that comes from finally grok&amp;rsquo;ing lamdas or dynamic programming or the like.&lt;/p&gt;
-
-&lt;p&gt;Basically, I miss school.  Not just my friends, I miss being in the trenches every day and having people who could completely empathize and working together not because we were on the same team but because it was a culture of stay competitive but help out the next person because strong competition made everyone better.  I am willing to admit I am romenticizing this a bit.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Anyways, I never got around to making any new year&amp;rsquo;s resolutions, but 7 months later is better than never right?  So that&amp;rsquo;s what I did &amp;ndash; I made a list of knowledge resolutions that I want to say I know and have experience doing and doing &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;My list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make a new website with a blog and a project section.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Complete at least one small library/module/plugin/etc in javascript (&lt;a href=&#34;http://tholman.com/elevator.js/&#34;&gt;this is my inspiration&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Do the &lt;a href=&#34;https://www.udacity.com/nanodegree&#34;&gt;android nanodegree&lt;/a&gt; and build a tiny app.&lt;/li&gt;
-&lt;li&gt;Brush up on actually implementing algorithms (DFS, djikstra&amp;rsquo;s, suffix tree implementation, etc etc).&lt;/li&gt;
-&lt;li&gt;Write about at least one technical problem or thing I learned once a week.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This list is purposely impossible.  By putting down all of the things I want to do, I&amp;rsquo;m identifying all of the parts of my big messy brain house instead of getting overwhelmed by the volume.&lt;/p&gt;
-
-&lt;p&gt;Wish me luck :)&lt;/p&gt;
-</description>
+      <description>I&#39;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something. It&#39;s not like I don&#39;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.
+The issue is that even though I like what I&#39;m doing, I don&#39;t feel like I&#39;ve done anything start-to-finish and like I&#39;m learning anything new.</description>
     </item>
     
     <item>
@@ -199,94 +72,8 @@ It never was.  Sure, it would probably vary a tiny bit here and there, but the m
       <pubDate>Tue, 14 Apr 2015 22:17:00 +0200</pubDate>
       
       <guid>http://jillmunson.com/project/hugo/about/</guid>
-      <description>
-
-&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/jaemu.github.io&#34;&gt;jaemu.github.io&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&amp;rsquo;t even there.  Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch).  I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.&lt;/p&gt;
-
-&lt;p&gt;As a primarily front-end developer, this overthinking paralysis has stricken me every time I&amp;rsquo;ve tried making a personal site.  I&amp;rsquo;ve experimented with different blog engines, tried rolling my own, even tried just hard-coding static html pages as a thought experiment to try and identify the different pain points that were causing me to throw in the towel every time.&lt;/p&gt;
-
-&lt;p&gt;All in all, I learned several things about myself and side projects in general:&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-0-you-might-not-need-javascript-insert-favorite-language-here:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 0 - You &lt;em&gt;might&lt;/em&gt; not need (javascript|insert favorite language here)&lt;/h4&gt;
-
-&lt;p&gt;When I first started thinking about what I needed, I started looking into &lt;a href=&#34;https://github.com/tryghost/Ghost&#34;&gt;Ghost&lt;/a&gt;, which is a full blog engine with a ton of features out of the box, 3rd-party plugins, etc.  Ghost is great and from my little time with it, seems like the kind of thing that could really fit the use case of needing a blog engine.&lt;/p&gt;
-
-&lt;p&gt;Once I started getting set up with it though, I realized that for what I wanted (a personal site to host blog posts, images, and project pages) I didn&amp;rsquo;t really &lt;em&gt;need&lt;/em&gt; a full-fledged backend and thus didn&amp;rsquo;t really need a server to serve content.  What I really wanted was something that generated static content and could be served from something like AWS S3 or Github.&lt;/p&gt;
-
-&lt;p&gt;This was an important realization for me because one of my major problems was just identifying what it was that I wanted to build.  Even though I could run a self-hosted instance of Ghost, that required a lot of additional configuration and setup that while not &lt;em&gt;difficult&lt;/em&gt; per se was an additional headache (not even going into my gun-shyness with securing a public web server after a fiasco with an EC2 instance that I was running for a network security project of all things).&lt;/p&gt;
-
-&lt;p&gt;Even though I was completely comfortable with nodejs and have been working on an incredibly dyanmic single-page application entirely in javascript, the things that nick.com need to do vs. what I wanted my site to do were wildly different in scope and complexity.&lt;/p&gt;
-
-&lt;p&gt;I learned not to overcomplicate things just for the sake of &amp;ldquo;learning&amp;rdquo; and to make the right thing for the right task.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-1-while-not-always-the-right-way-to-go-doing-something-the-hard-way-first-teaches-you-a-lot-about-what-you-re-trying-to-build:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 1: While not always the right way to go, doing something the hard way first teaches you a lot about what you&amp;rsquo;re trying to build&lt;/h4&gt;
-
-&lt;p&gt;I wish I could say that I learned my lesson and continued on without making things overly complex.&lt;/p&gt;
-
-&lt;p&gt;Instead, I thought &amp;ldquo;well I can write my &lt;em&gt;own&lt;/em&gt; static site generator for nodejs!  With recursion and partials and more!&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;As an experiment to figure out what features I would need to do so, I tried hand-rolling my own site.  In hindsight, this is like milking a cow to figure out how to make an ice cream machine but hindsight.&lt;/p&gt;
-
-&lt;p&gt;At the very least, I identified some pain points:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Re-usable HTML templates and partials are not just a nice to have, they are a necessity.  Otherwise, woe is the developer trying to keep an ever-growing number of static files consistently pointing to the right file references, using the same class names for elements across pages, etc.&lt;/li&gt;
-&lt;li&gt;Writing a static HTML generator is foolhardy for several reasons, least of which is the existence of Markdown compilers.  I realized one of the biggest advantages of using Markdown is that not only is there a common language that compiles to the same elements, but it gives you the freedom to use inline HTML when absolutely necessary.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Writing responsive CSS from scratch is a pain.  I don&amp;rsquo;t care how long you have been doing front-end development, writing clean, maintainable, working CSS without Less/Stylus/Sass and a framework is an exercise in frustration.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There were probably many more, but that was about as far as I got before having a conversation with my friend &lt;a href=&#34;http://www.robxu9.com/&#34;&gt;Rob&lt;/a&gt; about what I was trying to do.  He suggested &lt;a href=&#34;http://gohugo.io/&#34;&gt;hugo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-2-done-is-better-than-perfect-or-why-you-shouldn-t-give-up-on-something-the-first-time-it-doesn-t-work-the-way-you-expect-it-to:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 2: Done is better than perfect, or why you shouldn&amp;rsquo;t give up on something the first time it doesn&amp;rsquo;t work the way you expect it to.&lt;/h4&gt;
-
-&lt;p&gt;Getting started with hugo was extremely easy.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;brew install hugo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Figuring out what to do from there was not as easy.  Hugo expects to create a new folder within the current directory of&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo new site (sitename)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and if that folder already exists, throws an error.  If it were me, I would have created a new site within that folder or at least created an option to pass a flag that indicates that this is what I want to do, especially when migrating content from an existing github repo that has the strict requirement of having the name (github_name).github.io.&lt;/p&gt;
-
-&lt;p&gt;Once I got past that, I stumbled on the configuration bit.  Hugo expects a config.(toml|yaml|json) file, but not all of the params are documented.  This becomes a problem when trying to add data to partials because &lt;em&gt;some&lt;/em&gt; data is global in scope but others like custom params are under the .Site.Params namespace.  &lt;a href=&#34;http://gohugo.io/overview/configuration/&#34;&gt;This is all that I was able to find&lt;/a&gt;, and while most of the params are documented some are given no explanation.&lt;/p&gt;
-
-&lt;p&gt;There is also some reduntant functionality.  In the config file, you can specify which theme you want to use but you can also compile your project with&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo -t (theme_name)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;which is fine, but again not super well documented as to why you would want to use one and not the other.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;My point is, it&amp;rsquo;s ok to struggle with a tool out of the box.  The beauty of open source is that if something doesn&amp;rsquo;t work the way you intend it to, look at the source and if you think it&amp;rsquo;s wrong then change it.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-3-configuration-is-important-flexible-configuration-is-a-god-send:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 3: Configuration is important.  Flexible configuration is a god-send.&lt;/h4&gt;
-
-&lt;p&gt;One of my favorite parts about hugo is the configurable folder structure.  Currently I&amp;rsquo;m publishing to the project root directory (bad), but in the config file I can specify all of the directories I want to use and where I want hugo to publish those files.  I ran into this issue with Octopress awhile ago and found the &amp;ldquo;use this file structure&amp;rdquo; heavyhandedness really inflexible so this feature was a nice surprise.&lt;/p&gt;
-
-&lt;h4 id=&#34;lesson-4-there-are-hackfixes-in-every-project:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Lesson 4: There are hackfixes in &lt;em&gt;every&lt;/em&gt; project.&lt;/h4&gt;
-
-&lt;p&gt;When I first tried to deploy the site to github, all of my static file references were 404ing even though they were in the right directories.  I realized after a tiny bit of digging that when you run&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;it replaces the baseurl param with &amp;ldquo;localhost:1313&amp;rdquo; and puts this all over your site so that static file references work locally.  This is extremely heavyhanded (what if I don&amp;rsquo;t have localhost in /etc/hosts and I don&amp;rsquo;t have permissions to change that file?  Hypothetical.) for a few reasons.  I guess you could get around this by not using absolute paths to reference your static content, but that seems rather &lt;a href=&#34;http://stackoverflow.com/questions/2005079/absolute-vs-relative-urls&#34;&gt;opinionated&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;conclusions:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Conclusions&lt;/h4&gt;
-
-&lt;p&gt;I ran into a few other issues (static files not being copied over into my publish dir frrom my theme folder, customizing the theme, etc.) but all in all I found hugo easy to work with if a bit under-documented.  Most of its power comes from its tiny footprint, speed, and flexible configuration.  I don&amp;rsquo;t mind the hard dependency on Go, but I can see that being a drawback for some (although I find Go configuration and package management much easier to manage than, say, python but I could be biased because I am using a mac with a default python installed and having to remember where python vs python2.7 vs python3 look for their packages is frustrating at best).&lt;/p&gt;
-
-&lt;p&gt;This is one person&amp;rsquo;s experience with one tool, so please take any opinions here with a grain of salt.  However, the lessons learned here apply to any project.&lt;/p&gt;
-</description>
+      <description>Github: jaemu.github.io
+ One of the biggest weaknesses I have is putting pen to paper, finger to keyboard, etc. without getting overwhelmed by trying to organize something that isn&#39;t even there. Even in writing, my comfort zone was always editing and not content creation (I blame this background for my preference for hunting bugs and re-organizing code than architecting an application from scratch). I think as you get more knowledge without constantly exercising that knowledge with repeated exercise this becomes incredibly common.</description>
     </item>
     
   </channel>

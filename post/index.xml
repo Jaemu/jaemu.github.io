@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jill Munson</title>
@@ -6,8 +6,40 @@
     <description>Recent content in Posts on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Nov 2015 11:51:57 -0500</lastBuildDate>
-    <atom:link href="http://jillmunson.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Dec 2019 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://jillmunson.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homecoming</title>
+      <link>http://jillmunson.com/post/2019/12-30/homecoming/</link>
+      <pubDate>Mon, 30 Dec 2019 10:54:24 +0200</pubDate>
+      
+      <guid>http://jillmunson.com/post/2019/12-30/homecoming/</guid>
+      <description>We need a reboot.</description>
+    </item>
+    
+    <item>
+      <title>The Model and The View</title>
+      <link>http://jillmunson.com/post/2015/8-3/model-and-view/</link>
+      <pubDate>Fri, 03 Nov 2017 17:11:57 -0400</pubDate>
+      
+      <guid>http://jillmunson.com/post/2015/8-3/model-and-view/</guid>
+      <description>&amp;ldquo;Are you sure you did that work? I remember things differently.&amp;rdquo;
+I&#39;ve never been more sure of anything in my life.
+Over the course of a lifetime, I have developed an incredibly well-defined sense of self. In a world of imposter syndrome seminars and #askformore campaigns, it can feel like this identity that I have declared my own is in some way rooted in false bravado. I prefer to think of it as the result of having lived a life running in the debugger.</description>
+    </item>
+    
+    <item>
+      <title>Using SOHCAHTOA: A CSS War Story</title>
+      <link>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</link>
+      <pubDate>Sun, 09 Jul 2017 09:17:07 -0700</pubDate>
+      
+      <guid>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</guid>
+      <description>Dmitri PopovI decided to split this into parts, because I had a great time at I/O and there was a lot to learn and experience over 3 days.
+(Additional disclaimer: I do not present myself as a representative of Amazon nor does anything I say here confirm, deny or relate to any business strategy, priorities or initiatives currently being undertaken at Amazon. Any mention of Amazon products are presented as my personal opinion as a technology consumer, not as an employee.</description>
+    </item>
     
     <item>
       <title>Roadtrip Day [0] - Columbus, OH</title>
@@ -15,53 +47,9 @@
       <pubDate>Mon, 02 Nov 2015 11:51:57 -0500</pubDate>
       
       <guid>http://jillmunson.com/post/2015/11-2/day-0/</guid>
-      <description>
-
-&lt;p&gt;For the next 7 days, Ryan and I are making our own version of the Oregon trail (from New York to Seattle), along with the dog and everything we own in one of these&lt;img src=&#34;http://jillmunson.com/img/covered_wagon.jpg&#34; alt=&#34;&#34; title=&#34;All of the fording the river jokes have been made&#34; /&gt;.&lt;/p&gt;
-
-&lt;p&gt;Peak levels of &amp;lsquo;Murica have been reached, folks.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I have a history of making excuses based on overplayed stereotypes of salt-of-the-earth folk and cultural incest in an effort to avoid the awkward conversation about my policy of never moving to anywhere where I might be the most &amp;ldquo;ethnic&amp;rdquo; looking person in the zip code.  It&amp;rsquo;s so easy to write off entire swaths of the country this way.&lt;/p&gt;
-
-&lt;p&gt;That being said, in an effort to enjoy the 48+ hours of driving and weeklong stay in the heart of the nation I&amp;rsquo;m going to put aside my cultural identity crisis for the time being and learn as much as I can about each of the cities and towns that we are staying in along the way.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;day-0-columbus-oh:36c8cb37135652849af48a5409799526&#34;&gt;Day 0 - Columbus, OH&lt;/h3&gt;
-
-&lt;p&gt;Prior to this trip, all I knew about Ohio was that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;My dad briefly went to college there&lt;/li&gt;
-&lt;li&gt;They have two football teams&lt;br /&gt;
-and&lt;/li&gt;
-&lt;li&gt;People there love this spaghetti dish called &lt;a href=&#34;http://jillmunson.com/img/skyline.jpg&#34;&gt;Skyline Chili&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I didn&amp;rsquo;t have a ton of time to do research.  We got to the hotel at 4am, across the street from the county court so not exactly a picturesque historic downtown sort of area.&lt;br /&gt;
-On the entrance of the hotel we were staying at, I noticed a plaque next to the entrance that said:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;National Register of Historic Places: The Great Southern Hotel&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The National Historic Register documentation &lt;a href=&#34;http://focus.nps.gov/AssetDetail/NRIS/82001458&#34;&gt;has not been digitized at this time&lt;/a&gt; but from what I could gather from my limited resources:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The hotel opened in 1896 or 1897 (the hotel&amp;rsquo;s website and wikipedia differ on this).&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Prior to its opening, a series of fires destroyed some of the most prominent hotels in Columbus.  The Great Southern Hotel &amp;amp; Theater was an undertaking to replace the city gathering spaces and cultural centers that were lost.&lt;/li&gt;
-&lt;li&gt;The building was designed to be &amp;ldquo;fireproof&amp;rdquo;, was also one of the first in the city to both use and produce electricity.&lt;/li&gt;
-&lt;li&gt;The theater was reopened in 1998, after a $10MM renovation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I wish we had gotten to stay a bit longer and explore the hotel and the surrounding city.  Meryl and I took an early morning walk in the surrounding area, but we didn&amp;rsquo;t find too much besides the &lt;a href=&#34;http://columbuscommons.org/&#34;&gt;Columbus Commons&lt;/a&gt; and some under construction high-rise apartments.&lt;/p&gt;
-
-&lt;p&gt;I feel like we missed out on Ohio having only spent about 5-6 hours in Columbus and not in a very exciting neighborhood at that, so any suggestions on places to see or things to do the next time we hit the state would be greatly appreciated.&lt;/p&gt;
-</description>
+      <description>For the next 7 days, Ryan and I are making our own version of the Oregon trail (from New York to Seattle), along with the dog and everything we own in one of these.
+Peak levels of &amp;lsquo;Murica have been reached, folks.
+ I have a history of making excuses based on overplayed stereotypes of salt-of-the-earth folk and cultural incest in an effort to avoid the awkward conversation about my policy of never moving to anywhere where I might be the most &amp;ldquo;ethnic&amp;rdquo; looking person in the zip code.</description>
     </item>
     
     <item>
@@ -70,71 +58,12 @@ On the entrance of the hotel we were staying at, I noticed a plaque next to the 
       <pubDate>Thu, 29 Oct 2015 17:11:57 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/10-29/goodbye/</guid>
-      <description>&lt;p&gt;At the time of writing, this moment is:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;my last day with Nick digital,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;3 days before I start a cross-country adventure with my micro-family on our way to put down new roots and start the Seattle chapter of our lives,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;2 hours before my going away party starts,&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;about&lt;/em&gt; 20 minutes before the &lt;a href=&#34;https://minibardelivery.com/&#34;&gt;Minibar&lt;/a&gt; delivery gets here.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I started to wind down the day by writing one of those horrible &amp;ldquo;last day for ______&amp;rdquo; emails that read less like a parting note and more like a final treatise on so-and-so&amp;rsquo;s insights that will motivate and steer the company towards greatness while complimenting a large number of people that person has probably never met.&lt;br /&gt;
-I&amp;rsquo;m not one for flowery speech or long goodbyes.  I&amp;rsquo;ll do this in my preferred medium.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Starting at Nick on my first day while wrapping up grad school, I probably looked like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/51bdab692fb5d.gif&#34; alt=&#34;I have no idea what I&#39;m doing&#34; title=&#34;I have no idea what I&#39;m doing&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And when they stuck me in the intern cave I was like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/5185d4e91f8fe.gif&#34; alt=&#34;That&#39;s a big ass moose&#34; title=&#34;that&#39;s a big ass moose&#34; /&gt; and thought everyone hated me.&lt;/p&gt;
-
-&lt;p&gt;Then some time passed, I got to re-implement authentication, we relaunched &lt;a href=&#34;nick.com&#34;&gt;nick.com&lt;/a&gt;, basically a lot of things happened and stuff &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e68db26cdca4.gif&#34; alt=&#34;and it was AWESOME&#34; title=&#34;and it was AWESOME&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And without really realizing it, over time I felt less like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/507403c3d50c8.gif&#34; alt=&#34;I had no idea what was happening&#34; title=&#34;I had no idea what was happening&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and more like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/5474e83f22d62.gif&#34; alt=&#34;I could pretty much take on anything&#34; title=&#34;I could pretty much take on anything&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But I tried not to get too full of myself and do things like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4fb02d8639d6c.gif&#34; alt=&#34;get way too ahead of myself&#34; title=&#34;get way too ahead of myself&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And I didn&amp;rsquo;t.  Everyone here kept me pretty humble on the daily because this place is full of insanely creative and capable people and basically &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4fc86e6f70118.gif&#34; alt=&#34;Nick digital is flawless and I love you&#34; title=&#34;Nick digital is flawless and I love you&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It wasn&amp;rsquo;t all fun and games, though.  Sometimes there was site support &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/540969b121af1.gif&#34; alt=&#34;and unexpected things happened&#34; title=&#34;and unexpected things happened&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And really, really nasty bugs that were only reproducible on IE9&amp;hellip;sometimes&amp;hellip;and it was really tempting to tell users to &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/503222458de58.gif&#34; alt=&#34;deal with it or upgrade&#34; title=&#34;deal with it or upgrade&#34; /&gt;.&lt;/p&gt;
-
-&lt;p&gt;But overall it was awesome.  I&amp;rsquo;m not being glib or whatever when I say I learned a whole lot here and got addicted to the awesome feeling of launching something &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/54908e8df1dde.gif&#34; alt=&#34;even when all didn&#39;t go according to plan&#34; title=&#34;even when all didn&#39;t go according to plan&#34; /&gt;.&lt;/p&gt;
-
-&lt;p&gt;and I also learned that I&amp;rsquo;m entirely too risk averse and probably need to take more chances and not try to account for every single thing that might go wrong ever because I&amp;rsquo;m terrified of being wrong (no seriously, I think it&amp;rsquo;s a legit phobia.  I&amp;rsquo;m legit terrified of red pens and compiler errors).&lt;/p&gt;
-
-&lt;p&gt;Basically, less &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e0e17ed803b4.gif&#34; alt=&#34;indecisiveness and puttering&#34; title=&#34;indecisiveness and puttering&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;and more &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/55c3c0f1d2a05.gif&#34; alt=&#34;yolo&#34; title=&#34;you only launch once&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Because life is too short to be paralyzed by perfectionism, and the truth is when you&amp;rsquo;re making something new and venturing into uncharted territory there are no right answers and sometimes something that seemed totally stupid ends up being the feature that people love about your product and would have failed had it worked &amp;ldquo;properly&amp;rdquo;.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;In less than two weeks I will be in a new job writing code for another project that hasn&amp;rsquo;t launched yet, in a city 4000+ miles away from home after driving an unfamiliar car for 6+ days and I will inevitably screw up some part of this process by leaving my passport home, forgetting paperwork for the dog, not leaving a key for someone, etc etc etc.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m scared, but I&amp;rsquo;m also not going to go into this like &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4ec3cd2131d8e.gif&#34; alt=&#34;completely terrified and uprepared&#34; title=&#34;completely terrified and uprepared&#34; /&gt; because now I know that it&amp;rsquo;s ok to prepare and do the best you can and take the chance that it&amp;rsquo;s not good enough and &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4ff045335c6d2.gif&#34; alt=&#34;completely fall on your face as long as you&#39;re doing something you love&#34; title=&#34;completely fall on your face as long as you&#39;re doing something you love&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So even though leaving is &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/500901eb25f32.gif&#34; alt=&#34;kind of really sad&#34; title=&#34;kind of really sad&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;And maybe some &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/55be3ee3b4fd0.gif&#34; alt=&#34;insincere hugs and affection&#34; title=&#34;insincere hugs and affection&#34; /&gt; are in order.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;m not sad.  I&amp;rsquo;m leaving behind awesome experiences and people for something new to do something that they&amp;rsquo;ve been trying to encourage me to do for a long time which is to go big or go home (I blame Fred as always).&lt;/p&gt;
-
-&lt;p&gt;To my immediate team, just remember that no matter what challenges come up &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/4e557157570a4.gif&#34; alt=&#34;you are all awesome and can solve anything&#34; title=&#34;you are all awesome and can solve anything&#34; /&gt; and I would work with all of you again in a heartbeat.&lt;/p&gt;
-
-&lt;p&gt;Now if you&amp;rsquo;ll excuse me, &lt;img src=&#34;https://gimmebar-assets.s3.amazonaws.com/54db976d4d56b.gif&#34; alt=&#34;it&#39;s time for me to turn in my laptop and hand in my id card&#34; title=&#34;it&#39;s time for me to turn in my laptop and hand in my id card&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;(For Liz)&lt;/p&gt;
-</description>
+      <description>At the time of writing, this moment is:
+  my last day with Nick digital,
+  3 days before I start a cross-country adventure with my micro-family on our way to put down new roots and start the Seattle chapter of our lives,
+  2 hours before my going away party starts,
+  about 20 minutes before the Minibar delivery gets here.
+   I started to wind down the day by writing one of those horrible &amp;ldquo;last day for ______&amp;rdquo; emails that read less like a parting note and more like a final treatise on so-and-so&#39;s insights that will motivate and steer the company towards greatness while complimenting a large number of people that person has probably never met.</description>
     </item>
     
     <item>
@@ -143,77 +72,9 @@ I&amp;rsquo;m not one for flowery speech or long goodbyes.  I&amp;rsquo;ll do th
       <pubDate>Mon, 03 Aug 2015 17:11:57 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/8-3/craft/</guid>
-      <description>&lt;p&gt;I get restless sometimes.&lt;/p&gt;
-
-&lt;p&gt;I work in the city, and thus have the distinct pleasure of a long train commute.  I have lots of time on my hands to do a lot of thinking while sitting still.&lt;br /&gt;
-I think about lots of things &amp;ndash; work, side projects, what am I doing with my life, etc. but if I&amp;rsquo;m not doing something with my hands I get perpetually distracted from my own thoughts.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think I&amp;rsquo;m alone in this.  I look around at the other commuters every morning, eyes glued to their smartphones swiping mindlessly on CandySaga, Bejeweled, or whatever flavor of the month game it is today.  Whatever game they&amp;rsquo;re playing has them convinced that they are not running a fool&amp;rsquo;s errand, that this will be the day they beat their high score or get that new crown or what have you.&lt;/p&gt;
-
-&lt;p&gt;I do the same, and yet I still feel physically restless.&lt;/p&gt;
-
-&lt;p&gt;I thought about this restlessness a lot lately because I came across &lt;a href=&#34;http://robrhinehart.com/?p=1331&#34;&gt;this&lt;/a&gt; post a few weeks ago on hacker news.  In the post, the author eschews modern inconveniences required for self-maintenance like cooking in order to live a more efficient, sustainable lifestyle:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;With no fridge, no dishes, no microwave, no oven, no range, no dishwasher, no utensils, no pests, no cleaning products nor dirty
-rags, my life is considerably simpler, lighter and cleaner than before. I think it was a bit presumptuous for the architect to
-assume I wanted a kitchen with my apartment and make me pay for it. My home is a place of peace. I don’t want to live with red hot
-heating elements and razor sharp knives. That sounds like a torture chamber. However, it’s not a total loss. I was able to use the
-cabinets to store part of my book collection.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;rsquo;s important to note that the author is the creator of a product called &lt;a href=&#34;https://www.soylent.com/&#34;&gt;Soylent&lt;/a&gt;, which in a nutshell is a protein drink marketed towards the sort of people who would try to &amp;ldquo;hack&amp;rdquo; their daily bread in order to optimize the total amount of time wasted doing things like eating.&lt;/p&gt;
-
-&lt;p&gt;Ignoring the frenetic pace and contradictory nature of the writing (in the paragraph before the one quoted above he claims to not want to live with red hot heating elements, but he eschews an electric kettle in favor of an open-flame butane stove), the author paints a strange picture of a modern kitchen and an even stranger one of himself.&lt;/p&gt;
-
-&lt;p&gt;Placing truly universally disgusting things like pests and dirty rags in the same list as the rest of the normal things found in a kitchen is supposed to trick the audience into agreeing that indeed that entire list is undesirable.  Using words like &amp;ldquo;simpler&amp;rdquo; and &amp;ldquo;lighter&amp;rdquo; imply that the mere existence of the kitchen is a heavy burden upon the author.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;My home is a place of peace&amp;rdquo;, indicating that so long as there is a kitchen and all of its accoutrements present in his home, it cannot ever hope to be peaceful.  But fear not for the resourceful author, because he has hacked the necessity of this urban torture chamber by repurposing his cabinets as shelves for &amp;ldquo;part of [his] book collection&amp;rdquo;!&lt;/p&gt;
-
-&lt;p&gt;Look, there&amp;rsquo;s honest advertising copy trying to sell you on the company&amp;rsquo;s vision of the world and then there&amp;rsquo;s this, which vacilates between diary of a mad man and the arrogant manifesto of a fourteen-year old who has just discovered the thesaurus (see also: panoply).  The author is trying to sell himself as smarter than you as evidenced by his expansive book collection and his disgust for pretty much everything that one would consider a normal part of everyday life.  Since you haven&amp;rsquo;t &lt;em&gt;noticed&lt;/em&gt; how truly &lt;strong&gt;awful&lt;/strong&gt; and, worse yet, inefficient your daily existence actually is, your opinion is clearly not to be trusted.&lt;/p&gt;
-
-&lt;p&gt;Here, have a warm protein shake.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Delusional vision of the world aside, the line that struck me the most was this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I never cook. I am all for self reliance but repeating the same labor over and over for the sake of existence is the realm of
-robots.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Robotic.  The perfect word to describe the people on the train that I watch every day of the workweek playing their games.  The last word I would use to describe cooking, a tradition thousands of years old shaped by every culture that has ever walked the Earth as important to the persistence of oral history as storytelling.&lt;/p&gt;
-
-&lt;p&gt;I remember being around 11 or 12 and watching my grandma make &lt;a href=&#34;http://www.foodnetwork.com/recipes/daisy-martinez/chicken-with-rice-arroz-con-pollo-recipe.html&#34;&gt;arroz con pollo&lt;/a&gt; from scratch.  I took a class in high school called &amp;ldquo;world foods&amp;rdquo; and we were tasked with finding a recipe and bringing in a traditional dish from some part of your heritage.&lt;/p&gt;
-
-&lt;p&gt;I followed my grandma with pen and paper in hand, trying to write down everything she did so that I could remake the dish later.&lt;/p&gt;
-
-&lt;p&gt;The meal took over an hour to make.  Not once during the entire process did she ever pull out a measuring utensil.  The exercise went like this:&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;How many cups of chicken broth do I need to make?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;Just make a full pot&amp;rsquo;s worth from the leftover chicken parts, fill the pot for the rice until the broth reaches about two inches or so on the handle of a wooden spoon.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;And so on.  You would think with such inexact measurements and convoluted, inefficient ways for remembering how to make different parts of the dish that inevitably some step would be forgotten or something would be ruined.&lt;br /&gt;
-It never was.  Sure, it would probably vary a tiny bit here and there, but the meal always came out perfect &amp;ndash; the rice was never undercooked, the chicken was always seasoned properly, etc.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve since made that same meal hundreds of times over the course of a decade or so.  I started to realize that measuring cups and exact ratios of things for dishes that have been made since before man had a universal language for mathematics are an attempt to enforce preciseness on an imprecise are, to extract a minimally viable algorithm for making a minimally viable version of a dish.  You can see this in recipes when you spot &amp;ldquo;8-12 minutes depending&amp;rdquo; or what have you.  Nature provides variation &amp;ndash; how dense is a particular cut of meat, the exact temperature of your stove, the heat displacement capability of your pans, and so on.&lt;/p&gt;
-
-&lt;p&gt;So even though soylent man can make cooking out to be a delicious exercise in paint-by-numbers, if someone continues to practice the same paint-by-numbers every day to the point where they have memorized the basics and are so adept at reproducing the original that they can take creative license and add artistic elements to create something new on a blank canvas is that not art?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Cooking over the years has helped me develop a keen instinct that frees my mind to be able to multitask and handle a complex array of activites, but this is true of any skill that can be considered craft.&lt;/p&gt;
-
-&lt;p&gt;Much like cooking, I apply this same practice of repetition to writing, sewing, code, and pretty much everything else I want to get better at doing.  Mastery of the basics reinforces not only the concepts but also the importance of continuous improvement.  It&amp;rsquo;s the same reason we teach kids their multiplication tables before allowing them to use a calculator.&lt;/p&gt;
-
-&lt;p&gt;And yet, aside from the benefit of refining a particular skillset, I still find myself drawn to these mindful and repetitive exercises.  The only cure for my restlessness is to occupy my hands with making and my mind with full concentration on the physical nature of the task.  It&amp;rsquo;s ironic that in our self-proclaimed make-obsessed society, we look down on the artifacts of labor and making of physical goods for survival and dismiss them as mindless relics of tradition, reminders that we are shackled with the burden of being human.&lt;/p&gt;
-
-&lt;p&gt;Craft is how we learn.  Until we fully understand the brain and how to artificially imprint knowledge, craft is how we reinforce good habits and reduce badness in our respected skills.  This is true for everyone.  Whatever you do, do not mistake the burdensome labor of mindful crafting in others for mindless repetition to be optimized away.&lt;/p&gt;
-
-&lt;p&gt;It is not the realm of robots.  It is the essence of humanity.&lt;/p&gt;
-</description>
+      <description>I get restless sometimes.
+I work in the city, and thus have the distinct pleasure of a long train commute. I have lots of time on my hands to do a lot of thinking while sitting still.
+I think about lots of things &amp;ndash; work, side projects, what am I doing with my life, etc. but if I&#39;m not doing something with my hands I get perpetually distracted from my own thoughts.</description>
     </item>
     
     <item>
@@ -222,79 +83,8 @@ It never was.  Sure, it would probably vary a tiny bit here and there, but the m
       <pubDate>Sat, 11 Jul 2015 12:57:25 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/7-11/phylogeny-and-dogs/</guid>
-      <description>
-
-&lt;p&gt;I love life sciences, dogs, and algorithms so when I found &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004016&#34;&gt;this paper&lt;/a&gt; describing recent changes to the hypothesized phylogeny of modern dog I got giddy.&lt;/p&gt;
-
-&lt;p&gt;Dogs are incredibly fascinating, regardless of your opinion on breed standards and dog shows.  They are the only successfully domesticated carnivore, they have the ability to understand our social communication mechanics and language, they engage in mutually beneficial social cooperation with us and we are not absolutely certain of why or when it happened.&lt;/p&gt;
-
-&lt;p&gt;The truth is there is a lot we don&amp;rsquo;t understand about &lt;em&gt;how&lt;/em&gt; man domesticated dogs or if man was even the catalyst for domestication.  For a long time, the prevailing theory was that dogs had evolved from wolves that were attracted to human agricultural settlements by trash.  This isn&amp;rsquo;t completely unrealistic because we know wolves are &lt;a href=&#34;https://en.wikipedia.org/wiki/Dog_anatomy#Physical_characteristics&#34;&gt;scavengers&lt;/a&gt; and that dogs have maintained some of these behaviors (any dog owner can tell you about their temporary land shark that appears around the table at mealtime).&lt;/p&gt;
-
-&lt;p&gt;What is so awesome about the findings from this study is that it demonstrates a working model of phylogeny that satisfies the current state of genetic similarity that shows dogs not as a derivative of wolf but as a &lt;a href=&#34;http://mediarelations.cornell.edu/2014/01/16/dogs-and-wolves-diverged-from-common-ancestor/&#34;&gt;sibling that evolved separately from a common ancestor&lt;/a&gt;.  &lt;img src=&#34;http://jillmunson.com/img/journal.pgen.1004016.g004.png&#34; alt=&#34;Neighbor-joining tree and admixture signatures from ABBA/BABA tests.  Source: Genome Sequencing Highlights the Dynamic Early History of Dogs
-Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) Genome Sequencing Highlights the Dynamic Early History of Dogs. PLoS Genet 10(1): e1004016. doi: 10.1371/journal.pgen.1004016&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;phylogenetic-trees-introduction-and-construction-by-phenotype:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Phylogenetic trees: introduction and construction by phenotype&lt;/h4&gt;
-
-&lt;p&gt;The diagram in this picture is called a phylogenetic tree, a data structure that maintains the evolutionary relationship between child nodes.  In this representation, children on the same depth of the tree are &amp;ldquo;siblings&amp;rdquo; and their &amp;ldquo;common ancestor&amp;rdquo; is the node that corresponds to their closest common parent node.  So in this tree, BOX (boxer) and BSJ (basenji) are more closely related because they have a common ancestor that lived more recently than that of say, BOX and DNG (dingo).  Typically, the height of the tree correlates to time but I&amp;rsquo;ll explain the motivation for using base pair differences.&lt;/p&gt;
-
-&lt;p&gt;Before genetic sequencing, the &amp;ldquo;distance&amp;rdquo; between sibling nodes and the placement of intermediary branching events was guessed at by similarity of observable traits, or &lt;a href=&#34;https://en.wikipedia.org/wiki/Phenetics&#34;&gt;phenotype&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There are several problems with using the phenetic approach, most notably the existence of similar traits in unrelated species that have different evolutionary paths.  This could have occurred in isolated populations that were subject to the same selective pressures and not indicative of parent or sibling relationships in evolution.&lt;/p&gt;
-
-&lt;p&gt;Enter genomics and &lt;a href=&#34;https://en.wikipedia.org/wiki/Hamming_distance&#34;&gt;Hamming distance&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&#34;phylogenetic-trees-construction-by-edit-distance:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Phylogenetic trees: construction by edit distance&lt;/h4&gt;
-
-&lt;p&gt;With cheaper, faster genetic alignment and sequencing possible, we can now infer evolutionary relationships between species based on the &amp;ldquo;distance&amp;rdquo; of their DNA.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not as simple as determining the edit distance between two long strings &amp;ndash; identifying known gene regions and the migration, duplication and deletion of genes as well as rate of population growth and appearance of mutations across species &lt;a href=&#34;https://en.wikipedia.org/wiki/Genetic_distance&#34;&gt;complicates this a bit&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I will go into more detail of the algorithms used to reconstruct phylogenetic trees from genetic distance, but before you can construct a phylogenetic tree you need the data and a metric with which to measure the relative evolutionary relationships between species.&lt;/p&gt;
-
-&lt;p&gt;To determine the degree of &amp;ldquo;similarity&amp;rdquo; between two different species using DNA, it is necessary to sequence the current members of the species to compare and calculate their genetic difference.  In this case, siblings with a more recent common ancestor would be more genetically similar than species with an ancestor that last spread its genetic data thousands of years ago.&lt;/p&gt;
-
-&lt;p&gt;Which brings us back to the base pair representation of time.  Using base pair differences to determine similarity between species, a greater genetic distance directly correlates with a more distant common ancestor.  The program used to determine genetic distance in the study is &lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245873/&#34;&gt;described here&lt;/a&gt;.  In the diagram above, &amp;ldquo;substitutions per 10,000 base pairs&amp;rdquo; is the number of substitutions that must be made to one species&amp;rsquo; genetic sequence to transform it into the other (in this diagram, dashed lines represent &lt;a href=&#34;https://en.wikipedia.org/wiki/Genetic_admixture&#34;&gt;genetic admixture&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;When you combine this data with known data of populations, migrations, and approximate times of divergence between two species, we can begin to pinpoint the time at which these genetic events occurred based on the relation between known divergence events and another species&amp;rsquo; genetic distance from that event.&lt;/p&gt;
-
-&lt;h4 id=&#34;new-findings-in-the-genetic-lineage-of-domestic-dogs:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;New findings in the genetic lineage of domestic dogs&lt;/h4&gt;
-
-&lt;p&gt;With this model of the phylogeny of modern dog and its relation to wolves, the study suggests that the closest living relative that produced both species occurred between 9,000 and 34,000 years ago.  If this tree is the correct model of speciation for all of the members of the canine family sampled, it makes the previously mentioned theory of dog domestication much less probable.  Other studies of dog-like fossils support the model of evolution that shows dog as having begun its divergence from its ancestor &lt;a href=&#34;http://www.researchgate.net/publication/258529165_Complete_Mitochondrial_Genomes_of_Ancient_Canids_Suggest_a_European_Origin_of_Domestic_Dogs&#34;&gt;15,000 to 34,000 years ago&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;15,000 to 34,000 years ago is before the age of agriculture, and recorded history begins.  If this is true, the domestication of dogs began during the age of men as a hunter/gatherer society.  So what does that mean for the role of humans in the domestication of dogs if the dog genome began selecting for domesticated traits before what we consider modern man existed?&lt;/p&gt;
-
-&lt;p&gt;I was reminded of &lt;a href=&#34;http://www.nytimes.com/2012/05/29/science/dogs-and-humans-speculation-and-science.html&#34;&gt;this article&lt;/a&gt;, which back in 2012 discussed the &amp;ldquo;speculative science&amp;rdquo; of the dog genome because there was no credible evidence to indicate that dogs played any role in modern human&amp;rsquo;s dominance over neanderthal.  While this study doesn&amp;rsquo;t provide conclusive evidence that dog and man co-evolved, it does support the idea that dogs and humans at the very least may have engaged in mutually beneficial social cooperation long before humans discovered agriculture and demonstrates pretty clearly that the ancestor to the modern dog existed during the time of neanderthals.&lt;/p&gt;
-
-&lt;h4 id=&#34;final-thoughts:0b815a1b81587847d74fa9cdce27f2fa&#34;&gt;Final thoughts&lt;/h4&gt;
-
-&lt;p&gt;I don&amp;rsquo;t pretend to be an evolutionary biologist so don&amp;rsquo;t take my word on the quality of the science mentioned in any of the papers or articles that I cited.  I sort of fell down a rabbit hole when trying to find an article to support my dad&amp;rsquo;s assertion that he once heard on the Discovery channel that humans evolved a large visible sclera due to evolutionary advantages and the &lt;a href=&#34;https://en.wikipedia.org/wiki/Cooperative_eye_hypothesis&#34;&gt;cooperative eye hypothesis&lt;/a&gt;, and that dogs also engage in social cooperation via eye communication.  Much to my surprise, my dad wasn&amp;rsquo;t totally contradicted by modern science (not a first, but a rarity).&lt;/p&gt;
-
-&lt;p&gt;While it is true that dogs can and do signal emotions through use of visible sclera (search &amp;ldquo;whale eye&amp;rdquo; and you will get lots of images of scared or anxious dogs), there is no evidence that they engage in social cooperation with humans using eye contact.  The jury is still out on whether or not eye contact with humans makes dogs feel a stronger social bond or feel threatened.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I always try very hard to separate observable fact from gut feeling, and that&amp;rsquo;s almost impossibly hard to do when it comes to observing something you&amp;rsquo;re very attached to.&lt;/p&gt;
-
-&lt;p&gt;Is it wishful thinking on my part to imagine primitive man and the ancestor of dog living and working together as a cooperative unit?  What advantage did we give ancestral dog in return that gave it such a competitive advantage over its peers?  Was it a larger shared predator or environmental pressures or something else entirely?  Did we rely on dogs to be our literal eyes and ears and over time this caused our senses to become much duller?&lt;/p&gt;
-
-&lt;p&gt;I look at my dog now snoring under my chair, curled up on an old sweater of mine, nose-first in my shoe watching her take deep whiffs of my scent which is kind of gross but also really sweet in a way.  She has lots of very strong instinctual behaviors like digging ditches to get to cool dirt, herding various family members (most of the time without us dumb monkeys figuring out that she&amp;rsquo;s sleeping soundly only because all of us are sitting on the couch), what is known as the &lt;a href=&#34;https://www.google.com/search?q=border+collie+stare&amp;amp;safe=off&amp;amp;espv=2&amp;amp;biw=1394&amp;amp;bih=821&amp;amp;tbm=isch&amp;amp;tbo=u&amp;amp;source=univ&amp;amp;sa=X&amp;amp;ved=0CB0QsARqFQoTCKjJm9OB48YCFc06kgodBdEP-A&amp;amp;dpr=0.9&#34;&gt;&amp;ldquo;border collie stare&amp;rdquo;&lt;/a&gt; when she&amp;rsquo;s waiting for me to throw her frisbee, etc.&lt;/p&gt;
-
-&lt;p&gt;And yet even though man has molded domestic dog evolution to use its instincts to serve his needs like herding livestock and retrieving game, we shouldn&amp;rsquo;t give ourselves too much credit.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://jillmunson.com/img/puppe.jpg&#34; alt=&#34;Meryl on selection day&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;They chose us too.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Further Reading:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ngm.nationalgeographic.com/2011/03/taming-wild-animals/ratliff-text/2&#34;&gt;&amp;ldquo;Taming the Wild&amp;rdquo;&lt;/a&gt;, an article from Nat Geo describing the efforts to study the genetic origins of domesticated behaviors.  Of particular interest is the assertion made that domestication is a fluid rather than linear unidirectional process.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://rspb.royalsocietypublishing.org/content/280/1755/20122765&#34;&gt;&amp;ldquo;Urinary oxytocin and social bonding in related and unrelated wild chimpanzees&amp;rdquo;&lt;/a&gt;, a paper on the chemical changes that occur in chimpanzees that engage in social cooperation&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=info:doi/10.1371/journal.pgen.1004093&#34;&gt;&amp;ldquo;How Much Is That in Dog Years? The Advent of Canine Population Genomics&amp;rdquo;&lt;/a&gt;, paper describing the history of the study of dog phylogeny.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>I love life sciences, dogs, and algorithms so when I found this paper describing recent changes to the hypothesized phylogeny of modern dog I got giddy.
+Dogs are incredibly fascinating, regardless of your opinion on breed standards and dog shows. They are the only successfully domesticated carnivore, they have the ability to understand our social communication mechanics and language, they engage in mutually beneficial social cooperation with us and we are not absolutely certain of why or when it happened.</description>
     </item>
     
     <item>
@@ -303,30 +93,8 @@ Freedman AH, Gronau I, Schweizer RM, Ortega-Del Vecchyo D, Han E, et al. (2014) 
       <pubDate>Fri, 10 Jul 2015 12:57:25 -0400</pubDate>
       
       <guid>http://jillmunson.com/post/2015/7-10/hello-world/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something.  It&amp;rsquo;s not like I don&amp;rsquo;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.&lt;/p&gt;
-
-&lt;p&gt;The issue is that even though I like what I&amp;rsquo;m doing, I don&amp;rsquo;t feel like I&amp;rsquo;ve done anything start-to-finish and like I&amp;rsquo;m learning anything new.  Sure I&amp;rsquo;m quickly becoming the world&amp;rsquo;s largest living encyclopedia of browser and javascript quirks but lately I&amp;rsquo;ve been missing the sort of really stressful but incredibly satisfying high that comes from finally grok&amp;rsquo;ing lamdas or dynamic programming or the like.&lt;/p&gt;
-
-&lt;p&gt;Basically, I miss school.  Not just my friends, I miss being in the trenches every day and having people who could completely empathize and working together not because we were on the same team but because it was a culture of stay competitive but help out the next person because strong competition made everyone better.  I am willing to admit I am romenticizing this a bit.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Anyways, I never got around to making any new year&amp;rsquo;s resolutions, but 7 months later is better than never right?  So that&amp;rsquo;s what I did &amp;ndash; I made a list of knowledge resolutions that I want to say I know and have experience doing and doing &lt;em&gt;well&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;My list:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make a new website with a blog and a project section.&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;Complete at least one small library/module/plugin/etc in javascript (&lt;a href=&#34;http://tholman.com/elevator.js/&#34;&gt;this is my inspiration&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;Do the &lt;a href=&#34;https://www.udacity.com/nanodegree&#34;&gt;android nanodegree&lt;/a&gt; and build a tiny app.&lt;/li&gt;
-&lt;li&gt;Brush up on actually implementing algorithms (DFS, djikstra&amp;rsquo;s, suffix tree implementation, etc etc).&lt;/li&gt;
-&lt;li&gt;Write about at least one technical problem or thing I learned once a week.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This list is purposely impossible.  By putting down all of the things I want to do, I&amp;rsquo;m identifying all of the parts of my big messy brain house instead of getting overwhelmed by the volume.&lt;/p&gt;
-
-&lt;p&gt;Wish me luck :)&lt;/p&gt;
-</description>
+      <description>I&#39;m not sure when this all began, but right now it is July 10th and about halfway through what I consider real summer and I have been plagued by this near-constant sense that I should be doing something. It&#39;s not like I don&#39;t keep myself busy, but lately I feel like none of those things require any kind of boundary pushing.
+The issue is that even though I like what I&#39;m doing, I don&#39;t feel like I&#39;ve done anything start-to-finish and like I&#39;m learning anything new.</description>
     </item>
     
   </channel>

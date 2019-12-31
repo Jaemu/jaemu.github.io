@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Apis on Jill Munson</title>
+    <title>apis on Jill Munson</title>
     <link>http://jillmunson.com/tags/apis/</link>
-    <description>Recent content in Apis on Jill Munson</description>
+    <description>Recent content in apis on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Jul 2015 14:47:49 -0400</lastBuildDate>
-    <atom:link href="http://jillmunson.com/tags/apis/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jillmunson.com/tags/apis/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Haiku.py</title>
@@ -15,241 +17,11 @@
       <pubDate>Sat, 25 Jul 2015 14:47:49 -0400</pubDate>
       
       <guid>http://jillmunson.com/project/haiku/about/</guid>
-      <description>
-
-&lt;p&gt;&lt;del&gt;Link: &lt;a href=&#34;http://haiku.jillmunson.com&#34;&gt;haiku.jillmunson.com&lt;/a&gt;&lt;/del&gt;&lt;br /&gt;
-&lt;em&gt;no longer hosted on google app engine, currently migrating to AWS so stay tuned&lt;/em&gt; :)&lt;/p&gt;
-
-&lt;p&gt;Github: &lt;a href=&#34;https://github.com/Jaemu/haiku.py&#34;&gt;haiku.py&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A work in progress JSON API haiku-as-a-service.  Built with Flask on top of the provided sample application from CP:100, deployed on &lt;a href=&#34;https://cloud.google.com/appengine/docs&#34;&gt;google app engine&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;v-01-counting-syllables-with-nltk-and-cmu-pronouncing-dictionary:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.01 - Counting syllables with nltk and CMU pronouncing dictionary&lt;/h4&gt;
-
-&lt;p&gt;This all started as a demo app for google app engine that I was tweaking as part of &lt;a href=&#34;https://cloud.google.com/training/&#34;&gt;CP:100&lt;/a&gt;, an introduction to Google Cloud Platform that was organized by &lt;a href=&#34;http://www.meetup.com/NYC-GDG/&#34;&gt;GDG-NYC&lt;/a&gt; (side note: they are awesome and run some really awesome meetups so if you are in the area, go!).&lt;/p&gt;
-
-&lt;p&gt;At my day job, we use Hipchat for internal communications.  My original end goal was to build an API that would produce haikus from a user&amp;rsquo;s chat history.  Since I don&amp;rsquo;t have an API key for Hipchat access, I thought I would start on the whole counting syllables and making haikus that didn&amp;rsquo;t totally suck thing.&lt;/p&gt;
-
-&lt;p&gt;Accurate syllable counting is &lt;a href=&#34;https://en.wikipedia.org/wiki/Syllabification&#34;&gt;hard&lt;/a&gt;.  In theory, I could have started by limiting the dictionary and hard-coding text inputs with syllable counts and part-of-speech tags but that sounded tedious and the whole goal of this project was to entertain myself so creating shit work would kind of defeat the purpose, although &lt;a href=&#34;http://www.everypoet.com/haiku/chunk1.js&#34;&gt;it&amp;rsquo;s been done&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Enter &lt;a href=&#34;http://nltk.org&#34;&gt;nltk&lt;/a&gt;.  Nltk is a natural language toolkit for Python that has lots of &lt;a href=&#34;http://www.nltk.org/py-modindex.html&#34;&gt;awesome modules&lt;/a&gt; and &lt;a href=&#34;http://www.nltk.org/book&#34;&gt;a companion book with examples&lt;/a&gt; to get you started.&lt;/p&gt;
-
-&lt;p&gt;Unfortuantely, nltk does not have a syllable dictionary.  However, I found this nifty &lt;a href=&#34;https://groups.google.com/forum/#!msg/nltk-users/mCOh_u7V8_I/HsBNcLYM54EJ&#34;&gt;code snippet&lt;/a&gt; from the nltk-users mailing list which was cited in this &lt;a href=&#34;http://runningwithdata.com/post/3576752158/w&#34;&gt;writeup&lt;/a&gt; which is something closer to what I ended up using:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from curses.ascii import isdigit 
-from nltk.corpus import cmudict 
-
-d = cmudict.dict() # get the CMU Pronouncing Dict
-
-def nsyl(word): 
-    &amp;quot;&amp;quot;&amp;quot;return the max syllable count in the case of multiple pronunciations&amp;quot;&amp;quot;&amp;quot;
-    return max([len([y for y in x if isdigit(y[-1])]) for x in d[word.lower()]])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What this list comprehension is doing is taking the entry in the &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34;&gt;CMU pronuncing dictionary&lt;/a&gt; and counting the number of pronunciation entries for a given word (using max to always return greatest number of syllables in cases of multiple correct yet discrete pronunciations).&lt;/p&gt;
-
-&lt;p&gt;so the first version of the app literally just returned estimated syllable counts for a given input:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import string
-import nltk
-from nltk.corpus import cmudict
-
-class Haiku:
-
-def __init__(self):
-        self.cmudict = cmudict.dict()
-
-def countSyllables(self, query=&#39;hello&#39;):
-        result = {}
-        words = query.strip().split(&#39;,&#39;)
-        for word in words:
-            try:
-                result[word] = max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[word.lower()]])
-            except:
-                result[word] = &#39;Error - &#39; + word + &#39; is not a recognized word&#39;
-        return result
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;v-02-grammar-tagging-with-penn-treebank-part-of-speech-tags-and-nltk-word-tokenizer:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.02 - Grammar tagging with Penn Treebank part of speech tags and nltk word tokenizer&lt;/h4&gt;
-
-&lt;p&gt;So once I had a syllable counter, it would be trivially easy to find random words to construct a haiku that satisfies the 5-7-5 syllable structure.  I didn&amp;rsquo;t want to settle &amp;ndash; I wanted haikus that, while maybe not semantically sensical, at least followed some semblance of grammatically correct English.&lt;/p&gt;
-
-&lt;p&gt;In order to be able to do this, I needed to be able to tag every word in the CMU dictionary with its part of speech.  The nltk textbook has a &lt;a href=&#34;http://www.nltk.org/book/ch05.html&#34;&gt;whole chapter&lt;/a&gt; dedicated to word tagging and tokenization.&lt;/p&gt;
-
-&lt;p&gt;For my purposes, I wanted to preserve the generated syllable count and the part of speech.  In order to do that, I needed to create a new dictionary.  Generating this dictionary on application load was insanely expensive, so I made a smaller script just to generate the dictionary and instead would load a pickle.&lt;/p&gt;
-
-&lt;p&gt;To test the dictionary, I created a new endpoint that would accept a word as input and return a list of other words that have the same part of speech and syllable count.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
-
-
-    def __init__(self):
-        self.cmudict = cmudict.dict()
-        self.words = self.cmudict.keys()
-        self.tagged_words = pickle.load(open(&#39;tagged_words_syl.p&#39;, &amp;quot;rb&amp;quot;))
-
-    def _syllableHelper(self, query=&#39;hello&#39;):
-	    return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])
-
-
-Using this pattern I generated haikus like:
-
-
-
-    def getSimilarWords(self, word=&amp;quot;hello&amp;quot;):
-        wordData = nltk.pos_tag(word_tokenize(word))
-        category = wordData[0][1]
-        syllable = self._syllableHelper(word)
-        similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-        return {
-            word: similarWords,
-            &#39;category&#39;: category
-        }
-
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;v-03-building-pattern-based-haikus:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;v.03 - Building pattern-based haikus&lt;/h4&gt;
-
-&lt;p&gt;So once I had syllable counts and parts of speech, I needed to create a pattern for the haikus.  The pattern would contain three arrays, each containing either:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A (part of speech, syllable) tuple or&lt;/li&gt;
-&lt;li&gt;A list of connecting phrases, modifiers, etc.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The pattern I came up with after some trial and error was:&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-[plural noun] [present-tense verb]&lt;br \&gt;
-[present-tense verb] [&#34;in the&#34; | &#34;like some&#34; | &#34;without my&#34; | &#34;like the&#34; | &#34;of the&#34;] [plural noun]  &lt;br \&gt;
-[present-tense verb] [adjective] &lt;br \&gt;
-&lt;/p&gt;
-
-&lt;p&gt;So to use this to generate haikus, I would iterate over the pattern and either replace a tuple with a similar word or choose a random entry given a list of words.  I thought this might break down if I start accepting user-provided patterns, but I wasn&amp;rsquo;t there yet and honestly was just curious what kind of output I would get.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-import random
-import string
-import nltk
-import pickle
-from nltk.corpus import cmudict
-from nltk import word_tokenize
-
-class Haiku:
-
-
-	def __init__(self):
-		self.cmudict = cmudict.dict()
-		self.words = self.cmudict.keys()
-		self.tagged_words = pickle.load(open(&#39;tagged_words_syl.p&#39;, &amp;quot;rb&amp;quot;))
-		self.pattern = [[
-				(&amp;quot;NNS&amp;quot;, 2),
-				(&amp;quot;VBG&amp;quot;, 3)
-			],[
-				(&amp;quot;VBG&amp;quot;, 3),
-				[&amp;quot;in the&amp;quot;, &amp;quot;with some&amp;quot;, &amp;quot;like some&amp;quot;, &amp;quot;without my&amp;quot;, &amp;quot;like the&amp;quot;, &amp;quot;of the&amp;quot;],
-				(&amp;quot;NNS&amp;quot;, 2)
-			],[
-				(&amp;quot;VBG&amp;quot;, 2),
-				(&amp;quot;RB&amp;quot;, 3)
-			]
-		]
-		self.grammar = [
-			&amp;quot;CC&amp;quot;,
-			&amp;quot;CD&amp;quot;,
-			&amp;quot;DT&amp;quot;,
-			&amp;quot;EX&amp;quot;,
-			&amp;quot;FW&amp;quot;,
-			&amp;quot;IN&amp;quot;,
-			&amp;quot;JJ&amp;quot;,
-			&amp;quot;JJR&amp;quot;,
-			&amp;quot;JJS&amp;quot;,
-			&amp;quot;LS&amp;quot;,
-			&amp;quot;MD&amp;quot;,
-			&amp;quot;NN&amp;quot;,
-			&amp;quot;NNS&amp;quot;,
-			&amp;quot;NNP&amp;quot;,
-			&amp;quot;NNPS&amp;quot;,
-			&amp;quot;PDT&amp;quot;,
-			&amp;quot;POS&amp;quot;,
-			&amp;quot;PRP&amp;quot;,
-			&amp;quot;PRP$&amp;quot;,
-			&amp;quot;RB&amp;quot;,
-			&amp;quot;RBR&amp;quot;,
-			&amp;quot;RBS&amp;quot;,
-			&amp;quot;RP&amp;quot;,
-			&amp;quot;SYM&amp;quot;,
-			&amp;quot;TO&amp;quot;,
-			&amp;quot;UH&amp;quot;,
-			&amp;quot;VB&amp;quot;,
-			&amp;quot;VBD&amp;quot;,
-			&amp;quot;VBG&amp;quot;,
-			&amp;quot;VBN&amp;quot;,
-			&amp;quot;VBP&amp;quot;,
-			&amp;quot;VBZ&amp;quot;,
-			&amp;quot;WDT&amp;quot;,
-			&amp;quot;WP&amp;quot;,
-			&amp;quot;WP$&amp;quot;,
-		]
-
-	def _syllableHelper(self, query=&#39;hello&#39;):
-		return max([len([y for y in x if y[-1] in string.digits]) for x in self.cmudict[query.lower()]])	
-
-	def getSimilarWords(self, word=&amp;quot;hello&amp;quot;):
-		wordData = nltk.pos_tag(word_tokenize(word))
-		category = wordData[0][1]
-		syllable = self._syllableHelper(word)
-		similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-		return {
-			word: similarWords,
-			&#39;category&#39;: category
-		}
-
-	def makeHaiku(self):
-		haiku = {}
-		for line in xrange(len(self.pattern)):
-			haiku[line] = []
-			for i in xrange(len(self.pattern[line])):
-				if not (len(self.pattern[line][i]) &amp;gt; 2):
-					currentPattern = self.pattern[line][i]
-					category = currentPattern[0]
-					syllable = currentPattern[1]
-					similarWords = [x for x in self.tagged_words if x[1] == category and x[2] == syllable]
-					haiku[line].append(random.choice(similarWords)[0])
-				else:
-					haiku[line].append(random.choice(self.pattern[line][i]))
-		return {
-			&#39;haiku&#39;: haiku
-		}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Using this pattern I generated haikus like:
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-schaefers beheading&lt;br \&gt;
-reviving without my chloris&lt;br \&gt;
-filling plaintively&lt;br \&gt;
-&lt;/p&gt;&lt;/p&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;p style=&#34;text-align: center; font-size: .75em;&#34;&gt;
-bake-offs inflaming&lt;br \&gt;
-taxiing in the promos&lt;br \&gt;
-forcing gainfully&lt;br \&gt;
-&lt;/p&gt;
-
-&lt;p&gt;In general, the output reads like a silly but legit haiku.&lt;/p&gt;
-</description>
+      <description>Link: haiku.jillmunson.com
+no longer hosted on google app engine, currently migrating to AWS so stay tuned :)
+Github: haiku.py
+A work in progress JSON API haiku-as-a-service. Built with Flask on top of the provided sample application from CP:100, deployed on google app engine
+ v.01 - Counting syllables with nltk and CMU pronouncing dictionary This all started as a demo app for google app engine that I was tweaking as part of CP:100, an introduction to Google Cloud Platform that was organized by GDG-NYC (side note: they are awesome and run some really awesome meetups so if you are in the area, go!</description>
     </item>
     
   </channel>

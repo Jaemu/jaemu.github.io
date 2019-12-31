@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conferences on Jill Munson</title>
+    <link>http://localhost:1313/tags/conferences/</link>
+    <description>Recent content in Conferences on Jill Munson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 May 2016 22:21:34 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I/O 2016 Recap - Keynote</title>
+      <link>http://localhost:1313/post/2016/5-29/io-2016-keynote/</link>
+      <pubDate>Sun, 29 May 2016 22:21:34 -0700</pubDate>
+      
+      <guid>http://localhost:1313/post/2016/5-29/io-2016-keynote/</guid>
+      <description>
+
+&lt;p&gt;I decided to split this into parts, because I had a great time at I/O and there was a lot to learn and experience over 3 days.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;(Additional disclaimer: I do not present myself as a representative of Amazon nor does anything I say here confirm, deny or relate to any business strategy, priorities or initiatives currently being undertaken at Amazon.  Any mention of Amazon products are presented as my personal opinion as a technology consumer, not as an employee.  Phew.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;keynote:c922386f317c7f53d430ac622be0c7c3&#34;&gt;Keynote&lt;/h4&gt;
+
+&lt;p&gt;The undisputed overarching theme of this year&amp;rsquo;s I/O keynote was machine learning, and how far Google&amp;rsquo;s machine learning capabilities have come.  This flowed right into a narrative of how strong Google&amp;rsquo;s machine learning capabilities are, how much they have improved, and how that technology is driving the quality of the consumer-facing products it would present throughout the keynote.&lt;/p&gt;
+
+&lt;h5 id=&#34;machine-learning:c922386f317c7f53d430ac622be0c7c3&#34;&gt;Machine Learning&lt;/h5&gt;
+
+&lt;p&gt;For Google to come out and say that there have been tremendous advances in machine learning is somewhat disingenuous.  That&amp;rsquo;s not to say that they don&amp;rsquo;t have better prediction models today than they probably did 5-10 years ago, but the thing about models is the quality of predictions generated is largely based on the quality of the data they are trained on.&lt;/p&gt;
+
+&lt;p&gt;Saying that we have better machine learning today than we did last year is akin to saying &amp;ldquo;we have unprecedented amounts of very good, high quality data on our users that we are able to use to generate very accurate predictions in real time&amp;rdquo;, which made the follow-up presentation of Google Home more than a little unsettling.&lt;/p&gt;
+
+&lt;h5 id=&#34;google-assistant:c922386f317c7f53d430ac622be0c7c3&#34;&gt;Google Assistant&lt;/h5&gt;
+
+&lt;p&gt;The keynote also spent significant time making a hard sell for Google assistant technology.  Sundar Pichai came out and did this &lt;a href=&#34;https://youtu.be/uW04TtknrSc?t=9m56s&#34;&gt;staged demonstration&lt;/a&gt; of an interaction with the assistan that displayed his words before he got to that point in the presentation.  He wrapped up with a comment that this is the sort of interaction that demonstrates what Google assistant technology &amp;ldquo;aspires to be&amp;rdquo; (paraphrased).&lt;/p&gt;
+
+&lt;p&gt;This was extremely similar to last year&amp;rsquo;s Google Now demonstration.  For me, contrived demos of technology that is not quite ready for prime time should be reserved for truly game-changing, never before seen products or technologies.  We forgave the buggy Moto 360 demos two years ago because they were attempting to produce a circular smartwatch form factor, which was hard.&lt;/p&gt;
+
+&lt;p&gt;Demonstrating what is effectively a chat bot in this way feels like a major step backwards in what the audience has come to expect in terms of game-changing technology getting announced at I/O.  At this point in the keynote, it started to feel like those bi-weekly sprint demos in which no one but marketing wants to present what they&amp;rsquo;re working on.&lt;/p&gt;
+
+&lt;h5 id=&#34;home:c922386f317c7f53d430ac622be0c7c3&#34;&gt;Home&lt;/h5&gt;
+
+&lt;p&gt;Continuing the narrative of new applications of advanced machine learning and the assistant technology, the first (and only physical) consumer product presented was Google Home.  In the weeks leading up to I/O, there were &lt;a href=&#34;http://www.recode.net/2016/5/11/11658432/google-chirp-amazon-echo-rival&#34;&gt;several&lt;/a&gt; &lt;a href=&#34;http://www.androidpolice.com/2016/05/12/rumor-google-is-working-on-an-amazon-echo-competitor-codenamed-chirp/&#34;&gt;news&lt;/a&gt; &lt;a href=&#34;https://www.washingtonpost.com/news/the-switch/wp/2016/05/12/why-googles-chirp-could-be-better-than-amazons-alexa/&#34;&gt;articles&lt;/a&gt; that Google was going to present its Echo competitor at I/O.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure if my disappointment is biased because of the pre-I/O spoilers or from the presentation itself.  I&amp;rsquo;m skeptical of voice-based assistant technology for the non-blind population in general for the simple fact that no presentation has ever conclusively answered this question for me:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is the compelling use case that voice UI is uniquely &lt;em&gt;better&lt;/em&gt; suited for than other UIs?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I read faster than I type, I type faster than I think (sometimes), and I do both of those things much faster than talking.  Using a voice assistant feels like a giant step backwards because I can gesture and swipe in the time it takes me to initialize the interaction with a voice assistant, get an acknowledgement, say my command, confirm that this is the command I intended to provide, and then complete my original goal.&lt;/p&gt;
+
+&lt;p&gt;Look, I use Gmail and I continue to do so because it provides a compelling product at no monetary cost to me in exchange for my data and this is an trade-off I am comfortable with.  I don&amp;rsquo;t consider myself data paranoid.  What I am not about to do is to run out and purchase a product that has no killer app or user story in order to provide Google with more data.  It&amp;rsquo;s also a speaker?  Excellent, except I don&amp;rsquo;t even have a dumb speaker in my house and I&amp;rsquo;m not alone.&lt;/p&gt;
+
+&lt;p&gt;My home is my sanctuary.  When I&amp;rsquo;m home, I get comfort from the hum of domestic life &amp;ndash; the dog down the hall barking, the rumble of the washing machine, the crackle of ice cubes falling out of the ice cube tray.  I rarely if ever listen to music when I&amp;rsquo;m home, so the speaker itself is not a compelling product for me to begin with.&lt;/p&gt;
+
+&lt;p&gt;Personal feelings aside, the inclusion of Home in the I/O keynote felt strange not only because of the lack of compelling use case, but also because it was announced to be made available &amp;ldquo;later this year&amp;rdquo;.&lt;/p&gt;
+
+&lt;h5 id=&#34;allo-and-duo:c922386f317c7f53d430ac622be0c7c3&#34;&gt;Allo and Duo&lt;/h5&gt;
+
+&lt;p&gt;If spending keynote minutes on a voice assistant demonstration felt weird, then&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

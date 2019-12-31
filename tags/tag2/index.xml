@@ -1,22 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tag2 on Jill Munson</title>
-    <link>http://localhost:1313/tags/tag2/</link>
-    <description>Recent content in Tag2 on Jill Munson</description>
+    <title>tag2 on Jill Munson</title>
+    <link>http://jillmunson.com/tags/tag2/</link>
+    <description>Recent content in tag2 on Jill Munson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 17:11:57 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2017 09:17:07 -0700</lastBuildDate>
+    
+	<atom:link href="http://jillmunson.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Craft as meditation</title>
-      <link>http://localhost:1313/post/2015/8-3/craft/</link>
-      <pubDate>Mon, 03 Aug 2015 17:11:57 -0400</pubDate>
+      <title>Using SOHCAHTOA: A CSS War Story</title>
+      <link>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</link>
+      <pubDate>Sun, 09 Jul 2017 09:17:07 -0700</pubDate>
       
-      <guid>http://localhost:1313/post/2015/8-3/craft/</guid>
-      <description>&lt;p&gt;I get restless sometimes.&lt;/p&gt;
-</description>
+      <guid>http://jillmunson.com/post/2017/7-9/using-sohcahtoa/</guid>
+      <description>Dmitri PopovI decided to split this into parts, because I had a great time at I/O and there was a lot to learn and experience over 3 days.
+(Additional disclaimer: I do not present myself as a representative of Amazon nor does anything I say here confirm, deny or relate to any business strategy, priorities or initiatives currently being undertaken at Amazon. Any mention of Amazon products are presented as my personal opinion as a technology consumer, not as an employee.</description>
+    </item>
+    
+    <item>
+      <title>LIRR On-Time Performance</title>
+      <link>http://jillmunson.com/project/twitter/otp-bot/</link>
+      <pubDate>Sat, 10 Sep 2016 13:22:42 -0700</pubDate>
+      
+      <guid>http://jillmunson.com/project/twitter/otp-bot/</guid>
+      <description></description>
     </item>
     
   </channel>

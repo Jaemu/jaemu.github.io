@@ -9,17 +9,16 @@ canonifyurls = false
 builddrafts = false
 DisqusShortname = "jaemu"
 [params]
-  cover = "img/female_founders.jpg"
-  logo = "img/me.jpg"
+  cover = "img/parade.jpg"
+  logo = "img/noh8.jpg"
   author = "Jill Munson"
-  authorlocation = "New York, NY"
+  authorlocation = "Irvine, CA"
   authorwebsite = "email: hello at (this domain)"
-  description = "Software Engineer.  Seawolf.  Corg-mom."
-  bio= "Software Engineer | Seawolf | Corg-mom "
+  description = "Dreams in console.log, can probably fix your web app, most definitely cannot fix your printer."
+  bio= "Software Engineer, Twitch. Musings and opinions here are my own."
   googleAnalyticsUserID = "UA-60038362-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   githubName = "jaemu"
-  twitterName = "maykaynvwd"
   linkedin = "https://www.linkedin.com/in/jillianmunson"
   instagram = "msito"
   # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")

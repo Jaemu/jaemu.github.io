@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" The Model and The View &middot;  Jill Munson" />
+  	<meta property="og:site_name" content="Jill Munson" />
+  	<meta property="og:url" content="http://jillmunson.com/post/2015/8-3/model-and-view/" />
+    
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2017-11-03T17:11:57-04:00" />
+
+    
+    <meta property="og:article:tag" content="personal" />
+    
+    
+
+  <title>
+     The Model and The View &middot;  Jill Munson
+  </title>
+
+    <meta name="description" content="Software Engineer.  Seawolf.  Corg-mom." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://jillmunson.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://jillmunson.com/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="http://jillmunson.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://jillmunson.com/index.xml" rel="alternate" type="application/rss+xml" title="Jill Munson" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.62.0" />
+
+    <link rel="canonical" href="http://jillmunson.com/post/2015/8-3/model-and-view/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-60038362-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/">Home</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/about">About</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/post">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/project">Projects</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/meetups">WIT Meetups</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="/post/2019/12-30/homecoming/">Homecoming</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://jillmunson.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head" style="background-image: url(http://jillmunson.com/img/farm_small.jpg); background-size: cover;">
+  <nav class="main-nav overlay clearfix">
+
+ 
+  
+      <a class="blog-logo" href="http://jillmunson.com/"><img src="http://jillmunson.com/img/me.jpg" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">The Model and The View</h1>
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-11-03T17:11:57-04:00">
+            Nov 3, 2017
+          </time>
+        
+         
+          <span class="post-tag small"><a href="http://jillmunson.com/tags/personal/">#personal</a></span>
+         
+        </section>
+    </header>
+  
+    <section class="post-content">
+      <p>&ldquo;Are you sure you did that work?  I remember things differently.&rdquo;</p>
+<p>I've never been more sure of anything in my life.</p>
+<p>Over the course of a lifetime, I have developed an incredibly well-defined sense of self.  In a world of imposter syndrome seminars and #askformore campaigns, it can feel like this identity that I have declared my own is in some way rooted in false bravado.  I prefer to think of it as the result of having lived a life running in the debugger.</p>
+<hr>
+<p>I came across <a href="https://www.washingtonpost.com/news/post-nation/wp/2017/05/05/transcript-when-you-dont-look-black/?utm_term=.7394ec8cbcab">this article</a> on race and what it means to identify as black when the world interprets your presentation differently.  It struck me because it vocalized what I had been struggling to express for a long time.</p>
+<p>I started struggling with my identity probably earlier than most.  My parents were extremely proud of being Munsons - we had leather-bound copies of <a href="https://www.worldcat.org/title/1637-1887-the-munson-record-a-genealogical-and-biographical-account-of-captain-thomas-munson-a-pioneer-of-hartford-and-new-haven-and-his-descendants/oclc/6151585">the Munson Record</a>, my mom would show me pictures of her pregnant with me at the Munson family reunion at Yale (&ldquo;he was one of the founding fathers of Conneticut!&quot;).</p>
+<p>I looked nothing like my father's family.  I didn't feel very &ldquo;Munson&rdquo; because I was the spitting image of my mother.</p>
+<p>I asked questions about my mom's side all the time.  I knew we were &ldquo;Spanish&rdquo; but I was told that we were &ldquo;European&rdquo; and no different than my classmates who were largely Italian, Irish, or some mix of the two.  It was a thing - if you were brunette, you were probably Italian and if you were blonde you were probably Irish.  I asked questions, but really what I wanted to know was what made me different?  Was it my &ldquo;Spanish&rdquo;-ness?</p>
+<p>When I was in 1st grade we did a school-wide project &amp; presentation in which each of us had to pick a side of our family to learn more about.  At the end, they hung up all of our worksheets in the hallways, paint our faces with the flag of our country of origin, and have us stand on risers in the auditorium and sing songs about being different and yet the same or something.  Desperate to learn more about my mom's half of the family, I brought home the worksheet filled out with what I already knew &ndash; grandparents, aunts, etc. &ndash; and pestered my mom for the answers to the rest of the worksheet.</p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://jillmunson.com/" style="background-image: url(http://jillmunson.com/img/me.jpg)"><span class="hidden">Jill Munson's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://jillmunson.com/">Jill Munson</a></h4>
+  
+  <p>Software Engineer | Seawolf | Corg-mom </p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">New York, NY</span>
+    <span class="author-link icon-link">email: hello at (this domain)</span>
+  </div>
+</section>
+
+
+
+    
+    <section class="share">
+      <h4>Share this post</h4>
+      <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=The%20Model%20and%20The%20View&amp;url=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f8-3%2fmodel-and-view%2f"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+      </a>
+      <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f8-3%2fmodel-and-view%2f"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+      </a>
+      <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fjillmunson.com%2fpost%2f2015%2f8-3%2fmodel-and-view%2f"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+      </a>
+    </section>
+    
+
+    
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'jaemu';
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Jill Munson</a> </section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/Jaemu/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://jillmunson.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://jillmunson.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://jillmunson.com/js/index.js"></script>
+
+</body>
+</html>
+
